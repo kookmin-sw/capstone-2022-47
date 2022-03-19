@@ -5,6 +5,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ## 1. 프로젝트 소개
 
+<img src = "https://user-images.githubusercontent.com/90044681/159125938-5b229b48-0323-4d20-adb4-e14e319deb6e.png" height="140px">
+
+
 
 ## 2. Abstract
 
@@ -45,8 +48,11 @@ Email:
 
 ## 5. 사용법
 
+-소프트웨어 설치, 실행방법, 사용 방법 등 추가링크로 포함
+
 ## 6. 기타
 
+- 1~5 외에 전하고 싶은 내용, 사사 등
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
@@ -64,11 +70,6 @@ Syntax highlighted code block
 2. List
 
 **Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-![사진](https://user-images.githubusercontent.com/90044681/158945432-8238e135-ebb6-43ae-b317-b12f729de2e8.png)
-
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
