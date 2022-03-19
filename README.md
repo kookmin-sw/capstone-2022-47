@@ -65,7 +65,7 @@ git remote add upstream <clone해서 내 레포지토리에생긴 저장소 주�
 ```
 #### 5. remote 저장소 확인 (origin과 upstream이 같아야)
 ```
-git remote
+git remote -
 ```
 #### 6. 내 로컬컴퓨터에서 branch로 pull request 연습도 해보기
 ```
