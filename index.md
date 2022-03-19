@@ -5,7 +5,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ## 1. 프로젝트 소개
 
-<img src = "https://user-images.githubusercontent.com/90044681/159125938-5b229b48-0323-4d20-adb4-e14e319deb6e.png" height="140px">
+<img src = "https://user-images.githubusercontent.com/90044681/159125938-5b229b48-0323-4d20-adb4-e14e319deb6e.png" width="470px" height="150px">
 
 
 
