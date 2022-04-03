@@ -15,15 +15,16 @@
     복용하는 약이 있는 사람이라면 누구나 쉽고 간단하게 사용 가능한 약 복용 어플리케이션을 제작해
     현대인의 건강과 사회의 건강에 도움이 되고자 한다. 
 
-    
-  
+#### FLOWCHART
+<hr>
+<img src = "img/약속해 - 화면 설계.png" width="700px" height="450px">
+<hr>
+
+
+
 ### 주요 기능
-    A. 약 복용 알림 기능
     
-    B. 약물 기록 관리 기능
-    
-    C. 약 정보 제공 기능
-    
+   
 ## 2. Abstract
 
 In order to properly take various medicines and nutrients, the function of notifying when taking drugs and managing drug intake records
