@@ -17,13 +17,12 @@
 
 #### FLOWCHART
 <hr>
-<img src = "img/약속해 - 화면 설계.png" width="700px" height="450px">
-<hr>
-
+<img src = "img/약속해 - 화면 설계.png" width="800px" height="500px">
 
 
 ### 주요 기능
-    
+<hr>
+<img src = "img/약속해 - 기능.png" width="800px" height="330px">
    
 ## 2. Abstract
 
