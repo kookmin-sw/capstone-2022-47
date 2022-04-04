@@ -4,6 +4,7 @@
 ## 1. 프로젝트 소개
 
 <img src = "https://user-images.githubusercontent.com/90044681/159125938-5b229b48-0323-4d20-adb4-e14e319deb6e.png" width="470px" height="150px">
+
 다양한 의약품 및 영양제의 올바른 복용을 위해 약 복용 시 알림 기능과 약물 섭취 기록 관리 기능<br> 검색 및 구분 기능을 제공하는 약 복용 어플리케이션
  
 ### 배경 및 개요
@@ -17,13 +18,12 @@
 
 #### FLOWCHART
 <hr>
-<img src = "img/약속해 - 화면 설계.png" width="700px" height="450px">
-<hr>
-
+<img src = "img/약속해 - 화면 설계.png" width="800px" height="500px">
 
 
 ### 주요 기능
-    
+<hr>
+<img src = "img/약속해 - 기능.png" width="800px" height="330px">
    
 ## 2. Abstract
 
