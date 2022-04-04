@@ -31,8 +31,8 @@ In order to properly take various medicines and nutrients, the function of notif
 drug application that provides search and differentiation functions
 
 ## 3. 소개 영상
-[1. 중간 발표자료](https://github.com/kookmin-sw/capstone-2022-47/blob/master/docs/%ED%8C%8047-%EC%A4%91%EA%B0%84%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.pdf)
-[2. 중간 보고서]()
+[1. 중간 발표자료](https://github.com/kookmin-sw/capstone-2022-47/blob/master/docs/%ED%8C%8047-%EC%A4%91%EA%B0%84%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.pdf)<br>
+[2. 중간 보고서](https://github.com/kookmin-sw/capstone-2022-47/blob/master/docs/%ED%8C%8047-%EC%A4%91%EA%B0%84%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf)
 
 ## 4. 팀 소개
 
@@ -72,5 +72,11 @@ Email: dmldus0424@naver.com
 -소프트웨어 설치, 실행방법, 사용 방법 등 추가링크로 포함
 
 ## 6. 기타
-
-- 1~5 외에 전하고 싶은 내용, 사사 등
+```
+   1) 개발환경 : Visual Studio Code에서 제작한다.
+   2) 기술스택 : Android와 ios 에서 모두 원활히 돌아가는 어플리케이션을 만들기 위해
+                 Google에서 자체적으로 제작한 Flutter와 dart언어를 사용한다. Database는 빠르고 쉬우
+                 며 보안이 철저한 순수 Dart로 작성된 로컬 데이터베이스저장소 hive를 이용한다.
+   3) 실행 환경 : android pixel2 API 30 
+   4) 최종 산출물 : android, ios ap
+```
