@@ -31,6 +31,8 @@ In order to properly take various medicines and nutrients, the function of notif
 drug application that provides search and differentiation functions
 
 ## 3. 소개 영상
+[1. 중간 발표자료](https://github.com/kookmin-sw/capstone-2022-47/blob/master/docs/%ED%8C%8047-%EC%A4%91%EA%B0%84%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.pdf)
+[2. 중간 보고서]()
 
 ## 4. 팀 소개
 
