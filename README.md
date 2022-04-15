@@ -11,7 +11,7 @@
 
 - 팀페이지 꾸미기
   - 프로젝트 소개 및 팀원 소개
-  - index.md 예시보고 수정.
+  - index.md 예시보고 수정.ㅇ
 
 - GitHub Pages 리파지토리 Settings > Options > GitHub Pages 
   - Source를 marster branch
