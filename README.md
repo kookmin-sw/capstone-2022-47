@@ -1,53 +1,88 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=7295498&assignment_repo_type=AssignmentRepo)
-# Welcome to GitHub
 
-캡스톤 팀 생성을 축하합니다.
+# 약속해 
 
-## 팀소개 및 페이지를 꾸며주세요.
+## 1. 프로젝트 소개
 
-- 프로젝트 소개
-  - 프로젝트 설치방법 및 데모, 사용방법, 프리뷰등을 readme.md에 작성.
-  - Api나 사용방법등 내용이 많을경우 wiki에 꾸미고 링크 추가.
+<img src = "https://user-images.githubusercontent.com/90044681/159125938-5b229b48-0323-4d20-adb4-e14e319deb6e.png" width="470px" height="150px">
 
-- 팀페이지 꾸미기
-  - 프로젝트 소개 및 팀원 소개
-  - index.md 예시보고 수정.ㅇ
+다양한 의약품 및 영양제의 올바른 복용을 위해 약 복용 시 알림 기능과 약물 섭취 기록 관리 기능<br> 검색 및 구분 기능을 제공하는 약 복용 어플리케이션
+ 
+### 배경 및 개요
+    
+    현대인의 식습관에 따른 질병 증가 및 비타민 등 각종 영양제의 양은 증가하고 있으며,
+    2년 째 계속되고 있는 코로나19로 인해 일반 약들의 수요는 물론이고 우울증 치료를 위한 수면제 및 처방약의 소비 또한 점점 늘어나고 있다. 
+    
+    약물 복용은 정확한 처방을 기반으로 복용되어야 하며 그렇다 해도 바쁜 현대인의 삶에서 잊혀지기 쉽상이다. 
+    복용하는 약이 있는 사람이라면 누구나 쉽고 간단하게 사용 가능한 약 복용 어플리케이션을 제작해
+    현대인의 건강과 사회의 건강에 도움이 되고자 한다. 
 
-- GitHub Pages 리파지토리 Settings > Options > GitHub Pages 
-  - Source를 marster branch
-  - Theme Chooser에서 태마선택
-  - 수정후 팀페이지 확인하여 점검.
-
-**팀페이지 주소** -> https://kookmin-sw.github.io/ '{{자신의 리파지토리 아이디}}'
-
-**예시)** 2020년 0조  https://kookmin-sw.github.io/capstone-2020-0/
+#### FLOWCHART
+<hr>
+<img src = "img/약속해 - 화면 설계.png" width="800px" height="500px">
 
 
-## 내용에 아래와 같은 내용들을 추가하세요.
+### 주요 기능
+<hr>
+<img src = "img/약속해 - 기능.png" width="800px" height="330px">
+   
+## 2. Abstract
 
-### 1. 프로잭트 소개
+In order to properly take various medicines and nutrients, the function of notifying when taking drugs and managing drug intake records
+drug application that provides search and differentiation functions
 
-프로젝트
+## 3. 소개 영상
+[1. 중간 발표자료](https://github.com/kookmin-sw/capstone-2022-47/blob/master/docs/%ED%8C%8047-%EC%A4%91%EA%B0%84%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.pdf)<br>
+[2. 중간 보고서](https://github.com/kookmin-sw/capstone-2022-47/blob/master/docs/%ED%8C%8047-%EC%A4%91%EA%B0%84%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf)
 
-### 2. 소개 영상
+## 4. 팀 소개
 
-프로젝트 소개하는 영상을 추가하세요
+```markdown
+이름 : 이채현
+학번 : 20161671
+Email: chirene47507073@kookmin.ac.kr
+GitHub : https://github.com/swlee22
+```
 
-### 3. 팀 소개
+```markdown
+이름 : 이산하
+학번 : 20163138 
+Email: sanhaoov@kookmin.ac.kr
+GitHub : https://github.com/grasfgs
+```
 
-팀을 소개하세요.
 
-팀원정보 및 담당이나 사진 및 SNS를 이용하여 소개하세요.
+```markdown
+이름 : 조성래
+학번 : 20163159
+Email: whvkek@naver.com
+GitHub : https://github.com/Sungrae-kogi
+```
 
-### 4. 사용법
 
-소스코드제출시 설치법이나 사용법을 작성하세요.
+```markdown
+이름 : 김의연
+학번 : 20143044
+Email: dmldus0424@naver.com
+역할: https://github.com/KimUiYeon424
+```
 
-### 5. 기타
 
-추가적인 내용은 자유롭게 작성하세요.
+## 5. 사용법
 
------------------------------------------
+-소프트웨어 설치, 실행방법, 사용 방법 등 추가링크로 포함
+
+## 6. 기타
+```
+1) 개발환경 : Visual Studio Code에서 제작한다.
+2) 기술스택 : Android와 ios 에서 모두 원활히 돌아가는 어플리케이션을 만들기 위해
+              Google에서 자체적으로 제작한 Flutter와 dart언어를 사용한다. Database는 빠르고 쉬우
+              며 보안이 철저한 순수 Dart로 작성된 로컬 데이터베이스저장소 hive를 이용한다.
+3) 실행 환경 : android pixel2 API 30 
+4) 최종 산출물 : android, ios ap
+```
+
+-------------------------------------------
+
 진행과정에서 도움이 될 만한 코드입니다. 
 
 ## Fork, clone 진행 
