@@ -6,6 +6,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:yaksok_project/components/yaksok_page_route.dart';
 
 import '../../components/yaksok_constants.dart';
+import '../../components/yaksok_widgets.dart';
 import 'add_alarm_page.dart';
 import 'components/add_page_widget.dart';
 
@@ -75,8 +76,8 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
         ),
       ),
       bottomNavigationBar: BottomSubmitButton(
-          onPressed: _nameController.text.isEmpty ? null : _onAddAlarmPage,
-          text: '다음',
+        onPressed: _nameController.text.isEmpty ? null : _onAddAlarmPage,
+        text: '다음',
       ),
     );
   }
@@ -162,23 +163,17 @@ class PickImageBottomSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Padding(
-        padding: pagePadding,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            TextButton(
-              onPressed: onPressedCamera,
-              child: const Text('카메라로 촬영'),
-            ),
-            TextButton(
-              onPressed: onPressedGallery,
-              child: const Text('앨범에서 가져오기'),
-            ),
-          ],
+    return BottomSheetBody(
+      children: [
+        TextButton(
+          onPressed: onPressedCamera,
+          child: const Text('카메라로 촬영'),
         ),
-      ),
+        TextButton(
+          onPressed: onPressedGallery,
+          child: const Text('앨범에서 가져오기'),
+        ),
+      ],
     );
   }
 }
