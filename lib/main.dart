@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:yaksok_project/components/yaksok_theme.dart';
+import 'package:yaksok_project/services/yaksok_notification_service.dart';
 
 import 'pages/home_page.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  final notification = YaksokNotificationService();
+  notification.initializeTimeZone();
+  notification.initializeNotification();
+
   runApp(const MyApp());
 }
 

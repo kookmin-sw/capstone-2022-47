@@ -3,31 +3,24 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:yaksok_project/components/yaksok_colors.dart';
 import 'package:yaksok_project/components/yaksok_widgets.dart';
+import 'package:yaksok_project/services/add_medicine_service.dart';
 
 import '../../components/yaksok_constants.dart';
 import 'add_medicine_page.dart';
 import 'components/add_page_widget.dart';
 
-class AddAlarmPage extends StatefulWidget {
-  const AddAlarmPage(
+class AddAlarmPage extends StatelessWidget {
+  AddAlarmPage(
       {Key? key, required this.medicineImage, required this.medicineName})
       : super(key: key);
 
   final File? medicineImage;
   final String medicineName;
 
-  @override
-  State<AddAlarmPage> createState() => _AddAlarmPageState();
-}
-
-class _AddAlarmPageState extends State<AddAlarmPage> {
-  final _alarms = <String>{
-    '08:00',
-    '13:00',
-    '19:00',
-  };
+  final service = AddMedicineService();
 
   @override
   Widget build(BuildContext context) {
@@ -37,21 +30,38 @@ class _AddAlarmPageState extends State<AddAlarmPage> {
         children: [
           Text(
             '매일 복약 잊지 말아요!',
-            style: Theme
-                .of(context)
-                .textTheme
-                .headline4,
+            style: Theme.of(context).textTheme.headline4,
           ),
           const SizedBox(height: largeSpace),
           Expanded(
-            child: ListView(
-              children: alarmWidgets,
+            child: AnimatedBuilder(
+              animation: service,
+              builder: (context, _) {
+                return ListView(
+                  children: alarmWidgets,
+                );
+              },
             ),
           ),
         ],
       ),
       bottomNavigationBar: BottomSubmitButton(
-        onPressed: () {},
+        onPressed: () {
+          //알람추가, 이미지 저장,
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+                content: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: const [
+                Text('알람 권한이 없습니다.'),
+                TextButton(
+                  onPressed: openAppSettings,
+                  child: Text('설정창으로 이동'),
+                )
+              ],
+            )),
+          );
+        },
         text: '완료',
       ),
     );
@@ -61,26 +71,16 @@ class _AddAlarmPageState extends State<AddAlarmPage> {
   List<Widget> get alarmWidgets {
     final children = <Widget>[];
     children.addAll(
-      _alarms.map(
-            (alarmTime) =>
-            AlarmBox(
-              time: alarmTime,
-              onPressedMinus: () {
-                setState(() {
-                  _alarms.remove(alarmTime);
-                });
-              },
-            ),
+      service.alarms.map(
+        (alarmTime) => AlarmBox(
+          time: alarmTime,
+          service: service,
+        ),
       ),
     );
-    children.add(AddAlarmButton(onPressed: () {
-      //추가할때 현재시간이 들어가도록
-      final now = DateTime.now();
-      final nowTime = DateFormat('HH:mm').format(now);
-      setState(() {
-        _alarms.add(nowTime);
-      });
-    },));
+    children.add(AddAlarmButton(
+      service: service,
+    ));
     return children;
   }
 }
@@ -89,22 +89,22 @@ class AlarmBox extends StatelessWidget {
   const AlarmBox({
     Key? key,
     required this.time,
-    required this.onPressedMinus,
+    required this.service,
   }) : super(key: key);
 
   final String time;
-  final VoidCallback onPressedMinus;
+  final AddMedicineService service;
 
   @override
   Widget build(BuildContext context) {
-    final initTime = DateFormat('HH:mm').parse(time);
-
     return Row(
       children: [
         Expanded(
           flex: 1,
           child: IconButton(
-            onPressed:,
+            onPressed: () {
+              service.removeAlarm(time);
+            },
             icon: const Icon(CupertinoIcons.minus_circle),
           ),
         ),
@@ -112,17 +112,15 @@ class AlarmBox extends StatelessWidget {
           flex: 5,
           child: TextButton(
             style: TextButton.styleFrom(
-              textStyle: Theme
-                  .of(context)
-                  .textTheme
-                  .subtitle2,
+              textStyle: Theme.of(context).textTheme.subtitle2,
             ),
             onPressed: () {
               showModalBottomSheet(
                 context: context,
                 builder: (context) {
                   return TimePickerBottomSheet(
-                    initialDateTime: initTime,
+                    initialTime: time,
+                    service: service,
                   );
                 },
               );
@@ -136,27 +134,34 @@ class AlarmBox extends StatelessWidget {
 }
 
 class TimePickerBottomSheet extends StatelessWidget {
-  const TimePickerBottomSheet({
+  TimePickerBottomSheet({
     Key? key,
-    required this.initialDateTime,
+    required this.initialTime,
+    required this.service,
   }) : super(key: key);
 
-  final DateTime initialDateTime;
+  final String initialTime;
+  final AddMedicineService service;
+  DateTime? _setDateTime;
 
   @override
   Widget build(BuildContext context) {
+    final initialDateTime = DateFormat('HH:mm').parse(initialTime);
+
     return BottomSheetBody(
       children: [
         SizedBox(
           height: 200,
           child: CupertinoDatePicker(
-            onDateTimeChanged: (dateTime) {},
+            onDateTimeChanged: (dateTime) {
+              _setDateTime = dateTime;
+            },
             mode: CupertinoDatePickerMode.time, //
-            initialDateTime: initialDateTime,// 시간만
+            initialDateTime: initialDateTime, // 시간만
           ),
         ),
         //상하 여백
-        SizedBox(
+        const SizedBox(
           height: regularSpace,
         ),
         Row(
@@ -166,20 +171,17 @@ class TimePickerBottomSheet extends StatelessWidget {
                 height: submitButtonHeight,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    textStyle: Theme
-                        .of(context)
-                        .textTheme
-                        .subtitle1,
+                    textStyle: Theme.of(context).textTheme.subtitle1,
                     primary: Colors.white,
                     onPrimary: YaksokColors.primaryColor,
                   ),
-                  onPressed: () {},
+                  onPressed: () => Navigator.pop(context),
                   child: const Text('취소'),
                 ),
               ),
             ),
             //버튼 사이 여백
-            SizedBox(
+            const SizedBox(
               width: smallSpace,
             ),
             Expanded(
@@ -187,11 +189,13 @@ class TimePickerBottomSheet extends StatelessWidget {
                 height: submitButtonHeight,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                      textStyle: Theme
-                          .of(context)
-                          .textTheme
-                          .subtitle1),
-                  onPressed: () {},
+                      textStyle: Theme.of(context).textTheme.subtitle1),
+                  onPressed: () {
+                    service.setAlarm(
+                        prevTime: initialTime,
+                        setTime: _setDateTime ?? initialDateTime);
+                    Navigator.pop(context);
+                  },
                   child: const Text('선택'),
                 ),
               ),
@@ -206,22 +210,19 @@ class TimePickerBottomSheet extends StatelessWidget {
 class AddAlarmButton extends StatelessWidget {
   const AddAlarmButton({
     Key? key,
-    required this.onPressed,
+    required this.service,
   }) : super(key: key);
 
-  final VoidCallback onPressed;
+  final AddMedicineService service;
 
   @override
   Widget build(BuildContext context) {
     return TextButton(
       style: TextButton.styleFrom(
         padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 6),
-        textStyle: Theme
-            .of(context)
-            .textTheme
-            .subtitle1,
+        textStyle: Theme.of(context).textTheme.subtitle1,
       ),
-      onPressed: () {},
+      onPressed: service.addNowAlarm,
       child: Row(
         children: const [
           Expanded(
