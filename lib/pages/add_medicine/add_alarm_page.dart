@@ -7,8 +7,11 @@ import 'package:permission_handler/permission_handler.dart';
 import 'package:yaksok_project/components/yaksok_colors.dart';
 import 'package:yaksok_project/components/yaksok_widgets.dart';
 import 'package:yaksok_project/services/add_medicine_service.dart';
+import 'package:yaksok_project/services/yaksok_file_service.dart';
 
 import '../../components/yaksok_constants.dart';
+import '../../main.dart';
+import '../../models/medicine.dart';
 import 'add_medicine_page.dart';
 import 'components/add_page_widget.dart';
 
@@ -46,22 +49,40 @@ class AddAlarmPage extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: BottomSubmitButton(
-        onPressed: () {
+        onPressed: () async {
+          bool result = false;
           //알람추가, 이미지 저장,
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-                content: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
-                Text('알람 권한이 없습니다.'),
-                TextButton(
-                  onPressed: openAppSettings,
-                  child: Text('설정창으로 이동'),
-                )
-              ],
-            )),
+          for (var alarm in service.alarms) {
+            result = await notification.addNotifcication(
+              medicineId: medicineRepository.newId,
+              alarmTimeStr: alarm,
+              title: '$alarm 약 먹을 시간이에요!',
+              body: '$medicineName 복약했다고 알려주세요!',
+            );
+          }
+          if (!result) {
+            return showPermissionDenied(context, permission: '알람');
+          }
+
+          //이미지 저장
+          String? imageFilePath;
+
+          if (medicineImage != null) {
+            imageFilePath = await saveImageToLocalDirectory(medicineImage!);
+          }
+
+          //medicine model
+          final medicine = Medicine(
+            id: medicineRepository.newId,
+            name: medicineName,
+            imagePath: imageFilePath,
+            alarms: service.alarms.toList(),
           );
-        },
+
+          medicineRepository.addMedicine(medicine);
+          Navigator.popUntil(context, (route) => route.isFirst);
+
+          },
         text: '완료',
       ),
     );

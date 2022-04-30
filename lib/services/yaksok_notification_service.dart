@@ -37,6 +37,7 @@ class YaksokNotificationService {
   }
 
   Future<bool> addNotifcication({
+    required int medicineId,
     required String alarmTimeStr,
     required String title, // HH:mm 약 먹을 시간이예요!
     required String body, // {약이름} 복약했다고 알려주세요!
@@ -55,7 +56,9 @@ class YaksokNotificationService {
         : now.day;
 
     /// id
-    final alarmTimeId = alarmTimeStr.replaceAll(':', '');
+    String alarmTimeId = alarmTimeStr.replaceAll(':', '');
+    alarmTimeId = medicineId.toString() + alarmTimeId;  //id가 1, 8시 면 , 1+0800=10800형식
+
 
     /// add schedule notification
     final details = _notificationDetails(
