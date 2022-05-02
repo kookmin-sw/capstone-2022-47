@@ -28,10 +28,10 @@ class TodayPage extends StatelessWidget {
         ),
         const SizedBox(height: regularSpace), // regularSpace : 20
         Expanded(
-            child: ValueListenableBuilder(
-          valueListenable: medicineRepository.medicineBox.listenable(),
-          builder: _builderMedicineListView,
-        )
+          child: ValueListenableBuilder(
+            valueListenable: medicineRepository.medicineBox.listenable(),
+            builder: _builderMedicineListView,
+          )
         ),
       ],
     );
@@ -39,7 +39,7 @@ class TodayPage extends StatelessWidget {
 
   Widget _builderMedicineListView(context, Box<Medicine> box, _) {
     final medicines = box.values.toList();
-    final medicineAlarms = <MedicineAlarm>[];
+    final medicineAlarms = <MedicineAlarm>[]; //오늘 복용할 약 list 
 
     if(medicines.isEmpty){
       return const TodayEmpty();
@@ -71,9 +71,7 @@ class TodayPage extends StatelessWidget {
               padding: EdgeInsets.symmetric(vertical: smallSpace),
               itemCount: medicineAlarms.length,
               itemBuilder: (context, index) {
-                return BeforeTakeTile(
-                  medicineAlarm: medicineAlarms[index],
-                );
+                return _buildListTile(medicineAlarms[index]); //single medicine 불러옴
               },
               separatorBuilder: (context, index) {
                 return const Divider(height: regularSpace);
@@ -84,9 +82,45 @@ class TodayPage extends StatelessWidget {
       ],
     );
   }
+
+  Widget _buildListTile(MedicineAlarm medicineAlarm){
+    return ValueListenableBuilder(
+      valueListenable: historyRepository.historyBox.listenable(),
+      builder:(context, Box<MedicineHistory> historyBox, _) {
+        if(historyBox.values.isEmpty){ //historyBox db에 시간 체크한 값이 없다면
+          return BeforeTakeTile( //tile 체크 이전의 화면
+            medicineAlarm: medicineAlarm,
+          );
+        }
+
+        //singleWhere : 단일 MedicineHistory 반환
+        final todayTakeHistory = historyBox.values.singleWhere((history) => 
+          history.medicineId == medicineAlarm.id && 
+          history.alarmTime == medicineAlarm.alarmTime &&
+          isToday(history.takeTime, DateTime.now()),
+          orElse: () => MedicineHistory(             //아직 안눌러서 값이 없다면
+            medicineId: -1, alarmTime: '', takeTime: DateTime.now()
+          ),
+        );
+
+        if(todayTakeHistory.medicineId == -1 && todayTakeHistory.alarmTime == ''){ //지금/아까 타일 누르기 전 (데이터x)
+          return BeforeTakeTile( //tile 체크 이전의 화면
+            medicineAlarm: medicineAlarm,
+          );
+        }
+
+        return AfterTakeTile( //tile 체크 이후의 화면
+            medicineAlarm: medicineAlarm,
+        );
+        
+      }
+    );
+  }
+
+  bool isToday(DateTime source, DateTime destination) {
+    return
+    source.year == destination.year 
+    && source.month == destination.month
+    && source.day == destination.day;
+  }
 }
-
-
-
-
-
