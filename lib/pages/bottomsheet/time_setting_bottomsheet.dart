@@ -8,10 +8,14 @@ import 'package:yaksok_project/components/yaksok_widgets.dart';
 class TimeSettingBottomSheet extends StatelessWidget {
   const TimeSettingBottomSheet({
     Key? key,
-    required this.initialTime,
+    required this.initialTime, 
+    this.submitTitle="선택", 
+    this.bottomWidget,
   }) : super(key: key);
 
   final String initialTime;
+  final String submitTitle;
+  final Widget? bottomWidget;
 
 
   @override
@@ -36,7 +40,11 @@ class TimeSettingBottomSheet extends StatelessWidget {
         ),
         //상하 여백
         const SizedBox(
-          height: regularSpace,
+          height: smallSpace,
+        ),
+        if(bottomWidget != null) bottomWidget!,
+        const SizedBox(
+          height: smallSpace,
         ),
         Row(
           children: [
@@ -65,7 +73,7 @@ class TimeSettingBottomSheet extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                       textStyle: Theme.of(context).textTheme.subtitle1),
                   onPressed: () =>  Navigator.pop(context, setDateTime), //setDateTime 넘겨줌
-                  child: const Text('선택'),
+                  child: Text(submitTitle),
                 ),
               ),
             ),

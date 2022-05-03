@@ -168,6 +168,14 @@ class AfterTakeTile extends StatelessWidget {
       context: context, 
       builder: (context)=> TimeSettingBottomSheet(
         initialTime:  takeTimeStr,
+        submitTitle:  '수정',
+        bottomWidget: TextButton(
+          onPressed: () {
+            historyRepository.deleteHistory(history.key);
+            Navigator.pop(context);
+          },
+          child: Text('약 복용 시간을 되돌리고 싶어요!')
+        ),
       )
     ).then((takeDateTime){
       if(takeDateTime == null || takeDateTime is! DateTime)
