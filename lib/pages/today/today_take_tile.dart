@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:yaksok_project/components/yaksok_constants.dart';
 import 'package:yaksok_project/components/yaksok_page_route.dart';
 import 'package:yaksok_project/main.dart';
@@ -41,49 +42,51 @@ class BeforeTakeTile extends StatelessWidget {
   }
 
 
-
-
-  
-
   List<Widget> _buildTileBody(TextStyle? textStyle, BuildContext context) {
     return [
-              Text('🕑 ${medicineAlarm.alarmTime}', style: textStyle),
-              const SizedBox(height: 6),
-              Wrap(
-                crossAxisAlignment: WrapCrossAlignment.center,
-                children: [
-                  Text('${medicineAlarm.name},', style: textStyle),
-                  TileActionButton(
-                    onTap: () {
-                      
-                    },
-                    title: '지금',
-                  ),
-                  Text('|', style: textStyle),
-                  TileActionButton(
-                    onTap: () {
-                      showModalBottomSheet(
-                        context: context, 
-                        builder: (context)=> TimeSettingBottomSheet(
-                          initialTime: medicineAlarm.alarmTime,
-                        )
-                      ).then((takeDateTime){
-                        if(takeDateTime == null || takeDateTime is! DateTime){
-                          return;
-                        }
-                        historyRepository.addHistory(MedicineHistory( //hive db에 takeDateTime 저장
-                          medicineId: medicineAlarm.id
-                        , alarmTime: medicineAlarm.alarmTime
-                        , takeTime: takeDateTime));
-                      });
-                    },
-                    title: '아까',
-                  ),
-                  Text('먹었어요!', style: textStyle),
-                ],
-              )
-            ];
+      Text('🕑 ${medicineAlarm.alarmTime}', style: textStyle),
+      const SizedBox(height: 6),
+      Wrap(
+        crossAxisAlignment: WrapCrossAlignment.center,
+        children: [
+          Text('${medicineAlarm.name},', style: textStyle),
+          TileActionButton(
+            onTap: () { //history에 지금 시간 추가
+              historyRepository.addHistory(MedicineHistory( //hive db에 takeDateTime 저장
+                  medicineId: medicineAlarm.id
+                , alarmTime: medicineAlarm.alarmTime
+                , takeTime: DateTime.now(),
+              ));
+            },
+            title: '지금',
+          ),
+          Text('|', style: textStyle),
+          TileActionButton(
+            onTap: () => _onPreviousTake(context),
+            title: '아까',
+          ),
+          Text('먹었어요!', style: textStyle),
+        ],
+      )
+    ];
   }
+
+  _onPreviousTake(BuildContext context) {
+    showModalBottomSheet(
+      context: context, 
+      builder: (context)=> TimeSettingBottomSheet(
+        initialTime: medicineAlarm.alarmTime,
+      )
+    ).then((takeDateTime){
+      if(takeDateTime == null || takeDateTime is! DateTime){return;}
+      historyRepository.addHistory(MedicineHistory( //hive db에 takeDateTime 저장
+        medicineId: medicineAlarm.id
+      , alarmTime: medicineAlarm.alarmTime
+      , takeTime: takeDateTime
+      ),
+    );
+  });
+ }
 }
 
 
@@ -91,10 +94,12 @@ class BeforeTakeTile extends StatelessWidget {
 class AfterTakeTile extends StatelessWidget {
   const AfterTakeTile({
     Key? key,
-    required this.medicineAlarm,
+    required this.medicineAlarm, 
+    required this.history,
   }) : super(key: key);
 
   final MedicineAlarm medicineAlarm;
+  final MedicineHistory history;
 
   @override
   Widget build(BuildContext context) {
@@ -136,7 +141,7 @@ class AfterTakeTile extends StatelessWidget {
           text: '✅ ${medicineAlarm.alarmTime} → ',
           style: textStyle,
           children: [
-            TextSpan(text: '20:19', 
+            TextSpan(text: takeTimeStr, 
             style: textStyle?.copyWith(fontWeight: FontWeight.w500)),
           ]
         ),
@@ -147,15 +152,40 @@ class AfterTakeTile extends StatelessWidget {
         children: [
           Text('${medicineAlarm.name},', style: textStyle),
           TileActionButton(
-            onTap: (){},
-            title: '20시 19분에 ',
+            onTap: () => _onTap(context),
+            title: DateFormat('HH시 mm분에').format(history.takeTime),//'20시 19분에 ',
           ),
           Text('먹었어요!', style: textStyle),
         ],
       )
     ];
   }
-}
+
+  String get takeTimeStr => DateFormat('HH:mm').format(history.takeTime);
+
+  void _onTap(BuildContext context){
+    showModalBottomSheet(
+      context: context, 
+      builder: (context)=> TimeSettingBottomSheet(
+        initialTime:  takeTimeStr,
+      )
+    ).then((takeDateTime){
+      if(takeDateTime == null || takeDateTime is! DateTime)
+      {
+        return;
+      }
+      historyRepository.updateHistory( //hive db의 takeTime 수정
+        key: history.key, //변경하고자 하는 key값
+        history: MedicineHistory(
+          medicineId: medicineAlarm.id,
+          alarmTime: medicineAlarm.alarmTime,
+          takeTime: takeDateTime
+      ),  
+      );
+    });
+  }
+} 
+  
 
 
 

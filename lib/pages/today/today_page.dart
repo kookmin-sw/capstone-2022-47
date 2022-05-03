@@ -110,7 +110,9 @@ class TodayPage extends StatelessWidget {
         }
 
         return AfterTakeTile( //tile 체크 이후의 화면
-            medicineAlarm: medicineAlarm,
+            medicineAlarm: medicineAlarm, 
+            history: todayTakeHistory,
+            
         );
         
       }
