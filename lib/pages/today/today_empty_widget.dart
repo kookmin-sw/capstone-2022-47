@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:yaksok_project/components/yaksok_constants.dart';
 
-class extends StatelessWidget {
-  const ({Key? key}) : super(key: 
+class TodayEmpty extends StatelessWidget {
+  const TodayEmpty({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context){
     return Container(

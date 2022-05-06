@@ -2,9 +2,17 @@ import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:yaksok_project/components/yaksok_constants.dart';
+import 'package:yaksok_project/components/yaksok_page_route.dart';
+import 'package:yaksok_project/main.dart';
 import 'package:yaksok_project/models/medicine.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:yaksok_project/models/medicine_history.dart';
+import 'package:yaksok_project/pages/bottomsheet/time_setting_bottomsheet.dart';
+import 'package:yaksok_project/pages/today/today_empty_widget.dart';
+import 'package:yaksok_project/models/medicine_alarm.dart';
+import 'package:yaksok_project/pages/today/today_take_tile.dart';
 
 class TodayPage extends StatelessWidget {
   const TodayPage({Key? key}) : super(key: key);
@@ -20,20 +28,20 @@ class TodayPage extends StatelessWidget {
         ),
         const SizedBox(height: regularSpace), // regularSpace : 20
         Expanded(
-            child: ValueListenableBuilder(
-          valueListenable: medicineRepository.medicineBox.listenable(),
-          builder: _builderMedicineListView,
-        )
+          child: ValueListenableBuilder(
+            valueListenable: medicineRepository.medicineBox.listenable(),
+            builder: _builderMedicineListView,
+          )
         ),
       ],
     );
   }
 
   Widget _builderMedicineListView(context, Box<Medicine> box, _) {
-    final list = box.values.toList();
-    final medicineAlarms = <MedicineAlarm>[];
+    final medicines = box.values.toList();
+    final medicineAlarms = <MedicineAlarm>[]; //오늘 복용할 약 list 
 
-    if(medcines.isEmpty){
+    if(medicines.isEmpty){
       return const TodayEmpty();
     }
     
@@ -44,11 +52,16 @@ class TodayPage extends StatelessWidget {
           medicine.name, 
           medicine.imagePath, 
           alarm,
-          medicine.key,
+          medicine.key
         ));
       }
     }
 
+    medicineAlarms.sort(
+      (a, b) => DateFormat('HH:mm').parse(a.alarmTime).compareTo(
+            DateFormat('HH:mm').parse(b.alarmTime),
+          ),
+    );
     
     return Column(
       children: [
@@ -56,11 +69,9 @@ class TodayPage extends StatelessWidget {
         Expanded(
           child: ListView.separated(
               padding: EdgeInsets.symmetric(vertical: smallSpace),
-              itemCount: list.length,
+              itemCount: medicineAlarms.length,
               itemBuilder: (context, index) {
-                return MedicineListTile(
-                  medicineAlarm: medicineAlarms[index],
-                );
+                return _buildListTile(medicineAlarms[index]); //single medicine 불러옴
               },
               separatorBuilder: (context, index) {
                 return const Divider(height: regularSpace);
@@ -71,124 +82,47 @@ class TodayPage extends StatelessWidget {
       ],
     );
   }
-}
 
-class MedicineListTile extends StatelessWidget {
-  const MedicineListTile({
-    Key? key,
-    requird this.name,
-  }) : super(key: key);
+  Widget _buildListTile(MedicineAlarm medicineAlarm){
+    return ValueListenableBuilder(
+      valueListenable: historyRepository.historyBox.listenable(),
+      builder:(context, Box<MedicineHistory> historyBox, _) {
+        if(historyBox.values.isEmpty){ //historyBox db에 시간 체크한 값이 없다면
+          return BeforeTakeTile( //tile 체크 이전의 화면
+            medicineAlarm: medicineAlarm,
+          );
+        }
 
-  final MedicineAlarm medicineAlarm;
-
-  @override
-  Widget build(BuildContext context) {
-    final textStyle = Theme.of(context).textTheme.bodyText2;
-
-    return Row(
-        children: [
-          CupertinoButton(
-            padding: EdgeInsets.zero, // padding 제거
-            onPressed: medicineAlarm.imagePath == null
-            ? null
-            :() {
-              Navigator.push(
-                context, 
-                FadePageRoute(
-                  page: ImageDetailPage(medicineAlarm: medicineAlarm),
-                ),
-              );
-            },
-            child: CircleAvatar(
-              radius: 40,
-              foregroundImage: medicineAlarm.imagePath == null
-              ? null
-              : FileImage(File(medicineAlarm.imagePath!)),
-            ),
+        //singleWhere : 단일 MedicineHistory 반환
+        final todayTakeHistory = historyBox.values.singleWhere((history) => 
+          history.medicineId == medicineAlarm.id && 
+          history.alarmTime == medicineAlarm.alarmTime &&
+          isToday(history.takeTime, DateTime.now()),
+          orElse: () => MedicineHistory(             //아직 안눌러서 값이 없다면
+            medicineId: -1, alarmTime: '', takeTime: DateTime.now()
           ),
-          const SizedBox(width: smallSpace), // 여백
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text('Time : ${medicineAlarm.alarmTime}', style: textStyle),
-                const SizedBox(height: 6),
-                Wrap(
-                  crossAxisAlignment: WrapCrossAlignment.center,
-                  children: [
-                    Text('${medicineAlarm.name},', style: textStyle),
-                    TileActionButton(
-                      onTap: () {},
-                      title: '지금',
-                    ),
-                    Text('|', style: textStyle),
-                    TileActionButton(
-                      onTap: () {},
-                      title: '아까',
-                    ),
-                    Text('먹었어요!', style: textStyle),
-                  ],
-                )
-              ],
-            ),
-          ),
-          CupertinoButton(
-            onPressed: () {
-              medicineRepository.deleteMedicine(medicineAlarm.key);
-            },
-            child: const Icon(CupertinoIcons.ellipsis_vertical),
-          )
-        ],
+        );
+
+        if(todayTakeHistory.medicineId == -1 && todayTakeHistory.alarmTime == ''){ //지금/아까 타일 누르기 전 (데이터x)
+          return BeforeTakeTile( //tile 체크 이전의 화면
+            medicineAlarm: medicineAlarm,
+          );
+        }
+
+        return AfterTakeTile( //tile 체크 이후의 화면
+            medicineAlarm: medicineAlarm, 
+            history: todayTakeHistory,
+            
+        );
+        
+      }
     );
   }
-}
 
-class ImageDetailPage extends StatelessWidget {
-  const ImageDetailPage({
-    Key? key,
-    required this.medicineAlarm,
-  }) : super(key: key);
-
-  final MedicineAlarm medicineAlarm;
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        leading: const CloseButton(),
-      ),
-      body: Center(
-        child: Image.file(File(medicineAlarm.imagePath!)),
-      ),
-    );
-  }
-}
-
-class TileActionButton extends StatelessWidget {
-  const TileActionButton({
-    Key? key,
-    required this.onTap,
-    required this.title,
-  }) : super(key: key);
-
-  final VoidCallback onTap;
-  final String title;
-
-  @override
-  Widget build(BuildContext context) {
-    final buttonTextStyle = Theme.of(context)
-        .textTheme
-        .bodyText2
-        ?.copyWith(fontWeight: FontWeight.w500);
-    return GestureDetector(
-      onTap: onTap,
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Text(
-          title,
-          style: buttonTextStyle,
-        ),
-      ),
-    );
+  bool isToday(DateTime source, DateTime destination) {
+    return
+    source.year == destination.year 
+    && source.month == destination.month
+    && source.day == destination.day;
   }
 }
