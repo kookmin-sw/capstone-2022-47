@@ -8,6 +8,7 @@ import 'package:yaksok_project/components/yaksok_page_route.dart';
 import 'package:yaksok_project/main.dart';
 import 'package:yaksok_project/models/medicine_alarm.dart';
 import 'package:yaksok_project/models/medicine_history.dart';
+import 'package:yaksok_project/pages/bottomsheet/more_action_bottomsheet.dart';
 import 'package:yaksok_project/pages/bottomsheet/time_setting_bottomsheet.dart';
 import 'package:yaksok_project/pages/today/image_detail_page.dart';
 import 'package:yaksok_project/pages/today/today_page.dart';
@@ -98,8 +99,8 @@ class AfterTakeTile extends StatelessWidget {
     required this.history,
   }) : super(key: key);
 
-  final MedicineAlarm medicineAlarm;
-  final MedicineHistory history;
+  final MedicineAlarm medicineAlarm; //알람 객체
+  final MedicineHistory history; //복약기록 hive객체
 
   @override
   Widget build(BuildContext context) {
@@ -161,7 +162,7 @@ class AfterTakeTile extends StatelessWidget {
     ];
   }
 
-  String get takeTimeStr => DateFormat('HH:mm').format(history.takeTime);
+  String get takeTimeStr => DateFormat('HH:mm').format(history.takeTime); //실 복약시간 date -> string
 
   void _onTap(BuildContext context){
     showModalBottomSheet(
@@ -171,10 +172,10 @@ class AfterTakeTile extends StatelessWidget {
         submitTitle:  '수정',
         bottomWidget: TextButton(
           onPressed: () {
-            historyRepository.deleteHistory(history.key);
+            historyRepository.deleteHistory(history.key); //복약 히스토리 삭제
             Navigator.pop(context);
           },
-          child: Text('약 복용 시간을 되돌리고 싶어요!')
+          child: Text('약 복용 시간을 삭제하고 싶어요!')
         ),
       )
     ).then((takeDateTime){
@@ -199,7 +200,7 @@ class AfterTakeTile extends StatelessWidget {
 
 
 
-class _MoreButton extends StatelessWidget {
+class _MoreButton extends StatelessWidget { //더보기 버튼
   const _MoreButton({
     Key? key,
     required this.medicineAlarm,
@@ -211,9 +212,15 @@ class _MoreButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return CupertinoButton(
       onPressed: () {
-        medicineRepository.deleteMedicine(medicineAlarm.key);
+        //medicineRepository.deleteMedicine(medicineAlarm.key);
+        showModalBottomSheet(context: context, builder: (context)=> MoreActionBottomSheet(//context인자로 위젯 반환
+          onPressedUpdate: (){},
+          onPressedDeleteMedicine: (){},
+          onPressedDeleteAll: (){},
+          )
+        ); 
       },
-      child: const Icon(CupertinoIcons.ellipsis_vertical),
+      child: const Icon(CupertinoIcons.ellipsis_vertical), //점3개 아이콘
     );
   }
 }
@@ -230,13 +237,13 @@ class _MedicineImageButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return CupertinoButton(
       padding: EdgeInsets.zero, // padding 제거
-      onPressed: medicineAlarm.imagePath == null
+      onPressed: medicineAlarm.imagePath == null //이미지 클릭
       ? null
       :() {
         Navigator.push(
           context, 
-          FadePageRoute(
-            page: ImageDetailPage(medicineAlarm: medicineAlarm),
+          FadePageRoute( //화면 전환 애니메이션
+            page: ImageDetailPage(medicineAlarm: medicineAlarm), //이미지 창 크게보기
           ),
         );
       },

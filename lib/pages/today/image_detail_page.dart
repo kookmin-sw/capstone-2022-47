@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:yaksok_project/models/medicine_alarm.dart';
 
-class ImageDetailPage extends StatelessWidget {
+class ImageDetailPage extends StatelessWidget { //이미지 창 크게보기
   const ImageDetailPage({
     Key? key,
     required this.medicineAlarm,
