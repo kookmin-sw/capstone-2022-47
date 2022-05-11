@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:yaksok_project/components/yaksok_theme.dart';
+import 'package:yaksok_project/repositories/medicine_history_repository.dart';
 import 'package:yaksok_project/repositories/medicine_repository.dart';
 import 'package:yaksok_project/repositories/yaksok_hive.dart';
 import 'package:yaksok_project/services/yaksok_notification_service.dart';
@@ -9,7 +10,7 @@ import 'pages/home_page.dart';
 final notification = YaksokNotificationService();
 final hive = YaksokHive();
 final medicineRepository = MedicineRepository();
-
+final historyRepository = MedicineHistoryRepository();
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:yaksok_project/components/yaksok_colors.dart';
-import 'package:yaksok_project/pages/add/add_page.dart';
+import 'package:yaksok_project/pages/add_medicine/add_medicine_page.dart';
 import 'package:yaksok_project/pages/history/history_page.dart';
 import 'package:yaksok_project/pages/today/today_page.dart';
 
@@ -86,7 +86,7 @@ class _HomePageState extends State<HomePage>{
   void _onAddMedicine() {
       Navigator.push(
       context, 
-      MaterialPageRoute(builder: (contxt) => const AddPage()),
+      MaterialPageRoute(builder: (contxt) => const AddMedicinePage()),
       );
   }
 }
