@@ -56,6 +56,16 @@ dependencies:
   hive: ^2.0.5
   hive_flutter: ^1.1.0
 
+  #splash
+  flutter_native_splash: ^2.0.5
+
+flutter_native_splash:
+  color: "#42a5f5"
+  image: img/splash.png
+  # 변경사항 필요시 flutter pub run flutter_native_splash:create 와 remove 사용
+  # 변경시에 ** 먼저 remove로 지워준 후 변경사항이 된 버전을 다시 create로 등록해야 함 주의 **
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
