@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+//components 여러 화면에서 공통으로 사용될 위젯 모음
+
 class YaksokColors {
   static const int _primaryColorValue = 0xFF151515;
   static const primaryColor = Color(_primaryColorValue);
