@@ -22,9 +22,12 @@ class TodayPage extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          '오늘 복용할 약은?',
-          style: Theme.of(context).textTheme.headline4,
+        Container(
+          padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
+          child: Text(
+            '복용할 약 목록',
+            style: Theme.of(context).textTheme.headline4,
+          ),
         ),
         const SizedBox(height: regularSpace), // regularSpace : 20
         Expanded(
