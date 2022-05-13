@@ -57,12 +57,11 @@ class TodayPage extends StatelessWidget {
       }
     }
 
-    medicineAlarms.sort(
-      (a, b) => DateFormat('HH:mm').parse(a.alarmTime).compareTo(
-            DateFormat('HH:mm').parse(b.alarmTime),
-          ),
+    medicineAlarms.sort( //시간 순 정렬
+      (x, y) => DateFormat('HH:mm').parse(x.alarmTime).compareTo(DateFormat('HH:mm').parse(y.alarmTime))
     );
-    
+
+
     return Column(
       children: [
         const Divider(height: 1, thickness: 2.0),

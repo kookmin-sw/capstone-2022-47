@@ -8,6 +8,7 @@ import 'package:yaksok_project/components/yaksok_page_route.dart';
 import 'package:yaksok_project/main.dart';
 import 'package:yaksok_project/models/medicine_alarm.dart';
 import 'package:yaksok_project/models/medicine_history.dart';
+import 'package:yaksok_project/pages/add_medicine/add_medicine_page.dart';
 import 'package:yaksok_project/pages/bottomsheet/more_action_bottomsheet.dart';
 import 'package:yaksok_project/pages/bottomsheet/time_setting_bottomsheet.dart';
 import 'package:yaksok_project/pages/today/image_detail_page.dart';
@@ -212,18 +213,45 @@ class _MoreButton extends StatelessWidget { //더보기 버튼
   Widget build(BuildContext context) {
     return CupertinoButton(
       onPressed: () {
-        //medicineRepository.deleteMedicine(medicineAlarm.key);
         showModalBottomSheet(context: context, builder: (context)=> MoreActionBottomSheet(//context인자로 위젯 반환
-          onPressedUpdate: (){},
-          onPressedDeleteMedicine: (){},
-          onPressedDeleteAll: (){},
-          )
+          onPressedUpdate: (){ //약 정보 수정
+            Navigator.push(context, FadePageRoute(page: AddMedicinePage(updateMedicineId:medicineAlarm.id ,))).then((_) => Navigator.maybePop(context));
+          },
+          onPressedDeleteMedicine: (){ //약 정보 삭제
+            //알람 삭제
+            //hive 히스토리 데이터 삭제
+            //hive 약 데이터 삭제
+            notification.deleteMultipleAlarm(alarmIds);
+            medicineRepository.deleteMedicine(medicineAlarm.key);
+            Navigator.pop(context);
+          },
+          onPressedDeleteAll: (){ //약 정보와 히스토리 모두삭제
+            notification.deleteMultipleAlarm(alarmIds);
+            historyRepository.deleteAllHistory(keys);
+            medicineRepository.deleteMedicine(medicineAlarm.key);
+            Navigator.pop(context);
+          },
+        )
         ); 
       },
       child: const Icon(CupertinoIcons.ellipsis_vertical), //점3개 아이콘
     );
   }
+
+  List<String> get alarmIds{
+    final medicine = medicineRepository.medicineBox.values.singleWhere((element) => element.id == medicineAlarm.id);
+    final alarmIds = medicine.alarms.map((alarmStr) => notification.alarmId(medicineAlarm.id, alarmStr)).toList();
+    return alarmIds;
+  }
+
+  Iterable<int> get keys{
+  //historyRepository.historyBox.values.where((history) => history.medicineId == medicineAlarm.id && history.medicineKey == medicineAlarm.key);
+  //final keys = histories.map((e)=>e.key as int);
+  return keys;
+  }
 }
+
+
 
 class _MedicineImageButton extends StatelessWidget {
   const _MedicineImageButton({
@@ -252,6 +280,7 @@ class _MedicineImageButton extends StatelessWidget {
         foregroundImage: medicineAlarm.imagePath == null
         ? null
         : FileImage(File(medicineAlarm.imagePath!)),
+        child: imagePath == null? Icon(CupertinoIcons.alarm_fill): null,
       ),
     );
   }
