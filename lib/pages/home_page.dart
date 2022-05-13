@@ -98,7 +98,7 @@ class _HomePageState extends State<HomePage>{
   void _onAddMedicine() {
       Navigator.push(
       context, 
-      MaterialPageRoute(builder: (contxt) => const AddMedicinePage()),
+      MaterialPageRoute(builder: (context) => const AddMedicinePage()),
       );
   }
 }

@@ -1,12 +1,16 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import '../../components/yaksok_constants.dart';
 import '../../models/my_medicine_header.dart';
 
-class SettingPage extends StatelessWidget {
+class SettingPage extends StatefulWidget {
   const SettingPage({Key? key}) : super(key: key);
 
+  @override
+  State<SettingPage> createState() => _SettingPageState();
+}
+
+class _SettingPageState extends State<SettingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,7 +41,7 @@ class SettingPage extends StatelessWidget {
             const SizedBox(height: 8.0,),
 
             ElevatedButton(
-              onPressed: null,
+              onPressed: _SettingAlarm,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -157,6 +161,27 @@ class SettingPage extends StatelessWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+
+  //앱 설정 버튼들
+  void _SettingAlarm(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => SettingAlarmPage()),
+    );
+  }
+}
+
+class SettingAlarmPage extends StatelessWidget {
+  const SettingAlarmPage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        leading: const CloseButton(),
       ),
     );
   }
