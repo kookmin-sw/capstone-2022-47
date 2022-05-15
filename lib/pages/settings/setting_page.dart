@@ -1,6 +1,11 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:yaksok_project/pages/settings/setting_alarm_page.dart';
+import 'package:yaksok_project/pages/settings/setting_app_version_page.dart';
+import 'package:yaksok_project/pages/settings/setting_delete_page.dart';
+import 'package:yaksok_project/pages/settings/setting_email_page.dart';
+import 'package:yaksok_project/pages/settings/setting_info_page.dart';
+import 'package:yaksok_project/pages/settings/setting_review_page.dart';
 import '../../models/my_medicine_header.dart';
 
 class SettingPage extends StatefulWidget {
@@ -38,10 +43,14 @@ class _SettingPageState extends State<SettingPage> {
           scrollDirection: Axis.vertical,
           children: [
             MyMedicineHeader(),
-            const SizedBox(height: 8.0,),
-
+            const SizedBox(
+              height: 8.0,
+            ),
             ElevatedButton(
               onPressed: _SettingAlarm,
+              style: ElevatedButton.styleFrom(
+                primary: Colors.grey[700] // Background color
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -59,9 +68,14 @@ class _SettingPageState extends State<SettingPage> {
                 ],
               ),
             ),
-            const SizedBox(height: 5,),
+            const SizedBox(
+              height: 5,
+            ),
             ElevatedButton(
-              onPressed: null,
+              onPressed: _SettingReview,
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.grey[700] // Background color
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -79,9 +93,14 @@ class _SettingPageState extends State<SettingPage> {
                 ],
               ),
             ),
-            const SizedBox(height: 5,),
+            const SizedBox(
+              height: 5,
+            ),
             ElevatedButton(
-              onPressed: null,
+              onPressed: _SettingEmail,
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.grey[700] // Background color
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -99,9 +118,14 @@ class _SettingPageState extends State<SettingPage> {
                 ],
               ),
             ),
-            const SizedBox(height: 5,),
+            const SizedBox(
+              height: 5,
+            ),
             ElevatedButton(
-              onPressed: null,
+              onPressed: _SettingAppVersion,
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.grey[700] // Background color
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -119,9 +143,14 @@ class _SettingPageState extends State<SettingPage> {
                 ],
               ),
             ),
-            const SizedBox(height: 5,),
+            const SizedBox(
+              height: 5,
+            ),
             ElevatedButton(
-              onPressed: null,
+              onPressed: _SettingDelete,
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.grey[700] // Background color
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -139,9 +168,14 @@ class _SettingPageState extends State<SettingPage> {
                 ],
               ),
             ),
-            const SizedBox(height: 5,),
+            const SizedBox(
+              height: 5,
+            ),
             ElevatedButton(
-              onPressed: null,
+              onPressed: _SettingInfo,
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.grey[700] // Background color
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -165,24 +199,51 @@ class _SettingPageState extends State<SettingPage> {
     );
   }
 
-  //앱 설정 버튼들
-  void _SettingAlarm(){
+  //알림 설정 버튼
+  void _SettingAlarm() {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => SettingAlarmPage()),
     );
   }
-}
 
-class SettingAlarmPage extends StatelessWidget {
-  const SettingAlarmPage({Key? key}) : super(key: key);
+  //리뷰 작성 버튼
+  void _SettingReview() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => SettingReviewPage()),
+    );
+  }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        leading: const CloseButton(),
-      ),
+  //의견 전달 버튼
+  void _SettingEmail() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => SettingEmailPage()),
+    );
+  }
+
+  //앱 버전 버튼
+  void _SettingAppVersion() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => SettingAppVersionPage()),
+    );
+  }
+
+  //데이터 삭제 버튼
+  void _SettingDelete(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => SettingDeletePage()),
+    );
+  }
+
+  //이용 약관 버튼
+  void _SettingInfo(){
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => SettingInfoPage()),
     );
   }
 }
