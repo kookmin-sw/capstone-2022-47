@@ -30,7 +30,7 @@ class BeforeTakeTile extends StatelessWidget {
 
     return Row(
         children: [
-          _MedicineImageButton(medicineAlarm: medicineAlarm),
+          MedicineImageButton(imagePath: medicineAlarm.imagePath),
           const SizedBox(width: smallSpace), // 여백
           Expanded(
             child: Column(
@@ -57,7 +57,10 @@ class BeforeTakeTile extends StatelessWidget {
               historyRepository.addHistory(MedicineHistory( //hive db에 takeDateTime 저장
                   medicineId: medicineAlarm.id
                 , alarmTime: medicineAlarm.alarmTime
-                , takeTime: DateTime.now(),
+                , takeTime: DateTime.now()
+                , imagePath: medicineAlarm.imagePath
+                , name: medicineAlarm.name
+                , medicineKey: medicineAlarm.key,
               ));
             },
             title: '지금',
@@ -85,6 +88,9 @@ class BeforeTakeTile extends StatelessWidget {
         medicineId: medicineAlarm.id
       , alarmTime: medicineAlarm.alarmTime
       , takeTime: takeDateTime
+      , imagePath: medicineAlarm.imagePath
+      , name: medicineAlarm.name
+      , medicineKey: medicineAlarm.key,
       ),
     );
   });
@@ -111,7 +117,7 @@ class AfterTakeTile extends StatelessWidget {
       children: [
         Stack( //이미지 stack (쌓기)
           children: [
-            _MedicineImageButton(medicineAlarm: medicineAlarm),
+            MedicineImageButton(imagePath: medicineAlarm.imagePath),
             CircleAvatar( //이미지 위로 반투명 체크 겹침
               radius: 40,
               backgroundColor: Colors.green.withOpacity(0.8),
@@ -189,7 +195,12 @@ class AfterTakeTile extends StatelessWidget {
         history: MedicineHistory(
           medicineId: medicineAlarm.id,
           alarmTime: medicineAlarm.alarmTime,
-          takeTime: takeDateTime
+          takeTime: takeDateTime,
+
+          //추가
+          medicineKey: medicineAlarm.key,
+          imagePath: medicineAlarm.imagePath,
+          name: medicineAlarm.name,
       ),  
       );
     });
@@ -253,33 +264,33 @@ class _MoreButton extends StatelessWidget { //더보기 버튼
 
 
 
-class _MedicineImageButton extends StatelessWidget {
-  const _MedicineImageButton({
+class MedicineImageButton extends StatelessWidget {
+  const MedicineImageButton({
     Key? key,
-    required this.medicineAlarm,
+    required this.imagePath,
   }) : super(key: key);
 
-  final MedicineAlarm medicineAlarm;
+  final String? imagePath;
 
   @override
   Widget build(BuildContext context) {
     return CupertinoButton(
       padding: EdgeInsets.zero, // padding 제거
-      onPressed: medicineAlarm.imagePath == null //이미지 클릭
+      onPressed: imagePath == null //이미지 클릭
       ? null
       :() {
         Navigator.push(
           context, 
           FadePageRoute( //화면 전환 애니메이션
-            page: ImageDetailPage(medicineAlarm: medicineAlarm), //이미지 창 크게보기
+            page: ImageDetailPage(imagePath: imagePath!), //이미지 창 크게보기
           ),
         );
       },
       child: CircleAvatar(
         radius: 40,
-        foregroundImage: medicineAlarm.imagePath == null
+        foregroundImage: imagePath == null
         ? null
-        : FileImage(File(medicineAlarm.imagePath!)),
+        : FileImage(File(imagePath!)),
         child: imagePath == null? Icon(CupertinoIcons.alarm_fill): null,
       ),
     );

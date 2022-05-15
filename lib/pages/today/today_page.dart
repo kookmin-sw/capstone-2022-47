@@ -98,7 +98,8 @@ class TodayPage extends StatelessWidget {
           history.alarmTime == medicineAlarm.alarmTime &&
           isToday(history.takeTime, DateTime.now()),
           orElse: () => MedicineHistory(             //아직 안눌러서 값이 없다면
-            medicineId: -1, alarmTime: '', takeTime: DateTime.now()
+            medicineId: -1, alarmTime: '', takeTime: DateTime.now(),
+            medicineKey: -1, imagePath: null, name: '',
           ),
         );
 

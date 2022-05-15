@@ -30,6 +30,14 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
   late TextEditingController _nameController;
   File? _medicineImage;
 
+  bool get _isUpdate =>
+  widget.updateMedicineId != -1;
+
+    //약 정보 수정 객체 가져옴
+  Medicine get _updateMedicine =>
+    medicineRepository.medicineBox.values.singleWhere((medicine) => medicine.id == widget.updateMedicineId);
+
+
   @override
   void initState() {
     super.initState();
@@ -47,10 +55,8 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
   
 
 
-  bool get _isUpdate {
-    widget.updateMedicineId != -1;
-    return true;
-  }
+
+ 
   
   @override
   void dispose() {
@@ -59,9 +65,6 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
   }
 
 
-  //약 정보 수정 객체 가져옴
-  Medicine get _updateMedicine =>
-    medicineRepository.medicineBox.values.singleWhere((medicine) => medicine.id == widget.updateMedicineId);
 
   @override
   Widget build(BuildContext context) {
@@ -80,7 +83,7 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
               height: largeSpace,
             ),
             Center(
-              child: MedicineImageButton(
+              child: _MedicineImageButton(
                 updateImage: _medicineImage,
                 changeImageFile: (File? value) {
                   _medicineImage = value;
@@ -133,18 +136,18 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
   }
 }
 
-class MedicineImageButton extends StatefulWidget {
-  const MedicineImageButton({Key? key, required this.changeImageFile, this.updateImage})
+class _MedicineImageButton extends StatefulWidget {
+  const _MedicineImageButton({Key? key, required this.changeImageFile, this.updateImage})
       : super(key: key);
 
   final File? updateImage;
   final ValueChanged<File?> changeImageFile;
 
   @override
-  State<MedicineImageButton> createState() => _MedicineImageButtonState();
+  State<_MedicineImageButton> createState() => _MedicineImageButtonState();
 }
 
-class _MedicineImageButtonState extends State<MedicineImageButton> {
+class _MedicineImageButtonState extends State<_MedicineImageButton> {
   File? _pickedImage;
 
   @override
