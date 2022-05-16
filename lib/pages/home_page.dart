@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:yaksok_project/components/yaksok_colors.dart';
 import 'package:yaksok_project/pages/add_medicine/add_medicine_page.dart';
 import 'package:yaksok_project/pages/history/history_page.dart';
+import 'package:yaksok_project/pages/settings/setting_page.dart';
 import 'package:yaksok_project/pages/today/today_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -19,6 +20,7 @@ class _HomePageState extends State<HomePage>{
   final _pages = [
     const TodayPage(),
     const HistoryPage(),
+    const SettingPage(),
   ];
 
   @override
@@ -53,7 +55,7 @@ class _HomePageState extends State<HomePage>{
                     onPressed: () => _onCurrentPage(0),  // 0번 페이지
                     child: Icon(
                       CupertinoIcons.house,
-                      color: _currentIndex == 0 ? YaksokColors.primaryColor : Colors.green,  // check button이 0번 페이지인 경우 초록색 
+                      color: _currentIndex == 0 ? Colors.blueAccent : YaksokColors.primaryColor,  // check button이 0번 페이지인 경우 초록색
                       //Colors.grey[350], 정도 하면 초록색이 아니라 버튼이 흐려짐
                       ), 
                   ),
@@ -63,14 +65,22 @@ class _HomePageState extends State<HomePage>{
                     onPressed: () => _onCurrentPage(1),  // 1번 페이지
                     child: Icon(
                       CupertinoIcons.text_badge_checkmark, 
-                      color: _currentIndex == 1 ? YaksokColors.primaryColor : Colors.green, // check button이 1번 페이지인 경우 초록색
+                      color: _currentIndex == 1 ? Colors.blueAccent : YaksokColors.primaryColor, // check button이 1번 페이지인 경우 초록색
+                    ),
+                  ),
+
+                  //설정 모양 마크
+                  CupertinoButton(
+                    onPressed: () => _onCurrentPage(2),  // 1번 페이지
+                    child: Icon(
+                      CupertinoIcons.gear_solid,
+                      color: _currentIndex == 2 ? Colors.blueAccent : YaksokColors.primaryColor, // check button이 1번 페이지인 경우 초록색
                     ),
                   ),
               ],)
             ),
           ),
-        
-        
+
         ), 
       ),
     );
@@ -79,7 +89,7 @@ class _HomePageState extends State<HomePage>{
 
   void _onCurrentPage(int pageIndex) {
       setState(() {
-      _currentIndex = pageIndex;  
+      _currentIndex = pageIndex;
       });
                     
   }
@@ -87,7 +97,7 @@ class _HomePageState extends State<HomePage>{
   void _onAddMedicine() {
       Navigator.push(
       context, 
-      MaterialPageRoute(builder: (contxt) => const AddMedicinePage()),
+      MaterialPageRoute(builder: (context) => const AddMedicinePage()),
       );
   }
 }
