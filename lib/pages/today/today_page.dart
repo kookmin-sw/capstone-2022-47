@@ -60,12 +60,11 @@ class TodayPage extends StatelessWidget {
       }
     }
 
-    medicineAlarms.sort(
-      (a, b) => DateFormat('HH:mm').parse(a.alarmTime).compareTo(
-            DateFormat('HH:mm').parse(b.alarmTime),
-          ),
+    medicineAlarms.sort( //시간 순 정렬
+      (x, y) => DateFormat('HH:mm').parse(x.alarmTime).compareTo(DateFormat('HH:mm').parse(y.alarmTime))
     );
-    
+
+
     return Column(
       children: [
         const Divider(height: 1, thickness: 2.0),
@@ -102,7 +101,8 @@ class TodayPage extends StatelessWidget {
           history.alarmTime == medicineAlarm.alarmTime &&
           isToday(history.takeTime, DateTime.now()),
           orElse: () => MedicineHistory(             //아직 안눌러서 값이 없다면
-            medicineId: -1, alarmTime: '', takeTime: DateTime.now()
+            medicineId: -1, alarmTime: '', takeTime: DateTime.now(),
+            medicineKey: -1, imagePath: null, name: '',
           ),
         );
 

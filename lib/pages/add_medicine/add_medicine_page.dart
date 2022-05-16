@@ -4,6 +4,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:yaksok_project/components/yaksok_page_route.dart';
+import 'package:yaksok_project/main.dart';
+import 'package:yaksok_project/models/medicine.dart';
+import 'package:yaksok_project/pages/bottomsheet/pick_image_bottomsheet.dart';
 
 import '../../components/yaksok_constants.dart';
 import '../../components/yaksok_widgets.dart';
@@ -11,21 +14,57 @@ import 'add_alarm_page.dart';
 import 'components/add_page_widget.dart';
 
 class AddMedicinePage extends StatefulWidget {
-  const AddMedicinePage({Key? key}) : super(key: key);
+  const AddMedicinePage({
+    Key? key, 
+    this.updateMedicineId = -1, //-1이면 약 추가창, 다른 정수면 수정페이지
+  }) : super(key: key);
+
+  //약 정보 수정 시 받아올 key 값
+  final int updateMedicineId;
 
   @override
   State<AddMedicinePage> createState() => _AddMedicinePageState();
 }
 
 class _AddMedicinePageState extends State<AddMedicinePage> {
-  final _nameController = TextEditingController();
+  late TextEditingController _nameController;
   File? _medicineImage;
 
+  bool get _isUpdate =>
+  widget.updateMedicineId != -1;
+
+    //약 정보 수정 객체 가져옴
+  Medicine get _updateMedicine =>
+    medicineRepository.medicineBox.values.singleWhere((medicine) => medicine.id == widget.updateMedicineId);
+
+
+  @override
+  void initState() {
+    super.initState();
+
+    if(_isUpdate){ //약 정보 수정 창 + 기존값 가져오기
+      _nameController  = TextEditingController(text: _updateMedicine.name);
+      if(_updateMedicine.imagePath != null){
+        _medicineImage = File(_updateMedicine.imagePath!);
+      }
+    }else{ //추가창
+      _nameController  = TextEditingController(); 
+    }
+  }
+
+  
+
+
+
+ 
+  
   @override
   void dispose() {
     _nameController.dispose();
     super.dispose();
   }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +83,8 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
               height: largeSpace,
             ),
             Center(
-              child: MedicineImageButton(
+              child: _MedicineImageButton(
+                updateImage: _medicineImage,
                 changeImageFile: (File? value) {
                   _medicineImage = value;
                 },
@@ -88,25 +128,33 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
       FadePageRoute(
         page: AddAlarmPage(
           medicineImage: _medicineImage,
-          medicineName: _nameController.text,
+          medicineName: _nameController.text, 
+          updateMedicineId: widget.updateMedicineId,
         ),
       ),
     );
   }
 }
 
-class MedicineImageButton extends StatefulWidget {
-  const MedicineImageButton({Key? key, required this.changeImageFile})
+class _MedicineImageButton extends StatefulWidget {
+  const _MedicineImageButton({Key? key, required this.changeImageFile, this.updateImage})
       : super(key: key);
 
+  final File? updateImage;
   final ValueChanged<File?> changeImageFile;
 
   @override
-  State<MedicineImageButton> createState() => _MedicineImageButtonState();
+  State<_MedicineImageButton> createState() => _MedicineImageButtonState();
 }
 
-class _MedicineImageButtonState extends State<MedicineImageButton> {
+class _MedicineImageButtonState extends State<_MedicineImageButton> {
   File? _pickedImage;
+
+  @override
+  void initState() {
+    super.initState();
+    _pickedImage = widget.updateImage;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -156,27 +204,4 @@ class _MedicineImageButtonState extends State<MedicineImageButton> {
   }
 }
 
-class PickImageBottomSheet extends StatelessWidget {
-  const PickImageBottomSheet(
-      {Key? key, required this.onPressedCamera, required this.onPressedGallery})
-      : super(key: key);
 
-  final VoidCallback onPressedCamera;
-  final VoidCallback onPressedGallery;
-
-  @override
-  Widget build(BuildContext context) {
-    return BottomSheetBody(
-      children: [
-        TextButton(
-          onPressed: onPressedCamera,
-          child: const Text('카메라로 촬영'),
-        ),
-        TextButton(
-          onPressed: onPressedGallery,
-          child: const Text('앨범에서 가져오기'),
-        ),
-      ],
-    );
-  }
-}

@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage>{
                     onPressed: () => _onCurrentPage(0),  // 0번 페이지
                     child: Icon(
                       CupertinoIcons.house,
-                      color: _currentIndex == 0 ? Colors.blueAccent : YaksokColors.primaryColor,  // check button이 1번 페이지인 경우 초록색
+                      color: _currentIndex == 0 ? Colors.blueAccent : YaksokColors.primaryColor,  // check button이 0번 페이지인 경우 초록색
                       //Colors.grey[350], 정도 하면 초록색이 아니라 버튼이 흐려짐
                       ), 
                   ),

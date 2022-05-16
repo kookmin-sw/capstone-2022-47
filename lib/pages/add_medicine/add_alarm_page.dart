@@ -15,15 +15,19 @@ import '../../models/medicine.dart';
 import 'add_medicine_page.dart';
 import 'components/add_page_widget.dart';
 
+// ignore: must_be_immutable
 class AddAlarmPage extends StatelessWidget {
   AddAlarmPage(
-      {Key? key, required this.medicineImage, required this.medicineName})
-      : super(key: key);
+      {Key? key, required this.medicineImage, required this.medicineName, required this.updateMedicineId})
+      : super(key: key) {
+      service = AddMedicineService(updateMedicineId);
+  }
 
   final File? medicineImage;
   final String medicineName;
+  final int updateMedicineId;
 
-  final service = AddMedicineService();
+  late AddMedicineService service;
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +53,19 @@ class AddAlarmPage extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: BottomSubmitButton(
-        onPressed: () async {
+        onPressed: () async{
+          final isUpdate = updateMedicineId != -1;
+          isUpdate
+            ? await _onUpdateMedicine(context)
+            : await _onAddMedicine(context);
+          
+        },
+        text: '완료',
+      ),
+    );
+  }
+
+  Future<void> _onAddMedicine(BuildContext context) async {
           bool result = false;
           //알람추가, 이미지 저장,
           for (var alarm in service.alarms) {
@@ -82,11 +98,57 @@ class AddAlarmPage extends StatelessWidget {
           medicineRepository.addMedicine(medicine);
           Navigator.popUntil(context, (route) => route.isFirst);
 
-          },
-        text: '완료',
-      ),
-    );
   }
+
+  Future<void> _onUpdateMedicine(BuildContext context) async {
+    bool result = false;
+
+    //이전 알람 지우기
+    final alarmIds = _updateMedicine.alarms.map((alarmTime)=> notification.alarmId(updateMedicineId, alarmTime));
+    await notification.deleteMultipleAlarm(alarmIds);
+
+
+    //알람추가
+    for (var alarm in service.alarms) {
+      result = await notification.addNotifcication(
+        medicineId: updateMedicineId,
+        alarmTimeStr: alarm,
+        title: '$alarm 약 먹을 시간이에요!',
+        body: '$medicineName 복약했다고 알려주세요!',
+      );
+    }
+    if (!result) {
+      return showPermissionDenied(context, permission: '알람');
+    }
+
+    String? imageFilePath = _updateMedicine.imagePath;
+    if(_updateMedicine.imagePath != medicineImage?.path){
+      //이전 이미지 삭제
+      if(_updateMedicine.imagePath != null){
+      deleteImage(_updateMedicine.imagePath!);
+      }
+
+      //이미지 저장  
+      if (medicineImage != null) {
+        imageFilePath = await saveImageToLocalDirectory(medicineImage!);
+      }
+    }
+    
+
+    //update medicine model (로컬 db,  hive)
+    final medicine = Medicine(
+      id: updateMedicineId,
+      name: medicineName,
+      imagePath: imageFilePath,
+      alarms: service.alarms.toList(),
+    );
+
+    medicineRepository.updateMedicine(key: _updateMedicine.key,medicine: medicine);
+    Navigator.popUntil(context, (route) => route.isFirst);
+
+  }
+  Medicine get _updateMedicine =>
+    medicineRepository.medicineBox.values.singleWhere((medicine) => medicine.id == updateMedicineId);
 
   //알람시간 출력 리스트
   List<Widget> get alarmWidgets {

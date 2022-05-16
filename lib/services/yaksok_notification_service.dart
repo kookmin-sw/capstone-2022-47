@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'dart:io';
 
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
@@ -36,6 +37,10 @@ class YaksokNotificationService {
     );
   }
 
+  String alarmId(int medicineId, String alarmTime){
+    return medicineId.toString() + alarmTime.replaceAll(':', '');
+  }
+
   Future<bool> addNotifcication({
     required int medicineId,
     required String alarmTimeStr,
@@ -56,8 +61,7 @@ class YaksokNotificationService {
         : now.day;
 
     /// id
-    String alarmTimeId = alarmTimeStr.replaceAll(':', '');
-    alarmTimeId = medicineId.toString() + alarmTimeId;  //id가 1, 8시 면 , 1+0800=10800형식
+    String alarmTimeId = alarmId(medicineId, alarmTimeStr); //id가 1, 8시 면 , 1+0800=10800형식
 
 
     /// add schedule notification
@@ -82,9 +86,11 @@ class YaksokNotificationService {
       details,
       androidAllowWhileIdle: true,
       uiLocalNotificationDateInterpretation:
-      UILocalNotificationDateInterpretation.absoluteTime,
+        UILocalNotificationDateInterpretation.absoluteTime,
       matchDateTimeComponents: DateTimeComponents.time,
+      payload: alarmTimeId
     );
+    log('[notification list] ${await PendingNotificationRequest}');
 
     return true;
   }
@@ -121,5 +127,20 @@ class YaksokNotificationService {
     } else {
       return false;
     }
+  }
+
+  Future<void> deleteMultipleAlarm(Iterable<String> alarmIds) async {
+     log('[before delete notification list] ${await PendingNotificationRequest}');
+     for(final alarmId in alarmIds){
+       final id = int.parse(alarmId);
+       notification.cancel(id);
+     }
+
+     log('[after delete notification list] ${await PendingNotificationRequest}');
+  }
+
+  Future<List<int>> get PendingNotificationIds{
+    final list = notification.pendingNotificationRequests().then((value) => value.map((e) => e.id).toList());
+    return list;
   }
 }

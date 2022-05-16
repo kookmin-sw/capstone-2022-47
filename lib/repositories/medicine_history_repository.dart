@@ -35,4 +35,12 @@ class MedicineHistoryRepository{
     log('[updateHistory] update (key:$key) $history');
     log('result %{medicineBox.vlaues.toList()}');
   }
+
+    void deleteAllHistory(Iterable<int> keys) async{
+    //await historyBox.delete(key);
+    await historyBox.deleteAll(keys);
+
+    log('[deleteHistory] delete (key:$keys)');
+    log('result ${historyBox.values.toList()}');
+  }
 }
