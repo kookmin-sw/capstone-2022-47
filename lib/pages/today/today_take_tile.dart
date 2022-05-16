@@ -52,7 +52,7 @@ class BeforeTakeTile extends StatelessWidget {
         crossAxisAlignment: WrapCrossAlignment.center,
         children: [
           Text('${medicineAlarm.name},', style: textStyle),
-          TileActionButton(
+          TileActionButton( //'지금' 버튼
             onTap: () { //history에 지금 시간 추가
               historyRepository.addHistory(MedicineHistory( //hive db에 takeDateTime 저장
                   medicineId: medicineAlarm.id
@@ -66,7 +66,7 @@ class BeforeTakeTile extends StatelessWidget {
             title: '지금',
           ),
           Text('|', style: textStyle),
-          TileActionButton(
+          TileActionButton( //'아까' 버튼
             onTap: () => _onPreviousTake(context),
             title: '아까',
           ),
@@ -209,10 +209,8 @@ class AfterTakeTile extends StatelessWidget {
   
 
 
-
-
-
-class _MoreButton extends StatelessWidget { //더보기 버튼
+//더보기 버튼
+class _MoreButton extends StatelessWidget { 
   const _MoreButton({
     Key? key,
     required this.medicineAlarm,
@@ -230,13 +228,15 @@ class _MoreButton extends StatelessWidget { //더보기 버튼
           },
           onPressedDeleteMedicine: (){ //약 정보 삭제
             //알람 삭제
-            //hive 히스토리 데이터 삭제
             //hive 약 데이터 삭제
             notification.deleteMultipleAlarm(alarmIds);
             medicineRepository.deleteMedicine(medicineAlarm.key);
             Navigator.pop(context);
           },
           onPressedDeleteAll: (){ //약 정보와 히스토리 모두삭제
+            //알람 삭제
+            //hive 히스토리 데이터 삭제
+            //hive 약 데이터 삭제
             notification.deleteMultipleAlarm(alarmIds);
             historyRepository.deleteAllHistory(keys);
             medicineRepository.deleteMedicine(medicineAlarm.key);
@@ -256,14 +256,15 @@ class _MoreButton extends StatelessWidget { //더보기 버튼
   }
 
   Iterable<int> get keys{
-  //historyRepository.historyBox.values.where((history) => history.medicineId == medicineAlarm.id && history.medicineKey == medicineAlarm.key);
-  //final keys = histories.map((e)=>e.key as int);
+  final histories = 
+  historyRepository.historyBox.values.where((history) => history.medicineId == medicineAlarm.id && history.medicineKey == medicineAlarm.key);
+  final keys = histories.map((e)=>e.key as int);
   return keys;
   }
 }
 
 
-
+//이미지 클릭
 class MedicineImageButton extends StatelessWidget {
   const MedicineImageButton({
     Key? key,
@@ -298,6 +299,7 @@ class MedicineImageButton extends StatelessWidget {
 }
 
 
+//지금,아까 타일 버튼
 class TileActionButton extends StatelessWidget {
   const TileActionButton({
     Key? key,

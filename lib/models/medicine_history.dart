@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 part 'medicine_history.g.dart';

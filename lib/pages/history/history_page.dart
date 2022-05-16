@@ -3,7 +3,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:intl/intl.dart';
 import 'package:yaksok_project/components/yaksok_constants.dart';
 import 'package:yaksok_project/models/medicine_history.dart';
-import 'package:yaksok_project/pages/add_medicine/add_medicine_page.dart';
+import 'package:yaksok_project/pages/today/history_empty.dart';
 import 'package:yaksok_project/pages/today/today_take_tile.dart';
 
 import 'package:yaksok_project/models/medicine.dart';
@@ -35,6 +35,10 @@ class HistoryPage extends StatelessWidget {
         .toList()
         .reversed
         .toList(); // 최신 데이터가 위에 있도록 하기 위해서. toList로 다시 반환
+
+    if(histories.isEmpty){ //history page empty 창
+      return const HistoryEmpty();
+    }
     return ListView.builder(
       itemCount: histories.length,
       itemBuilder: (context, index) {
@@ -63,7 +67,7 @@ class _TimeTile extends StatelessWidget {
           flex: 1,
           child: Text(
             DateFormat('yyyy\nMM.dd E', 'ko').format(history
-                .takeTime), // ko_KR 또는 ko= locale 값, main.dart, takeTiem - medicine_history.dart
+                .takeTime), // ko_KR 또는 ko= locale 값, main.dart, takeTime - medicine_history.dart
             textAlign: TextAlign.center, // 가운데 정렬
             style: Theme.of(context).textTheme.subtitle2!.copyWith(
                   height: 1.6, // 각 날짜 공간 크기
