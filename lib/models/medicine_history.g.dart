@@ -29,6 +29,7 @@ class MedicineHistoryAdapter extends TypeAdapter<MedicineHistory> {
   @override
   void write(BinaryWriter writer, MedicineHistory obj) {
     writer
+      ..writeByte(6)
       ..writeByte(0)
       ..write(obj.medicineId)
       ..writeByte(1)
@@ -43,7 +44,8 @@ class MedicineHistoryAdapter extends TypeAdapter<MedicineHistory> {
       ..write(obj.imagePath);
   }
 
-  
+  @override
+  int get hashCode => typeId.hashCode;
 
   @override
   bool operator ==(Object other) =>
@@ -51,8 +53,4 @@ class MedicineHistoryAdapter extends TypeAdapter<MedicineHistory> {
       other is MedicineHistoryAdapter &&
           runtimeType == other.runtimeType &&
           typeId == other.typeId;
-
-
-  @override
-  int get hashCode => typeId.hashCode;
 }
