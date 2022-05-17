@@ -4,6 +4,7 @@ import 'package:yaksok_project/components/yaksok_constants.dart';
 
 class HistoryEmpty extends StatelessWidget {
   const HistoryEmpty({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context){
     return Column(
@@ -15,10 +16,10 @@ class HistoryEmpty extends StatelessWidget {
           '약을 복용했다고 알려주세요!',
           style: Theme.of(context).textTheme.subtitle1,
         ),
-        const SizedBox(height: smallSpace),
+        const SizedBox(height: largeSpace),
         const SizedBox(height: smallSpace),
         const Icon(CupertinoIcons.arrow_down),
-        const SizedBox(height: largeSpace),
+        const SizedBox(height: smallSpace),
       ],
     );
   }

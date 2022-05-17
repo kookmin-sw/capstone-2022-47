@@ -17,7 +17,10 @@ class HistoryPage extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start, // 좌측 정렬
       children: [
-        Text('잘 복용 했어요', style: Theme.of(context).textTheme.headline4),
+        Container(
+          padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
+          child: Text('잘 복용 했어요', style: Theme.of(context).textTheme.headline4),
+        ),
         const SizedBox(height: regularSpace),
         const Divider(height: 1, thickness: 1.0),
         Expanded(
@@ -36,7 +39,8 @@ class HistoryPage extends StatelessWidget {
         .reversed
         .toList(); // 최신 데이터가 위에 있도록 하기 위해서. toList로 다시 반환
 
-    if(histories.isEmpty){ //history page empty 창
+    if (histories.isEmpty) {
+      //history page empty 창
       return const HistoryEmpty();
     }
     return ListView.builder(
@@ -66,8 +70,8 @@ class _TimeTile extends StatelessWidget {
           // Expanded로 감싸주면 텍스트가 넘쳐도 개행, flex는 Row 축의 남은 공간을 차지함.
           flex: 1,
           child: Text(
-            DateFormat('yyyy\nMM.dd E', 'ko').format(history
-                .takeTime), // ko_KR 또는 ko= locale 값, main.dart, takeTime - medicine_history.dart
+            DateFormat('yyyy\nMM.dd E', 'ko').format(history.takeTime),
+            // ko_KR 또는 ko= locale 값, main.dart, takeTime - medicine_history.dart
             textAlign: TextAlign.center, // 가운데 정렬
             style: Theme.of(context).textTheme.subtitle2!.copyWith(
                   height: 1.6, // 각 날짜 공간 크기

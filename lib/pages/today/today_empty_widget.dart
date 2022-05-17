@@ -15,7 +15,8 @@ class TodayEmpty extends StatelessWidget {
           '약을 추가해주세요',
           style: Theme.of(context).textTheme.subtitle1,
         ),
-        
+
+        const SizedBox(height: smallSpace,),
         const Icon(CupertinoIcons.arrow_down),
         const SizedBox(height: largeSpace),
       ],

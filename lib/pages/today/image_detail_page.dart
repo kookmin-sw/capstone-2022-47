@@ -1,9 +1,9 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:yaksok_project/models/medicine_alarm.dart';
 
-class ImageDetailPage extends StatelessWidget { //이미지 창 크게보기
+class ImageDetailPage extends StatelessWidget {
+  //이미지 창 크게보기
   const ImageDetailPage({
     Key? key,
     required this.imagePath,
@@ -18,7 +18,9 @@ class ImageDetailPage extends StatelessWidget { //이미지 창 크게보기
         leading: const CloseButton(),
       ),
       body: Center(
-        child: Image.file(File(imagePath)),
+        child: Image.file(
+          File(imagePath),
+        ),
       ),
     );
   }
