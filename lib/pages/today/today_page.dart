@@ -25,7 +25,7 @@ class TodayPage extends StatelessWidget {
         Container(
           padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
           child: Text(
-            '복용할 약 목록',
+            '복용할 약이나 영양제를 추가해보세요!💊',
             style: Theme.of(context).textTheme.headline4,
           ),
         ),
@@ -99,6 +99,7 @@ class TodayPage extends StatelessWidget {
         final todayTakeHistory = historyBox.values.singleWhere((history) => 
           history.medicineId == medicineAlarm.id && 
           history.alarmTime == medicineAlarm.alarmTime &&
+          history.medicineKey == medicineAlarm.key &&
           isToday(history.takeTime, DateTime.now()),
           orElse: () => MedicineHistory(             //아직 안눌러서 값이 없다면
             medicineId: -1, alarmTime: '', takeTime: DateTime.now(),

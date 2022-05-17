@@ -6,8 +6,9 @@ class AddMedicineService with ChangeNotifier{
 
   AddMedicineService(int updateMedicineId){
     if(updateMedicineId != -1){ ///약 정보 수정 객체라면
-      _alarms.clear(); //알람 초기화
+     
       final updateAlarms = medicineRepository.medicineBox.values.singleWhere((medicine) => medicine.id == updateMedicineId).alarms;
+      _alarms.clear(); //알람 초기화
       _alarms.addAll(updateAlarms);
     }
   }

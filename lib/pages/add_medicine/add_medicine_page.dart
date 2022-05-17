@@ -76,7 +76,7 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
         child: AddPageBody(
           children: [
             Text(
-              '어떤 약이에요?',
+              '어떤 약을 등록하실 건가요?🤔',
               style: Theme.of(context).textTheme.headline4,
             ),
             const SizedBox(

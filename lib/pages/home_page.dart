@@ -71,7 +71,7 @@ class _HomePageState extends State<HomePage>{
 
                   //설정 모양 마크
                   CupertinoButton(
-                    onPressed: () => _onCurrentPage(2),  // 1번 페이지
+                    onPressed: () => _onCurrentPage(2),  // 2번 페이지
                     child: Icon(
                       CupertinoIcons.gear_solid,
                       color: _currentIndex == 2 ? Colors.blueAccent : YaksokColors.primaryColor, // check button이 1번 페이지인 경우 초록색
