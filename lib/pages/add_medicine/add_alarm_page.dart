@@ -36,7 +36,7 @@ class AddAlarmPage extends StatelessWidget {
       body: AddPageBody(
         children: [
           Text(
-            '매일 복약 잊지 말아요!',
+            '복용할 시간을 설정해주세요!',
             style: Theme.of(context).textTheme.headline4,
           ),
           const SizedBox(height: largeSpace),

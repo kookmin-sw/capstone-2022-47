@@ -10,10 +10,10 @@ class HistoryEmpty extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
-        const Center(child: Text('복약 기록이 없습니다.')),
+        const Center(child: Text('아직 약을 복용한 기록이 없어요~😥')),
         const SizedBox(height: smallSpace),
         Text(
-          '약을 복용했다고 알려주세요!',
+          '약과 영양제를 복용하고 기록을 남겨보세요!',
           style: Theme.of(context).textTheme.subtitle1,
         ),
         const SizedBox(height: largeSpace),
