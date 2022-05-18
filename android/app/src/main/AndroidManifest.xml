@@ -4,6 +4,11 @@
         android:label="약속해"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+
+       <!--google map-->
+       <meta-data android:name="com.google.android.geo.API_KEY"
+           android:value="AIzaSyBsGegJvqPVdrgv-j4UqUTc7Kw57LXY1Hc"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -34,4 +39,7 @@
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 </manifest>

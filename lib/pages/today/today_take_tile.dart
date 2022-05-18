@@ -171,6 +171,7 @@ class AfterTakeTile extends StatelessWidget {
 
   String get takeTimeStr => DateFormat('HH:mm').format(history.takeTime); //실 복약시간 date -> string
 
+  //저장된 약 터치
   void _onTap(BuildContext context){
     showModalBottomSheet(
       context: context, 
