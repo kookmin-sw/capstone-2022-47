@@ -49,8 +49,8 @@ class _SettingPageState extends State<SettingPage> {
             ElevatedButton(
               onPressed: _SettingAlarm,
               style: ElevatedButton.styleFrom(
-                primary: Colors.grey[700] // Background color
-              ),
+                  primary: Colors.grey[700] // Background color
+                  ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -75,7 +75,7 @@ class _SettingPageState extends State<SettingPage> {
               onPressed: _SettingReview,
               style: ElevatedButton.styleFrom(
                   primary: Colors.grey[700] // Background color
-              ),
+                  ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -100,7 +100,7 @@ class _SettingPageState extends State<SettingPage> {
               onPressed: _SettingEmail,
               style: ElevatedButton.styleFrom(
                   primary: Colors.grey[700] // Background color
-              ),
+                  ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -125,7 +125,7 @@ class _SettingPageState extends State<SettingPage> {
               onPressed: _SettingAppVersion,
               style: ElevatedButton.styleFrom(
                   primary: Colors.grey[700] // Background color
-              ),
+                  ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -150,7 +150,7 @@ class _SettingPageState extends State<SettingPage> {
               onPressed: _SettingDelete,
               style: ElevatedButton.styleFrom(
                   primary: Colors.grey[700] // Background color
-              ),
+                  ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -175,7 +175,7 @@ class _SettingPageState extends State<SettingPage> {
               onPressed: _SettingInfo,
               style: ElevatedButton.styleFrom(
                   primary: Colors.grey[700] // Background color
-              ),
+                  ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -232,7 +232,7 @@ class _SettingPageState extends State<SettingPage> {
   }
 
   //데이터 삭제 버튼
-  void _SettingDelete(){
+  void _SettingDelete() {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => SettingDeletePage()),
@@ -240,7 +240,7 @@ class _SettingPageState extends State<SettingPage> {
   }
 
   //이용 약관 버튼
-  void _SettingInfo(){
+  void _SettingInfo() {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => SettingInfoPage()),

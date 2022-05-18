@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'dart:io' show Platform;
+import 'package:in_app_review/in_app_review.dart';
 
 /*
   리뷰 작성 화면
@@ -17,3 +18,10 @@ class SettingReviewPage extends StatelessWidget {
     );
   }
 }
+
+/*
+final InAppReview inAppReview = InAppReview.instance;
+if (await inAppReview.isAvailable()) {
+    inAppReview.requestReview();
+}
+*/

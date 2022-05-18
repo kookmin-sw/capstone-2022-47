@@ -63,7 +63,7 @@ GitHub : https://github.com/Sungrae-kogi
 이름 : 김의연
 학번 : 20143044
 Email: dmldus0424@naver.com
-역할: https://github.com/KimUiYeon424
+GitHub: https://github.com/KimUiYeon424
 ```
 
 
@@ -77,9 +77,10 @@ Email: dmldus0424@naver.com
 2) 기술스택 : Android와 ios 에서 모두 원활히 돌아가는 어플리케이션을 만들기 위해
               Google에서 자체적으로 제작한 Flutter와 dart언어를 사용한다. Database는 빠르고 쉬우
               며 보안이 철저한 순수 Dart로 작성된 로컬 데이터베이스저장소 hive를 이용한다.
-3) 실행 환경 : android pixel2 API 30 
-4) 최종 산출물 : android, ios ap
+3) 실행 환경 : android pixel 2 API 30 
+4) 최종 산출물 : android, ios app
 ```
+
 
 -------------------------------------------
 
