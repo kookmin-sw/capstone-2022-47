@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:yaksok_project/pages/bottomsheet/set_alarm_bottomsheet.dart';
-import 'package:yaksok_project/pages/settings/setting_alarm_page.dart';
 import 'package:yaksok_project/pages/settings/setting_app_version_page.dart';
 import 'package:yaksok_project/pages/settings/setting_delete_page.dart';
 import 'package:yaksok_project/pages/settings/setting_email_page.dart';
@@ -203,11 +202,7 @@ class _SettingPageState extends State<SettingPage> {
   //알림 설정 버튼
   void _SettingAlarm() {
     showModalBottomSheet(context: context, builder: (context) => SetAlarmBottomSheet());
-    /*
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => SettingAlarmPage()),
-    );*/
+
   }
 
   //리뷰 작성 버튼

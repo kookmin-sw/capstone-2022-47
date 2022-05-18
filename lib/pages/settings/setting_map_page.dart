@@ -29,14 +29,14 @@ class SettingMapPageState extends State<SettingMapPage> {
   //Completer<GoogleMapController> _controller = Completer();
   late GoogleMapController _controller;
   static final CameraPosition _kGooglePlex = CameraPosition(
-      target: LatLng(37.61040539999977, 126.99559249999936), zoom: 14.4746);
+      target: LatLng(37.61040539999977, 126.99559249999936), zoom: 18.4746);
 
   //안쓰는 코드부분, 참고 다했으면 추후에 지울것
   static final CameraPosition _kLake = CameraPosition(
       bearing: 192.8334901395799,
       target: LatLng(37.610970700000124, 126.99622799999938),
       tilt: 50.440717697143555,
-      zoom: 17.151926040649414);
+      zoom: 27.151926040649414);
 
   final List<Marker> markers = [];
 
