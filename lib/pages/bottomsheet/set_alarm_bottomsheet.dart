@@ -1,4 +1,6 @@
+
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:yaksok_project/components/yaksok_widgets.dart';
 
 import '../../components/yaksok_colors.dart';
@@ -44,9 +46,10 @@ class SetAlarmBottomSheet extends StatelessWidget {
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                           textStyle: Theme.of(context).textTheme.subtitle1),
-                      onPressed: () => Navigator.pop(
-                        context,
-                      ), //setDateTime 넘겨줌
+                      onPressed: () {
+                        Navigator.pop(context);
+                        flutterToast();
+                      },//setDateTime 넘겨줌
                       child: Text('확인'),
                     ),
                   ),
@@ -56,6 +59,16 @@ class SetAlarmBottomSheet extends StatelessWidget {
           ],
         )
       ],
+    );
+  }
+
+  void flutterToast(){
+    Fluttertoast.showToast(msg: '알림 설정이 활성화되었습니다.',
+      gravity: ToastGravity.BOTTOM,
+      backgroundColor: Colors.black54,
+      fontSize: 15.0,
+      textColor: Colors.white,
+      toastLength: Toast.LENGTH_SHORT,
     );
   }
 }

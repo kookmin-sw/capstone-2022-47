@@ -3,22 +3,19 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:location/location.dart';
 import 'package:yaksok_project/components/yaksok_colors.dart';
-
+import 'package:geolocator/geolocator.dart';
 /*
 구글맵
-
-** geolocator yaml에 추가하기만해도 지도에서 구글 map app을 켜주는 버튼이 생겨남, 활용방안 찾아봐도 좋을듯.
+1.Geolocator api를 이용하여 기기의 위치정보 접근허용을 묻고, 해당 위치정보를 받아와 표기
 Get the current location of the device;
-Get the last known location;
-Get continuous location updates;
 Check if location services are enabled on the device;
-Translate an address to geocoordinates and vice verse (a.k.a. Geocoding);
-Calculate the distance (in meters) between two geocoordinates;
-Check the availability of Google Play services (on Android only).
+
+2.google places api를 통한 검색 시스템
 
  */
+
+
 
 class SettingMapPage extends StatefulWidget {
   @override
@@ -26,21 +23,36 @@ class SettingMapPage extends StatefulWidget {
 }
 
 class SettingMapPageState extends State<SettingMapPage> {
-  //Completer<GoogleMapController> _controller = Completer();
   late GoogleMapController _controller;
+  LatLng? _initialPosition;
+  late Position currentLocation;
+
+  @override
+  void initState() {
+    super.initState();
+    _getUserLocation();
+  }
+
+  Future<Position> locateUser() async{
+    return Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
+  }
+
+  void _getUserLocation() async{
+    LocationPermission permission = await Geolocator.requestPermission(); //지도 켰을때 위치정보요청 동의를 묻는 창
+    Position position = await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
+    setState(() {
+      _initialPosition = LatLng(position.latitude, position.longitude);
+    });
+  }
+
+  /*임시 고정좌표값으로 사용하지않으면 지울예정
   static final CameraPosition _kGooglePlex = CameraPosition(
       target: LatLng(37.61040539999977, 126.99559249999936), zoom: 18.4746);
-
-  //안쓰는 코드부분, 참고 다했으면 추후에 지울것
-  static final CameraPosition _kLake = CameraPosition(
-      bearing: 192.8334901395799,
-      target: LatLng(37.610970700000124, 126.99622799999938),
-      tilt: 50.440717697143555,
-      zoom: 27.151926040649414);
-
+  */
   final List<Marker> markers = [];
 
   MapType _currentMapType = MapType.normal;
+
 
   addMarker(cordinate) {
     int id = Random().nextInt(100);
@@ -100,7 +112,7 @@ class SettingMapPageState extends State<SettingMapPage> {
             myLocationEnabled: true,
             mapType: _currentMapType,
             //위성지도와 기본지도 변경 함수
-            initialCameraPosition: _kGooglePlex,
+            initialCameraPosition: CameraPosition(target: _initialPosition?? LatLng(37.6100260, 126.9975020), zoom: 17.4746),//
             onMapCreated: (GoogleMapController controller) {
               setState(() {
                 _controller = controller;
