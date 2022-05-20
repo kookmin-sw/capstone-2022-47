@@ -15,14 +15,26 @@ class MedicineDataDetail extends StatelessWidget {
         children: [
           Text(
             medicineData.name,
-            style: TextStyle(fontSize: 15),
+            style: TextStyle(
+              color: Colors.black54,
+              fontWeight: FontWeight.w500,
+              fontSize: 22,
+            ),
           ),
-          const SizedBox(height: 4.0),
-          Text('${medicineData.company}'),
+          const SizedBox(height: 8.0),
+          Text('제조사: ${medicineData.company}',
+            style: TextStyle(
+              fontSize: 12,
+            ),
+          ),
           const SizedBox(
-            height: 4.0,
+            height: 8.0,
           ),
-          Text('${medicineData.no}'),
+          Text('일련번호: ${medicineData.no}',
+            style: TextStyle(
+              fontSize: 14,
+          ),
+          ),
           const Spacer(),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
@@ -31,9 +43,11 @@ class MedicineDataDetail extends StatelessWidget {
                 visible: true,
                 child: Row(
                   children: [
-                    Icon(CupertinoIcons.chat_bubble_2, size: 14.0,),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(0,0,10,0),
+                      child: Icon(CupertinoIcons.suit_heart, size: 22.0,),
+                    ),
                     const SizedBox(width: 4.0,),
-                    Text('data'),
                   ],
                 ),
               )

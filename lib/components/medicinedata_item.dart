@@ -17,14 +17,12 @@ class MedicineDataItem extends StatelessWidget {
         children: [
           ClipRRect(
             borderRadius: BorderRadius.circular(10.0),
-            child: Image(image: AssetImage('assets/medicinedata/200808876.jpg'), width: 115, height: 115,),
-            
-            /*Image.network(
+            child: Image.network(
               medicineData.urlToImage,
-              width: 100,
-              height: 100,
+              width: 135,
+              height: 110,
               fit: BoxFit.cover,
-            ),*/
+            ),
           ),
           const SizedBox(width: 16.0,),
           MedicineDataDetail(medicineData: medicineData)
