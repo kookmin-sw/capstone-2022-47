@@ -215,10 +215,9 @@ class _SettingPageState extends State<SettingPage> {
 
   //의견 전달 버튼
   void _SettingEmail() {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => SettingEmailPage()),
-    );
+    //AlarmBottomSheet이랑 마찬가지로 ModalBottomSheet가 올라와 Email기능과 연결시켜야함
+    //showModalBottomSheet(context: context, builder: (context) => SetEmailBottomSheet());
+
   }
 
   //앱 버전 버튼

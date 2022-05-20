@@ -45,10 +45,6 @@ class SettingMapPageState extends State<SettingMapPage> {
     });
   }
 
-  /*임시 고정좌표값으로 사용하지않으면 지울예정
-  static final CameraPosition _kGooglePlex = CameraPosition(
-      target: LatLng(37.61040539999977, 126.99559249999936), zoom: 18.4746);
-  */
   final List<Marker> markers = [];
 
   MapType _currentMapType = MapType.normal;

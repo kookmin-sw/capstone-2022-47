@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:yaksok_project/pages/settings/setting_search_page.dart';
 
 import '../pages/settings/setting_map_page.dart';
 
@@ -97,7 +98,7 @@ class _MyMedicineHeaderState extends State<MyMedicineHeader> {
     return Column(
       children: [
         ElevatedButton(
-          onPressed: () {},
+          onPressed: _SettingSearch,
           style: ButtonStyle(
             elevation: MaterialStateProperty.all<double>(0.0),
             backgroundColor: MaterialStateProperty.all(Colors.white),
@@ -204,7 +205,7 @@ class _MyMedicineHeaderState extends State<MyMedicineHeader> {
   void _SettingSearch() {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => SettingMapPage()),
+      MaterialPageRoute(builder: (context) => SettingSearchPage()),
     );
   }
 
