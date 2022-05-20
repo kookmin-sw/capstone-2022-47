@@ -30,7 +30,7 @@ class SettingMapPageState extends State<SettingMapPage> {
   @override
   void initState() {
     super.initState();
-    _getUserLocation();
+    _getUserLocation();   //접속자 초기 위치 파악
   }
 
   Future<Position> locateUser() async{

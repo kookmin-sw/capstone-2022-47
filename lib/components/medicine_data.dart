@@ -107,6 +107,31 @@ List<MedicineData> medicineList = [
       name: '에스시탈정',
       company: '(주)종근당',
       urlToImage: 'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200810125.jpg?raw=true'),
-  //urlToImage 수정해야함
+
+  MedicineData(
+      no: '200810314',
+      name: '발산정',
+      company: '유니메이드제약(주)',
+      urlToImage: 'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200810314.jpg?raw=true'),
+  MedicineData(
+      no: '200810338',
+      name: '가스리드정',
+      company: '(주)유한양행',
+      urlToImage: 'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200810338.jpg?raw=true'),
+
+  MedicineData(
+      no: '200810473',
+      name: '엑스반정',
+      company: '삼진제약(주)',
+      urlToImage: 'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200810473.jpg?raw=true'),
+
+  MedicineData(
+      no: '200810509',
+      name: '뉴멘타민서방캡슐',
+      company: '고려제약(주)',
+      urlToImage: 'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200810509.jpg?raw=true'),
+
+
+  //urlToImage 수정해야함 엑셀 20번부터
 
 ];
