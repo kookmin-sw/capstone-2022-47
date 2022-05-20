@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="generator" content="made with love by dartdoc 5.0.1">
+  <meta name="description" content="yaksok_project API docs, for the Dart programming language.">
+  <title>yaksok_project - Dart API docs</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <link rel="stylesheet" href="static-assets/github.css?v1">
+  <link rel="stylesheet" href="static-assets/styles.css?v1">
+  <link rel="icon" href="static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href=""
+      data-using-base-href="false">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+</header>
+
+<main>
+
+
+  <div id="dartdoc-main-content" class="main-content">
+      
+<section class="desc markdown">
+  <h1 id="">Capstone-2022-47 약속해</h1>
+<h2 id="1--">1. 프로젝트 소개</h2><img src="https://user-images.githubusercontent.com/90044681/159125938-5b229b48-0323-4d20-adb4-e14e319deb6e.png" width="470px" height="150px">
+<p>다양한 의약품 및 영양제의 올바른 복용을 위해 약 복용 시 알림 기능과 약물 섭취 기록 관리 기능<br> 검색 및 구분 기능을 제공하는 약 복용 어플리케이션</p>
+<h3 id="--">배경 및 개요</h3>
+<pre class="language-dart"><code>현대인의 식습관에 따른 질병 증가 및 비타민 등 각종 영양제의 양은 증가하고 있으며,
+2년 째 계속되고 있는 코로나19로 인해 일반 약들의 수요는 물론이고 우울증 치료를 위한 수면제 및 처방약의 소비 또한 점점 늘어나고 있다. 
+
+약물 복용은 정확한 처방을 기반으로 복용되어야 하며 그렇다 해도 바쁜 현대인의 삶에서 잊혀지기 쉽상이다. 
+복용하는 약이 있는 사람이라면 누구나 쉽고 간단하게 사용 가능한 약 복용 어플리케이션을 제작해
+현대인의 건강과 사회의 건강에 도움이 되고자 한다. 
+</code></pre>
+<h4 id="flowchart">FLOWCHART</h4><hr>
+<img src="img/약속해 - 화면 설계.png" width="800px" height="500px">
+<h3 id="-">주요 기능</h3><hr>
+<img src="img/약속해 - 기능.png" width="800px" height="330px">
+<h2 id="2-abstract">2. Abstract</h2>
+<p>In order to properly take various medicines and nutrients, the function of notifying when taking drugs and managing drug intake records
+drug application that provides search and differentiation functions</p>
+<h2 id="3--">3. 소개 영상</h2>
+<p><a href="https://github.com/kookmin-sw/capstone-2022-47/blob/master/docs/%ED%8C%8047-%EC%A4%91%EA%B0%84%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.pdf">1. 중간 발표자료</a><br>
+<a href="https://github.com/kookmin-sw/capstone-2022-47/blob/master/docs/%ED%8C%8047-%EC%A4%91%EA%B0%84%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf">2. 중간 보고서</a></p>
+<h2 id="4--">4. 팀 소개</h2>
+<pre class="language-markdown"><code class="language-markdown">이름 : 이채현
+학번 : 20161671
+Email: chirene47507073@kookmin.ac.kr
+GitHub : https://github.com/swlee22
+</code></pre>
+<pre class="language-markdown"><code class="language-markdown">이름 : 이산하
+학번 : 20163138 
+Email: sanhaoov@kookmin.ac.kr
+GitHub : https://github.com/grasfgs
+</code></pre>
+<pre class="language-markdown"><code class="language-markdown">이름 : 조성래
+학번 : 20163159
+Email: whvkek@naver.com
+GitHub : https://github.com/Sungrae-kogi
+</code></pre>
+<pre class="language-markdown"><code class="language-markdown">이름 : 김의연
+학번 : 20143044
+Email: dmldus0424@naver.com
+GitHub: https://github.com/KimUiYeon424
+</code></pre>
+<h2 id="5-">5. 사용법</h2>
+<p>-소프트웨어 설치, 실행방법, 사용 방법 등 추가링크로 포함</p>
+<h2 id="6-">6. 기타</h2>
+<pre class="language-dart"><code>1) 개발환경 : Visual Studio Code에서 제작한다.
+2) 기술스택 : Android와 ios 에서 모두 원활히 돌아가는 어플리케이션을 만들기 위해
+              Google에서 자체적으로 제작한 Flutter와 dart언어를 사용한다. Database는 빠르고 쉬우
+              며 보안이 철저한 순수 Dart로 작성된 로컬 데이터베이스저장소 hive를 이용한다.
+3) 실행 환경 : android pixel 2 API 30 
+4) 최종 산출물 : android, ios app
+</code></pre>
+</section>
+
+
+      <section class="summary">
+          <h2>Libraries</h2>
+        <dl>
+          <dt id="add_alarm_page">
+  <span class="name"><a href="pages_add_medicine_add_alarm_page/pages_add_medicine_add_alarm_page-library.html">add_alarm_page</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="add_medicine_page">
+  <span class="name"><a href="pages_add_medicine_add_medicine_page/pages_add_medicine_add_medicine_page-library.html">add_medicine_page</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="add_medicine_service">
+  <span class="name"><a href="services_add_medicine_service/services_add_medicine_service-library.html">add_medicine_service</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="add_page_widget">
+  <span class="name"><a href="pages_add_medicine_components_add_page_widget/pages_add_medicine_components_add_page_widget-library.html">add_page_widget</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="history_empty">
+  <span class="name"><a href="pages_today_history_empty/pages_today_history_empty-library.html">history_empty</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="history_page">
+  <span class="name"><a href="pages_history_history_page/pages_history_history_page-library.html">history_page</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="home_page">
+  <span class="name"><a href="pages_home_page/pages_home_page-library.html">home_page</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="image_detail_page">
+  <span class="name"><a href="pages_today_image_detail_page/pages_today_image_detail_page-library.html">image_detail_page</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="main">
+  <span class="name"><a href="main/main-library.html">main</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="medicine">
+  <span class="name"><a href="models_medicine/models_medicine-library.html">medicine</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="medicine_alarm">
+  <span class="name"><a href="models_medicine_alarm/models_medicine_alarm-library.html">medicine_alarm</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="medicine_history">
+  <span class="name"><a href="models_medicine_history/models_medicine_history-library.html">medicine_history</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="medicine_history_repository">
+  <span class="name"><a href="repositories_medicine_history_repository/repositories_medicine_history_repository-library.html">medicine_history_repository</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="medicine_repository">
+  <span class="name"><a href="repositories_medicine_repository/repositories_medicine_repository-library.html">medicine_repository</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="more_action_bottomsheet">
+  <span class="name"><a href="pages_bottomsheet_more_action_bottomsheet/pages_bottomsheet_more_action_bottomsheet-library.html">more_action_bottomsheet</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="my_medicine_header">
+  <span class="name"><a href="models_my_medicine_header/models_my_medicine_header-library.html">my_medicine_header</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="pick_image_bottomsheet">
+  <span class="name"><a href="pages_bottomsheet_pick_image_bottomsheet/pages_bottomsheet_pick_image_bottomsheet-library.html">pick_image_bottomsheet</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="setting_alarm_page">
+  <span class="name"><a href="pages_settings_setting_alarm_page/pages_settings_setting_alarm_page-library.html">setting_alarm_page</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="setting_app_version_page">
+  <span class="name"><a href="pages_settings_setting_app_version_page/pages_settings_setting_app_version_page-library.html">setting_app_version_page</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="setting_delete_page">
+  <span class="name"><a href="pages_settings_setting_delete_page/pages_settings_setting_delete_page-library.html">setting_delete_page</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="setting_email_page">
+  <span class="name"><a href="pages_settings_setting_email_page/pages_settings_setting_email_page-library.html">setting_email_page</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="setting_info_page">
+  <span class="name"><a href="pages_settings_setting_info_page/pages_settings_setting_info_page-library.html">setting_info_page</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="setting_page">
+  <span class="name"><a href="pages_settings_setting_page/pages_settings_setting_page-library.html">setting_page</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="setting_review_page">
+  <span class="name"><a href="pages_settings_setting_review_page/pages_settings_setting_review_page-library.html">setting_review_page</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="time_setting_bottomsheet">
+  <span class="name"><a href="pages_bottomsheet_time_setting_bottomsheet/pages_bottomsheet_time_setting_bottomsheet-library.html">time_setting_bottomsheet</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="today_empty_widget">
+  <span class="name"><a href="pages_today_today_empty_widget/pages_today_today_empty_widget-library.html">today_empty_widget</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="today_page">
+  <span class="name"><a href="pages_today_today_page/pages_today_today_page-library.html">today_page</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="today_take_tile">
+  <span class="name"><a href="pages_today_today_take_tile/pages_today_today_take_tile-library.html">today_take_tile</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="yaksok_colors">
+  <span class="name"><a href="components_yaksok_colors/components_yaksok_colors-library.html">yaksok_colors</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="yaksok_constants">
+  <span class="name"><a href="components_yaksok_constants/components_yaksok_constants-library.html">yaksok_constants</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="yaksok_file_service">
+  <span class="name"><a href="services_yaksok_file_service/services_yaksok_file_service-library.html">yaksok_file_service</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="yaksok_hive">
+  <span class="name"><a href="repositories_yaksok_hive/repositories_yaksok_hive-library.html">yaksok_hive</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="yaksok_notification_service">
+  <span class="name"><a href="services_yaksok_notification_service/services_yaksok_notification_service-library.html">yaksok_notification_service</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="yaksok_page_route">
+  <span class="name"><a href="components_yaksok_page_route/components_yaksok_page_route-library.html">yaksok_page_route</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="yaksok_theme">
+  <span class="name"><a href="components_yaksok_theme/components_yaksok_theme-library.html">yaksok_theme</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+          <dt id="yaksok_widgets">
+  <span class="name"><a href="components_yaksok_widgets/components_yaksok_widgets-library.html">yaksok_widgets</a></span> 
+
+</dt>
+<dd> 
+</dd>
+
+        </dl>
+      </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+  </form>
+</header>
+
+  </div>
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div>
+
+</main>
+
+<footer>
+</footer>
+
+
+
+<script src="static-assets/highlight.pack.js?v1"></script>
+<script src="static-assets/script.js?v1"></script>
+
+
+
+</body>
+
+</html>
+
