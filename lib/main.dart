@@ -14,7 +14,7 @@ final historyRepository = MedicineHistoryRepository();
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
+
   await notification.initializeTimeZone();
   await notification.initializeNotification();
 

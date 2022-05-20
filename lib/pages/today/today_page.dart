@@ -40,6 +40,7 @@ class TodayPage extends StatelessWidget {
     );
   }
 
+
   Widget _builderMedicineListView(context, Box<Medicine> box, _) {
     final medicines = box.values.toList();
     final medicineAlarms = <MedicineAlarm>[]; //오늘 복용할 약 list 

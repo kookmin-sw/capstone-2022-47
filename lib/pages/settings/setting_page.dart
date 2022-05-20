@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:yaksok_project/pages/settings/setting_alarm_page.dart';
+import 'package:yaksok_project/pages/bottomsheet/set_alarm_bottomsheet.dart';
 import 'package:yaksok_project/pages/settings/setting_app_version_page.dart';
 import 'package:yaksok_project/pages/settings/setting_delete_page.dart';
 import 'package:yaksok_project/pages/settings/setting_email_page.dart';
@@ -201,10 +201,8 @@ class _SettingPageState extends State<SettingPage> {
 
   //알림 설정 버튼
   void _SettingAlarm() {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => SettingAlarmPage()),
-    );
+    showModalBottomSheet(context: context, builder: (context) => SetAlarmBottomSheet());
+
   }
 
   //리뷰 작성 버튼
@@ -217,10 +215,9 @@ class _SettingPageState extends State<SettingPage> {
 
   //의견 전달 버튼
   void _SettingEmail() {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => SettingEmailPage()),
-    );
+    //AlarmBottomSheet이랑 마찬가지로 ModalBottomSheet가 올라와 Email기능과 연결시켜야함
+    //showModalBottomSheet(context: context, builder: (context) => SetEmailBottomSheet());
+
   }
 
   //앱 버전 버튼
@@ -246,4 +243,6 @@ class _SettingPageState extends State<SettingPage> {
       MaterialPageRoute(builder: (context) => SettingInfoPage()),
     );
   }
+
+
 }
