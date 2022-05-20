@@ -3,22 +3,28 @@ import 'package:flutter/material.dart';
 import 'package:yaksok_project/components/medicine_data.dart';
 import 'package:yaksok_project/components/medicinedata_item.dart';
 
+import '../../components/yaksok_colors.dart';
+
 class SettingSearchPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(
+          color: Colors.white, //색변경
+        ),
+        backgroundColor: YaksokColors.primaryColor,
         title: Row(
           children: [
-            const Text('찾는 약이 있으신가요?', style: TextStyle(color: Colors.grey),),
+            const Text('찾는 약이 있으신가요?', style: TextStyle(color: Colors.white),),
             const SizedBox(width: 4.0),
           ],
         ),
         actions: [
           IconButton(
-              icon: const Icon(CupertinoIcons.search), onPressed: () {}),
+              icon: const Icon(CupertinoIcons.search, color: Colors.white,), onPressed: () {}),
           IconButton(
-              icon: const Icon(CupertinoIcons.list_dash), onPressed: () {}),
+              icon: const Icon(CupertinoIcons.list_dash, color: Colors.white,), onPressed: () {}),
         ],
         bottom: const PreferredSize(
           child: Divider(thickness: 0.5, height: 0.5, color: Colors.grey),
