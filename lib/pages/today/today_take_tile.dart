@@ -246,7 +246,7 @@ class _MoreButton extends StatelessWidget {
         )
         ); 
       },
-      child: const Icon(CupertinoIcons.ellipsis_vertical), //점3개 아이콘
+      child: const Icon(CupertinoIcons.ellipsis_vertical, color: Colors.lightGreen,), //점3개 아이콘
     );
   }
 
@@ -289,11 +289,12 @@ class MedicineImageButton extends StatelessWidget {
         );
       },
       child: CircleAvatar(
+        backgroundColor: Colors.green[300],
         radius: 40,
         foregroundImage: imagePath == null
         ? null
         : FileImage(File(imagePath!)),
-        child: imagePath == null? Icon(CupertinoIcons.alarm_fill): null,
+        child: imagePath == null? Icon(CupertinoIcons.alarm, color: Colors.white,): null,
       ),
     );
   }
@@ -316,7 +317,7 @@ class TileActionButton extends StatelessWidget {
     final buttonTextStyle = Theme.of(context)
         .textTheme
         .bodyText2
-        ?.copyWith(fontWeight: FontWeight.w500);
+        ?.copyWith(fontWeight: FontWeight.w500, color: Colors.green[300]);
     return GestureDetector(
       onTap: onTap,
       child: Padding(

@@ -19,7 +19,7 @@ class HistoryEmpty extends StatelessWidget {
         const SizedBox(height: largeSpace),
         const SizedBox(height: smallSpace),
         const Icon(CupertinoIcons.arrow_down),
-        const SizedBox(height: smallSpace),
+        const SizedBox(height: 30),
       ],
     );
   }

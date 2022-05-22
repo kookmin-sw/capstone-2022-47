@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:yaksok_project/pages/bottomsheet/set_alarm_bottomsheet.dart';
-import 'package:yaksok_project/pages/settings/setting_app_version_page.dart';
-import 'package:yaksok_project/pages/settings/setting_delete_page.dart';
-import 'package:yaksok_project/pages/settings/setting_email_page.dart';
 import 'package:yaksok_project/pages/settings/setting_info_page.dart';
 import 'package:yaksok_project/pages/settings/setting_review_page.dart';
 import '../../models/my_medicine_header.dart';
+import '../bottomsheet/set_delete_bottomsheet.dart';
+import '../bottomsheet/set_email_bottomsheet.dart';
 
 class SettingPage extends StatefulWidget {
   const SettingPage({Key? key}) : super(key: key);
@@ -23,7 +23,7 @@ class _SettingPageState extends State<SettingPage> {
         title: const Text(
           '앱 설정',
           style: TextStyle(
-            color: Colors.grey,
+            color: Colors.green,
             fontWeight: FontWeight.w400,
             fontSize: 32,
           ),
@@ -33,7 +33,7 @@ class _SettingPageState extends State<SettingPage> {
           child: Divider(
             thickness: 0.5,
             height: 0.5,
-            color: Colors.grey,
+            color: Colors.green,
           ),
         ),
       ),
@@ -49,7 +49,7 @@ class _SettingPageState extends State<SettingPage> {
             ElevatedButton(
               onPressed: _SettingAlarm,
               style: ElevatedButton.styleFrom(
-                primary: Colors.grey[700] // Background color
+                primary: Colors.green[300] // Background color
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -63,7 +63,7 @@ class _SettingPageState extends State<SettingPage> {
                   ),
                   Text(
                     "알림",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
                   ),
                 ],
               ),
@@ -72,9 +72,9 @@ class _SettingPageState extends State<SettingPage> {
               height: 5,
             ),
             ElevatedButton(
-              onPressed: _SettingReview,
+              onPressed: () {},//_SettingReview,
               style: ElevatedButton.styleFrom(
-                  primary: Colors.grey[700] // Background color
+                  primary: Colors.green[300] // Background color
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -88,7 +88,7 @@ class _SettingPageState extends State<SettingPage> {
                   ),
                   Text(
                     "리뷰 작성하기",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
                   ),
                 ],
               ),
@@ -99,7 +99,7 @@ class _SettingPageState extends State<SettingPage> {
             ElevatedButton(
               onPressed: _SettingEmail,
               style: ElevatedButton.styleFrom(
-                  primary: Colors.grey[700] // Background color
+                  primary: Colors.green[300] // Background color
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -113,7 +113,7 @@ class _SettingPageState extends State<SettingPage> {
                   ),
                   Text(
                     "의견 보내기",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
                   ),
                 ],
               ),
@@ -124,7 +124,7 @@ class _SettingPageState extends State<SettingPage> {
             ElevatedButton(
               onPressed: _SettingAppVersion,
               style: ElevatedButton.styleFrom(
-                  primary: Colors.grey[700] // Background color
+                  primary: Colors.green[300] // Background color
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -138,7 +138,7 @@ class _SettingPageState extends State<SettingPage> {
                   ),
                   Text(
                     "앱 버전",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
                   ),
                 ],
               ),
@@ -149,7 +149,7 @@ class _SettingPageState extends State<SettingPage> {
             ElevatedButton(
               onPressed: _SettingDelete,
               style: ElevatedButton.styleFrom(
-                  primary: Colors.grey[700] // Background color
+                  primary: Colors.green[300] // Background color
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -163,7 +163,7 @@ class _SettingPageState extends State<SettingPage> {
                   ),
                   Text(
                     "데이터 삭제",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
                   ),
                 ],
               ),
@@ -174,7 +174,7 @@ class _SettingPageState extends State<SettingPage> {
             ElevatedButton(
               onPressed: _SettingInfo,
               style: ElevatedButton.styleFrom(
-                  primary: Colors.grey[700] // Background color
+                  primary: Colors.green[300] // Background color
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
@@ -188,7 +188,7 @@ class _SettingPageState extends State<SettingPage> {
                   ),
                   Text(
                     "이용 약관",
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
                   ),
                 ],
               ),
@@ -205,7 +205,7 @@ class _SettingPageState extends State<SettingPage> {
 
   }
 
-  //리뷰 작성 버튼
+  //리뷰 작성 버튼  -> 배포를 완료한 후에 기능을추가해야함
   void _SettingReview() {
     Navigator.push(
       context,
@@ -216,24 +216,18 @@ class _SettingPageState extends State<SettingPage> {
   //의견 전달 버튼
   void _SettingEmail() {
     //AlarmBottomSheet이랑 마찬가지로 ModalBottomSheet가 올라와 Email기능과 연결시켜야함
-    //showModalBottomSheet(context: context, builder: (context) => SetEmailBottomSheet());
+    showModalBottomSheet(context: context, builder: (context) => SetEmailBottomSheet());
 
   }
 
   //앱 버전 버튼
   void _SettingAppVersion() {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => SettingAppVersionPage()),
-    );
+    AppVersionToast();
   }
 
   //데이터 삭제 버튼
   void _SettingDelete(){
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => SettingDeletePage()),
-    );
+    showModalBottomSheet(context: context, builder: (context) => SetDeleteBottomSheet());
   }
 
   //이용 약관 버튼
@@ -245,4 +239,14 @@ class _SettingPageState extends State<SettingPage> {
   }
 
 
+  void AppVersionToast() {
+    Fluttertoast.showToast(
+      msg: '약속해: 1.0v.',
+      gravity: ToastGravity.BOTTOM,
+      backgroundColor: Colors.green[300],
+      fontSize: 15.0,
+      textColor: Colors.white,
+      toastLength: Toast.LENGTH_SHORT,
+    );
+  }
 }

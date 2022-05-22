@@ -35,8 +35,9 @@ class _HomePageState extends State<HomePage>{
 
           // 추가(+) 모양 버튼
           floatingActionButton: FloatingActionButton(
+            backgroundColor: Colors.green[300],
             onPressed: _onAddMedicine,
-            child: const Icon(CupertinoIcons.add),
+            child: const Icon(CupertinoIcons.add,),
           ),
           // 추가(+) 모양 버튼 중앙으로 위치
           floatingActionButtonLocation: 
@@ -55,7 +56,7 @@ class _HomePageState extends State<HomePage>{
                     onPressed: () => _onCurrentPage(0),  // 0번 페이지
                     child: Icon(
                       CupertinoIcons.house,
-                      color: _currentIndex == 0 ? Colors.blueAccent : YaksokColors.primaryColor,  // check button이 0번 페이지인 경우 초록색
+                      color: _currentIndex == 0 ? Colors.deepOrangeAccent : Colors.green[300],  // check button이 0번 페이지인 경우 초록색
                       //Colors.grey[350], 정도 하면 초록색이 아니라 버튼이 흐려짐
                       ), 
                   ),
@@ -65,7 +66,7 @@ class _HomePageState extends State<HomePage>{
                     onPressed: () => _onCurrentPage(1),  // 1번 페이지
                     child: Icon(
                       CupertinoIcons.text_badge_checkmark, 
-                      color: _currentIndex == 1 ? Colors.blueAccent : YaksokColors.primaryColor, // check button이 1번 페이지인 경우 초록색
+                      color: _currentIndex == 1 ? Colors.deepOrangeAccent  : Colors.green[300], // check button이 1번 페이지인 경우 초록색
                     ),
                   ),
 
@@ -74,7 +75,7 @@ class _HomePageState extends State<HomePage>{
                     onPressed: () => _onCurrentPage(2),  // 2번 페이지
                     child: Icon(
                       CupertinoIcons.gear_solid,
-                      color: _currentIndex == 2 ? Colors.blueAccent : YaksokColors.primaryColor, // check button이 1번 페이지인 경우 초록색
+                      color: _currentIndex == 2 ? Colors.deepOrangeAccent  : Colors.green[300], // check button이 1번 페이지인 경우 초록색
                     ),
                   ),
               ],)

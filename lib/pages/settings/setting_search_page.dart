@@ -13,7 +13,7 @@ class SettingSearchPage extends StatelessWidget {
         iconTheme: IconThemeData(
           color: Colors.white, //색변경
         ),
-        backgroundColor: YaksokColors.primaryColor,
+        backgroundColor: Colors.green[300],
         title: Row(
           children: [
             const Text('찾는 약이 있으신가요?', style: TextStyle(color: Colors.white),),

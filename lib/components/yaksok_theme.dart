@@ -33,12 +33,14 @@ class YaksokThemes {
 
   static const TextTheme _textTheme = TextTheme(
     headline4: TextStyle(
-      fontSize: 32,
+      fontSize: 30,
       fontWeight: FontWeight.w400,
+      color: Color(0xFF81C784),
     ),
     subtitle1: TextStyle(
       fontSize: 16,
       fontWeight: FontWeight.w500,
+      color: Color(0xFF81C784),
     ),
     subtitle2: TextStyle(
       fontSize: 16,
