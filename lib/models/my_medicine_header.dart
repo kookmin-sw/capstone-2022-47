@@ -82,11 +82,14 @@ class _MyMedicineHeaderState extends State<MyMedicineHeader> {
           children: [
             Text(
               '사용자',
+              style: TextStyle(fontWeight: FontWeight.w400),
             ),
             SizedBox(
               height: 10,
             ),
-            Text('회원번호 #00912'),
+            Text('회원번호 #00001',
+              style: TextStyle(fontSize: 11),
+            ),
           ],
         )
       ],
@@ -108,12 +111,12 @@ class _MyMedicineHeaderState extends State<MyMedicineHeader> {
             height: 60,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30.0),
-              color: Colors.grey,
+              color: Colors.green[300],
               border: Border.all(color: Color(0xFFD4D5DD), width: 0.5),
             ),
             child: Icon(
               iconData,
-              color: Colors.black54,
+              color: Colors.white,
             ),
           ),
         ),
@@ -122,6 +125,7 @@ class _MyMedicineHeaderState extends State<MyMedicineHeader> {
         ),
         Text(
           title,
+          style: TextStyle(fontWeight: FontWeight.w400),
         )
       ],
     );
@@ -143,12 +147,12 @@ class _MyMedicineHeaderState extends State<MyMedicineHeader> {
             height: 60,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30.0),
-              color: Colors.grey,
+              color: Colors.green[300],
               border: Border.all(color: Color(0xFFD4D5DD), width: 0.5),
             ),
             child: Icon(
               iconData,
-              color: Colors.black54,
+              color: Colors.white,
             ),
           ),
         ),
@@ -157,6 +161,7 @@ class _MyMedicineHeaderState extends State<MyMedicineHeader> {
         ),
         Text(
           title,
+          style: TextStyle(fontWeight: FontWeight.w400),
         )
       ],
     );
@@ -178,12 +183,12 @@ class _MyMedicineHeaderState extends State<MyMedicineHeader> {
             height: 60,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30.0),
-              color: Colors.grey,
+              color: Colors.green[300],
               border: Border.all(color: Color(0xFFD4D5DD), width: 0.5),
             ),
             child: Icon(
               iconData,
-              color: Colors.black54,
+              color: Colors.white,
             ),
           ),
         ),
@@ -192,6 +197,7 @@ class _MyMedicineHeaderState extends State<MyMedicineHeader> {
         ),
         Text(
           title,
+          style: TextStyle(fontWeight: FontWeight.w400),
         )
       ],
     );

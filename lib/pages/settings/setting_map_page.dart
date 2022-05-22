@@ -81,7 +81,7 @@ class SettingMapPageState extends State<SettingMapPage> {
         iconTheme: IconThemeData(
           color: Colors.white, //색변경
         ),
-        backgroundColor: YaksokColors.primaryColor,
+        backgroundColor: Colors.green[300],
         title: Text(
           '가까운 약국을 찾아보세요!!',
           style: TextStyle(
@@ -124,11 +124,14 @@ class SettingMapPageState extends State<SettingMapPage> {
             padding: const EdgeInsets.all(16.0),
             child: Align(
               alignment: Alignment.topRight,
-              child: FloatingActionButton(
-                onPressed: _onMapTypeButtonPressed,
-                materialTapTargetSize: MaterialTapTargetSize.padded,
-                backgroundColor: Colors.green[300],
-                child: const Icon(Icons.map, size: 36.0),
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(0,40,0,0),
+                child: FloatingActionButton(
+                  onPressed: _onMapTypeButtonPressed,
+                  materialTapTargetSize: MaterialTapTargetSize.padded,
+                  backgroundColor: Colors.green[300],
+                  child: const Icon(Icons.map, size: 36.0),
+                ),
               ),
             ),
           ),

@@ -43,7 +43,7 @@ class BottomSubmitButton extends StatelessWidget {
           child: ElevatedButton(
             onPressed: onPressed,
             style: ElevatedButton.styleFrom(
-                textStyle: Theme.of(context).textTheme.subtitle1),
+                textStyle: Theme.of(context).textTheme.subtitle1, primary: Colors.green[300]),
             child: Text(text),
           ),
         ),

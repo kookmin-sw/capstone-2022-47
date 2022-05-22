@@ -188,7 +188,7 @@ class AlarmBox extends StatelessWidget {
             onPressed: () {
               service.removeAlarm(time);
             },
-            icon: const Icon(CupertinoIcons.minus_circle),
+            icon: const Icon(CupertinoIcons.minus_circle, color: Colors.green,),
           ),
         ),
         Expanded(
@@ -310,7 +310,7 @@ class AddAlarmButton extends StatelessWidget {
         children: const [
           Expanded(
             flex: 1,
-            child: Icon(CupertinoIcons.plus_circle_fill),
+            child: Icon(CupertinoIcons.plus_circle_fill, color: Colors.green,),
           ),
           Expanded(
             flex: 5,

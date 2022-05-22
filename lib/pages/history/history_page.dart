@@ -23,7 +23,7 @@ class HistoryPage extends StatelessWidget {
               Text('잘 복용하셨네요!👍', style: Theme.of(context).textTheme.headline4),
         ),
         const SizedBox(height: regularSpace),
-        const Divider(height: 1, thickness: 1.0),
+        const Divider(height: 1, thickness: 0.5, color: Colors.green,),
         Expanded(
           child: ValueListenableBuilder(
             valueListenable: historyRepository.historyBox.listenable(),
@@ -95,12 +95,15 @@ class _TimeTile extends StatelessWidget {
                 thickness: 1,
               ),
             ),
-            CircleAvatar(
-              // 비어있는 원
-              radius: 4,
+            Padding(
+              padding: EdgeInsets.fromLTRB(0,27,0,0),
               child: CircleAvatar(
-                radius: 3,
-                backgroundColor: Colors.white,
+                // 비어있는 원
+                radius: 4,
+                child: CircleAvatar(
+                  radius: 3,
+                  backgroundColor: Colors.white,
+                ),
               ),
             ),
           ],

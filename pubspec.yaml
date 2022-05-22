@@ -61,7 +61,6 @@ dev_dependencies:
 
 
 
-
 # 변경사항 필요시 flutter pub run flutter_native_splash:create 와 remove 사용
 # 변경시에 ** 먼저 remove로 지워준 후 변경사항이 된 버전을 다시 create로 등록해야 함 주의 **
 flutter_native_splash:
@@ -179,11 +178,11 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - img/
+    - assets/
     - assets/images/YaksokLogo.png
-    - assets/medicinedata/200808876.jpg
-    - assets/medicinedata/200808877.jpg
-    - assets/medicinedata/200808948.jpg
-    - assets/medicinedata/200809076.jpg
+    - assets/images/gmail.png
+    - assets/images/email.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

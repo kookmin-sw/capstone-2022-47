@@ -68,7 +68,7 @@ class TodayPage extends StatelessWidget {
 
     return Column(
       children: [
-        const Divider(height: 1, thickness: 2.0),
+        const Divider(height: 1, thickness: 0.7, color: Colors.green,),
         Expanded(
           child: ListView.separated(
               padding: EdgeInsets.symmetric(vertical: smallSpace),
@@ -81,7 +81,6 @@ class TodayPage extends StatelessWidget {
               }
             ),
         ),
-          const Divider(height: 1, thickness: 1.0),
       ],
     );
   }
