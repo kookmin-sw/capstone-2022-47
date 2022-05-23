@@ -18,17 +18,17 @@ class MedicineDataDetail extends StatelessWidget {
             style: TextStyle(
               color: Colors.black54,
               fontWeight: FontWeight.w500,
-              fontSize: 22,
+              fontSize: 18,
             ),
           ),
-          const SizedBox(height: 8.0),
+          const SizedBox(height: 6.0),
           Text('제조사: ${medicineData.company}',
             style: TextStyle(
               fontSize: 12,
             ),
           ),
           const SizedBox(
-            height: 8.0,
+            height: 6.0,
           ),
           Text('일련번호: ${medicineData.no}',
             style: TextStyle(

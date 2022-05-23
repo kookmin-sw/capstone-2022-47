@@ -19,203 +19,203 @@ class MedicineData {
 List<MedicineData> medicineList = [
   MedicineData(
     no: '200808876',
-    name: '가스디알정50밀리그램(디메크로틴산마그네슘)',
+    name: '가스디알정',
     company: '일동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200808876.jpg?raw=true',
   ),
   MedicineData(
     no: '200808877',
-    name: '페라트라정2.5밀리그램(레트로졸)',
+    name: '페라트라정',
     company: '(주)유한양행',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200808877.jpg?raw=true',
   ),
   MedicineData(
     no: '200808948',
-    name: '졸뎀속붕정(졸피뎀타르타르산염)',
+    name: '졸뎀속붕정',
     company: '보령제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200808948.jpg?raw=true',
   ),
   MedicineData(
     no: '200809076',
-    name: '가스프렌정(모사프리드시트르산염이수화물)',
+    name: '가스프렌정',
     company: '경동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200809076.jpg?raw=true',
   ),
   MedicineData(
     no: '200809276',
-    name: '디텐션정80밀리그램(발사르탄)',
+    name: '디텐션정',
     company: '일성신약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200809276.jpg?raw=true',
   ),
   MedicineData(
     no: '200809361',
-    name: '바르탄정(발사르탄)',
+    name: '바르탄정',
     company: '(주)휴온스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200809361.jpg?raw=true',
   ),
   MedicineData(
     no: '200809402',
-    name: '리피논정80밀리그램(아토르바스타틴칼슘삼수화물)',
+    name: '리피논정',
     company: '동아에스티(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200809402.jpg?raw=true',
   ),
   MedicineData(
     no: '200809710',
-    name: '사르발탄정160밀리그램(발사르탄)',
+    name: '사르발탄정',
     company: '(주)서울제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200809710.jpg?raw=true',
   ),
   MedicineData(
     no: '200809882',
-    name: '가스베트정5밀리그램(모사프리드시트르산염수화물)',
+    name: '가스베트정',
     company: '일동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200809882.jpg?raw=true',
   ),
   MedicineData(
     no: '200809883',
-    name: '아푸르탄정150밀리그램(이르베사르탄)',
+    name: '아푸르탄정',
     company: '동아에스티(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200809883.jpg?raw=true',
   ),
   MedicineData(
     no: '200809909',
-    name: '발사르텔정80밀리그램(발사르탄)',
+    name: '발사르텔정',
     company: '주식회사제뉴원사이언스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200809909.jpg?raw=true',
   ),
   MedicineData(
     no: '200809910',
-    name: '발사르텔정160밀리그램(발사르탄)',
+    name: '발사르텔정',
     company: '주식회사제뉴원사이언스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200809910.jpg?raw=true',
   ),
   MedicineData(
     no: '200809959',
-    name: '동광모니플루메이트정350mg',
+    name: '동광모니플루메이트정',
     company: '동광제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200809959.jpg?raw=true',
   ),
   MedicineData(
     no: '200810125',
-    name: '에스시탈정5밀리그램(에스시탈로프람옥살산염)',
+    name: '에스시탈정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200810125.jpg?raw=true',
   ),
   MedicineData(
     no: '200810314',
-    name: '발산정80밀리그램(발사르탄)',
+    name: '발산정',
     company: '유니메드제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200810314.jpg?raw=true',
   ),
   MedicineData(
     no: '200810338',
-    name: '가스리드정5mg(모사프리드시트르산염수화물)',
+    name: '가스리드정',
     company: '(주)유한양행',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200810338.jpg?raw=true',
   ),
   MedicineData(
     no: '200810473',
-    name: '엑스반정80밀리그램(발사르탄)',
+    name: '엑스반정',
     company: '삼진제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200810473.jpg?raw=true',
   ),
   MedicineData(
     no: '200810509',
-    name: '뉴멘타민서방캡슐8밀리그램(갈란타민브롬화수소산염)',
+    name: '뉴멘타민서방캡슐',
     company: '고려제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200810509.jpg?raw=true',
   ),
   MedicineData(
     no: '200810522',
-    name: '발트렙정160밀리그램(발사르탄)',
+    name: '발트렙정',
     company: '경동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200810522.jpg?raw=true',
   ),
   MedicineData(
     no: '200810789',
-    name: '수로신디정(탐스로신염산염)',
+    name: '수로신디정',
     company: '(주)에스트라',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200810789.jpg?raw=true',
   ),
   MedicineData(
     no: '200810870',
-    name: '로수로드정10밀리그램(로수바스타틴칼슘)',
+    name: '로수로드정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200810870.jpg?raw=true',
   ),
   MedicineData(
     no: '200811004',
-    name: '슈니펜정(모니플루메이트)',
+    name: '슈니펜정',
     company: '안국약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200811004.jpg?raw=true',
   ),
   MedicineData(
     no: '200811013',
-    name: '글리텍엠정2/500밀리그램',
+    name: '글리텍엠정',
     company: '동광제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200811013.jpg?raw=true',
   ),
   MedicineData(
     no: '200811104',
-    name: '디오살탄정160밀리그램(발사르탄)',
+    name: '디오살탄정',
     company: '(주)유한양행',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200811104.jpg?raw=true',
   ),
   MedicineData(
     no: '200811105',
-    name: '디오살탄정80밀리그램(발사르탄)',
+    name: '디오살탄정',
     company: '(주)유한양행',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200811105.jpg?raw=true',
   ),
   MedicineData(
     no: '200811403',
-    name: '칸데사르정8밀리그램(칸데사르탄실렉세틸)',
+    name: '칸데사르정',
     company: '(주)한독',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200811403.jpg?raw=true',
   ),
   MedicineData(
     no: '200811404',
-    name: '칸데사르정16밀리그램(칸데사르탄실렉세틸)',
+    name: '칸데사르정',
     company: '(주)에스트라',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200811404.jpg?raw=true',
   ),
   MedicineData(
     no: '200811619',
-    name: '디로탄정160mg(발사르탄)',
+    name: '디로탄정',
     company: '이연제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200811619.jpg?raw=true',
   ),
   MedicineData(
     no: '200811883',
-    name: '인케어정(옥수수불검화정량추출물)',
+    name: '인케어정',
     company: '(주)한국비엠아이',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200811883.jpg?raw=true',
@@ -229,49 +229,49 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200900005',
-    name: '노페인에프정(수출용)',
+    name: '노페인에프정',
     company: '크리스탈생명과학(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200900005.jpg?raw=true',
   ),
   MedicineData(
     no: '200900018',
-    name: '깅코탄연질캡슐120밀리그램(은행엽건조엑스)',
+    name: '깅코탄연질캡슐',
     company: '한국프라임제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200900018.jpg?raw=true',
   ),
   MedicineData(
     no: '200900026',
-    name: '리버풀350연질캡슐(밀크시슬열매건조엑스)',
+    name: '리버풀350연질캡슐',
     company: '신일제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200900026.jpg?raw=true',
   ),
   MedicineData(
     no: '200900193',
-    name: '모니맥정(모니플루메이트)',
+    name: '모니맥정',
     company: '맥널티제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200900193.jpg?raw=true',
   ),
   MedicineData(
     no: '200900194',
-    name: '모니필정350밀리그램(모니플루메이트)',
+    name: '모니필정',
     company: '(주)테라젠이텍스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200900194.jpg?raw=true',
   ),
   MedicineData(
     no: '200900195',
-    name: '모니메르정(모니플루메이트)',
+    name: '모니메르정',
     company: '알리코제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200900195.jpg?raw=true',
   ),
   MedicineData(
     no: '200900196',
-    name: '모니트정350밀리그램(모니플루메이트)',
+    name: '모니트정',
     company: '(주)하원제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200900196.jpg?raw=true',
@@ -285,7 +285,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200900378',
-    name: '칸데사르플러스정16/12.5밀리그램',
+    name: '칸데사르플러스정',
     company: '(주)한독',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200900378.jpg?raw=true',
@@ -306,7 +306,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200900682',
-    name: '굿스펜연질캡슐(덱시부프로펜)',
+    name: '굿스펜연질캡슐',
     company: '광동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200900682.jpg?raw=true',
@@ -334,14 +334,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200900844',
-    name: '모빅캡슐7.5밀리그램(멜록시캄)',
+    name: '모빅캡슐7.5밀리그램',
     company: '한국베링거인겔하임(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200900844.jpg?raw=true',
   ),
   MedicineData(
     no: '200900845',
-    name: '모빅캡슐15밀리그램(멜록시캄)',
+    name: '모빅캡슐15밀리그램',
     company: '한국베링거인겔하임(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200900845.jpg?raw=true',
@@ -355,14 +355,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200901073',
-    name: '발크로버정500밀리그램(발라시클로비르염산염수화물)',
+    name: '발크로버정',
     company: '환인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200901073.jpg?raw=true',
   ),
   MedicineData(
     no: '200901148',
-    name: '엔에이피정(나프록센나트륨)',
+    name: '엔에이피정',
     company: '한솔신약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200901148.jpg?raw=true',
@@ -376,7 +376,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200901187',
-    name: '이지에스정(방기황기탕건조엑스)',
+    name: '이지에스정',
     company: '한국인스팜(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200901187.jpg?raw=true',
@@ -432,14 +432,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200903044',
-    name: '본렉스이알캡슐15밀리그램(시클로벤자프린염산염)',
+    name: '본렉스이알캡슐',
     company: '(주)새한제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903044.jpg?raw=true',
   ),
   MedicineData(
     no: '200903045',
-    name: '본렉스이알캡슐30밀리그램(시클로벤자프린염산염)',
+    name: '본렉스이알캡슐',
     company: '(주)새한제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903045.jpg?raw=true',
@@ -453,42 +453,42 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200903065',
-    name: '산도스올란자핀정10밀리그램',
+    name: '산도스올란자핀정',
     company: '한국산도스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903065.jpg?raw=true',
   ),
   MedicineData(
     no: '200903066',
-    name: '올란프레서정10mg(올란자핀)',
+    name: '올란프레서정',
     company: '한국노바티스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903066.jpg?raw=true',
   ),
   MedicineData(
     no: '200903067',
-    name: '산도스올란자핀정5밀리그램',
+    name: '산도스올란자핀정',
     company: '한국산도스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903067.jpg?raw=true',
   ),
   MedicineData(
     no: '200903068',
-    name: '올란프레서정5mg(올란자핀)',
+    name: '올란프레서정',
     company: '한국노바티스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903068.jpg?raw=true',
   ),
   MedicineData(
     no: '200903078',
-    name: '산도스올란자핀정2.5밀리그램',
+    name: '산도스올란자핀정',
     company: '한국산도스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903078.jpg?raw=true',
   ),
   MedicineData(
     no: '200903080',
-    name: '올란프레서정2.5mg(올란자핀)',
+    name: '올란프레서정',
     company: '한국노바티스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903080.jpg?raw=true',
@@ -509,7 +509,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200903217',
-    name: '메펜연질캡슐(메페남산)',
+    name: '메펜연질캡슐',
     company: '한솔신약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903217.jpg?raw=true',
@@ -530,7 +530,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200903392',
-    name: '제로민연질캡슐(디펜히드라민염산염)',
+    name: '제로민연질캡슐',
     company: '한솔신약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903392.jpg?raw=true',
@@ -544,14 +544,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200903409',
-    name: '리피다운캡슐120밀리그람(오르리스타트)',
+    name: '리피다운캡슐',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903409.jpg?raw=true',
   ),
   MedicineData(
     no: '200903482',
-    name: '비오펜연질캡슐(덱시부프로펜)',
+    name: '비오펜연질캡슐',
     company: '(주)동구바이오제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903482.jpg?raw=true',
@@ -565,14 +565,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200903580',
-    name: '덴탈에프정(옥수수불검화정량추출물)',
+    name: '덴탈에프정',
     company: '한솔신약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903580.jpg?raw=true',
   ),
   MedicineData(
     no: '200903585',
-    name: '마이에신캡슐(은교산)',
+    name: '마이에신캡슐',
     company: '한솔신약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903585.jpg?raw=true',
@@ -586,7 +586,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200901575',
-    name: '행심연질캡슐(은행엽건조엑스)',
+    name: '행심연질캡슐',
     company: '동화약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200901575.jpg?raw=true',
@@ -621,7 +621,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200902147',
-    name: '에코닉신정(클로닉신리시네이트)',
+    name: '에코닉신정',
     company: '화일약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200902147.jpg?raw=true',
@@ -635,7 +635,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200902207',
-    name: '헤파라이프연질캡슐350mg(밀크시슬열매건조엑스)',
+    name: '헤파라이프연질캡슐',
     company: '(주)테라젠이텍스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200902207.jpg?raw=true',
@@ -656,14 +656,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200902328',
-    name: '자베스카캡슐100밀리그램(미글루스타트)',
+    name: '자베스카캡슐',
     company: '(주)한국얀센',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200902328.jpg?raw=true',
   ),
   MedicineData(
     no: '200902364',
-    name: '이프렌에스연질캡슐(덱시부프로펜)',
+    name: '이프렌에스연질캡슐',
     company: '삼진제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200902364.jpg?raw=true',
@@ -677,7 +677,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200902506',
-    name: '에델피스연질캡슐(디펜히드라민염산염)',
+    name: '에델피스연질캡슐',
     company: '삼진제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200902506.jpg?raw=true',
@@ -747,7 +747,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200701086',
-    name: '스프라이셀정50밀리그램(다사티닙)',
+    name: '스프라이셀정',
     company: '(유)한국비엠에스제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200701086.jpg?raw=true',
@@ -761,7 +761,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200704968',
-    name: '토핀정25밀리그램(토피라메이트)',
+    name: '토핀정',
     company: '대한뉴팜(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200704968.jpg?raw=true',
@@ -789,7 +789,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200709387',
-    name: '케티맥스정100밀리그램(푸마르산쿠에티아핀)',
+    name: '케티맥스정',
     company: '한국산도스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200709387.jpg?raw=true',
@@ -817,7 +817,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200101951',
-    name: '한신타미놀캅셀(아세트아미노펜)',
+    name: '한신타미놀캅셀',
     company: '(주)한국신약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200101951.jpg?raw=true',
@@ -831,7 +831,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200705825',
-    name: '아토스타정10밀리그램(아토르바스타틴칼슘삼수화물)',
+    name: '아토스타정10밀리그램',
     company: '동화약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200705825.jpg?raw=true',
@@ -845,7 +845,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200600140',
-    name: '라시핀정(라시디핀)',
+    name: '라시핀정',
     company: '오스틴제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200600140.jpg?raw=true',
@@ -859,56 +859,56 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200612598',
-    name: '보령세파클러캡슐(세파클러수화물)',
+    name: '보령세파클러캡슐',
     company: '(주)보령',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200612598.jpg?raw=true',
   ),
   MedicineData(
     no: '200806047',
-    name: '리피다운캡슐60밀리그램(오르리스타트)',
+    name: '리피다운캡슐',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200806047.jpg?raw=true',
   ),
   MedicineData(
     no: '200808168',
-    name: '아지탑스정250밀리그램(아지트로마이신수화물)',
+    name: '아지탑스정',
     company: '일동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200808168.jpg?raw=true',
   ),
   MedicineData(
     no: '200808280',
-    name: '수마트란정50밀리그램(수마트립탄숙신산염)',
+    name: '수마트란정',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200808280.jpg?raw=true',
   ),
   MedicineData(
     no: '200808340',
-    name: '바로디핀정5밀리그램(암로디핀베실산염)',
+    name: '바로디핀정',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200808340.jpg?raw=true',
   ),
   MedicineData(
     no: '200808561',
-    name: '아네페질속붕정(도네페질염산염일수화물)',
+    name: '아네페질속붕정',
     company: '대원제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200808561.jpg?raw=true',
   ),
   MedicineData(
     no: '200808653',
-    name: '사르반정80밀리그램(발사르탄)',
+    name: '사르반정',
     company: '대우제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200808653.jpg?raw=true',
   ),
   MedicineData(
     no: '200808753',
-    name: '레보텍캡슐(레보드로프로피진)',
+    name: '레보텍캡슐',
     company: '(주)일화',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200808753.jpg?raw=true',
@@ -929,42 +929,42 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200903727',
-    name: '속콜파워연질캡슐(수출용)',
+    name: '속콜파워연질캡슐',
     company: '일양약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903727.jpg?raw=true',
   ),
   MedicineData(
     no: '200903737',
-    name: '쿨드림연질캡슐(디펜히드라민염산염)',
+    name: '쿨드림연질캡슐',
     company: '(주)녹십자',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903737.jpg?raw=true',
   ),
   MedicineData(
     no: '200903776',
-    name: '긴코센정120밀리그램(은행엽건조엑스)',
+    name: '긴코센정',
     company: '태극제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903776.jpg?raw=true',
   ),
   MedicineData(
     no: '200903782',
-    name: '칼루타미정150밀리그램(비칼루타미드)',
+    name: '칼루타미정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903782.jpg?raw=true',
   ),
   MedicineData(
     no: '200903829',
-    name: '씨탈정(에스시탈로프람옥살산염)',
+    name: '씨탈정',
     company: '에이치엘비제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903829.jpg?raw=true',
   ),
   MedicineData(
     no: '200903830',
-    name: '미가드정2.5밀리그램(프로바트립탄숙신산염일수화물)',
+    name: '미가드정',
     company: '에스케이케미칼(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903830.jpg?raw=true',
@@ -999,14 +999,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200903876',
-    name: '지르세틴정10밀리그램(세티리진염산염)',
+    name: '지르세틴정',
     company: '태극제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903876.jpg?raw=true',
   ),
   MedicineData(
     no: '200903891',
-    name: '실리웰골드연질캡슐(밀크시슬열매건조엑스)',
+    name: '실리웰골드연질캡슐',
     company: '(주)녹십자',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903891.jpg?raw=true',
@@ -1020,7 +1020,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200903964',
-    name: '로큅정0.25밀리그램(로피니롤염산염)',
+    name: '로큅정',
     company: '(주)대웅제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903964.jpg?raw=true',
@@ -1034,7 +1034,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200903974',
-    name: '칸데모어정16밀리그램(칸데사르탄실렉세틸)',
+    name: '칸데모어정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903974.jpg?raw=true',
@@ -1055,7 +1055,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200903993',
-    name: '로큅정1밀리그램(로피니롤염산염)',
+    name: '로큅정1밀리그램',
     company: '(주)대웅제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200903993.jpg?raw=true',
@@ -1069,7 +1069,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200904019',
-    name: '바로자미연질캡슐(디펜히드라민염산염)',
+    name: '바로자미연질캡슐',
     company: '영진약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904019.jpg?raw=true',
@@ -1083,21 +1083,21 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200904073',
-    name: '알벤프리졸정(알벤다졸)',
+    name: '알벤프리졸정',
     company: '(유)한풍제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904073.jpg?raw=true',
   ),
   MedicineData(
     no: '200904082',
-    name: '로노펜300연질캡슐(덱시부프로펜)',
+    name: '로노펜300연질캡슐',
     company: '태극제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904082.jpg?raw=true',
   ),
   MedicineData(
     no: '200904122',
-    name: '이모돌정(옥수수불검화정량추출물)',
+    name: '이모돌정',
     company: '하나제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904122.jpg?raw=true',
@@ -1111,28 +1111,28 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200905961',
-    name: '프릴리지정60밀리그램(다폭세틴염산염)',
+    name: '프릴리지정',
     company: '한국메나리니(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905961.jpg?raw=true',
   ),
   MedicineData(
     no: '200906066',
-    name: '프로코라란정5밀리그램(이바브라딘염산염)',
+    name: '프로코라란정',
     company: '한국세르비에(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906066.jpg?raw=true',
   ),
   MedicineData(
     no: '200906065',
-    name: '프로코라란정7.5밀리그램(이바브라딘염산염)',
+    name: '프로코라란정',
     company: '한국세르비에(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906065.jpg?raw=true',
   ),
   MedicineData(
     no: '200906578',
-    name: '뉴피오정(피오글리타존염산염)',
+    name: '뉴피오정',
     company: '하나제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906578.jpg?raw=true',
@@ -1146,35 +1146,35 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200906062',
-    name: '페이론캡슐(아미노벤조산칼륨)',
+    name: '페이론캡슐',
     company: '(주)한국팜비오',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906062.jpg?raw=true',
   ),
   MedicineData(
     no: '200905938',
-    name: '레복사신정250밀리그램(레보플록사신수화물)',
+    name: '레복사신정',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905938.jpg?raw=true',
   ),
   MedicineData(
     no: '200905455',
-    name: '아트로졸정(아나스트로졸)',
+    name: '아트로졸정',
     company: '제일약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905455.jpg?raw=true',
   ),
   MedicineData(
     no: '200906061',
-    name: '피륵산정200밀리그램(부플로메딜인산피리독살)',
+    name: '피륵산정',
     company: '환인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906061.jpg?raw=true',
   ),
   MedicineData(
     no: '200905692',
-    name: '클라리틴정(로라타딘)',
+    name: '클라리틴정',
     company: '바이엘코리아(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905692.jpg?raw=true',
@@ -1195,7 +1195,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200905929',
-    name: '애드릴정5밀리그램(이미다프릴염산염)',
+    name: '애드릴정',
     company: '삼익제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905929.jpg?raw=true',
@@ -1237,7 +1237,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200905776',
-    name: '써큐징코연질캡슐(수출용)',
+    name: '써큐징코연질캡슐',
     company: '미래제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905776.jpg?raw=true',
@@ -1251,7 +1251,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200905651',
-    name: '이모나에프캡슐(수출용)',
+    name: '이모나에프캡슐',
     company: '미래제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905651.jpg?raw=true',
@@ -1272,7 +1272,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200905597',
-    name: '덱시쿨펜연질캡슐(덱시부프로펜)',
+    name: '덱시쿨펜연질캡슐',
     company: '경남제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905597.jpg?raw=true',
@@ -1307,21 +1307,21 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200905586',
-    name: '쎌크비타연질캡슐(수출용)',
+    name: '쎌크비타연질캡슐',
     company: '크리스탈생명과학(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905586.jpg?raw=true',
   ),
   MedicineData(
     no: '200905658',
-    name: '덱시브연질캡슐(덱시부프로펜)',
+    name: '덱시브연질캡슐',
     company: '(주)한국파비스제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905658.jpg?raw=true',
   ),
   MedicineData(
     no: '200905472',
-    name: '덱시카이플러스연질캡슐(덱시부프로펜)',
+    name: '덱시카이플러스연질캡슐',
     company: '(주)씨엠지제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905472.jpg?raw=true',
@@ -1342,21 +1342,21 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200905653',
-    name: '알지엔스피드연질캡슐10밀리그램(세티리진염산염)',
+    name: '알지엔스피드연질캡슐',
     company: '(주)대웅제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905653.jpg?raw=true',
   ),
   MedicineData(
     no: '200906592',
-    name: '아스몬츄정5밀리그램(몬테루카스트나트륨)',
+    name: '아스몬츄정',
     company: '신일제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906592.jpg?raw=true',
   ),
   MedicineData(
     no: '200906608',
-    name: '산도스프라미펙솔정0.25밀리그램(프라미펙솔염산염)',
+    name: '산도스프라미펙솔정',
     company: '한국산도스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906608.jpg?raw=true',
@@ -1377,56 +1377,56 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200906611',
-    name: '산도스프라미펙솔정1밀리그램(프라미펙솔염산염)',
+    name: '산도스프라미펙솔정',
     company: '한국산도스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906611.jpg?raw=true',
   ),
   MedicineData(
     no: '200906599',
-    name: '라파뮨정2밀리그램(시롤리무스)',
+    name: '라파뮨정',
     company: '한국화이자제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906599.jpg?raw=true',
   ),
   MedicineData(
     no: '200906610',
-    name: '산도스프라미펙솔정0.5밀리그램(프라미펙솔염산염)',
+    name: '산도스프라미펙솔정',
     company: '한국산도스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906610.jpg?raw=true',
   ),
   MedicineData(
     no: '200906585',
-    name: '레보세린정(레보세티리진염산염)',
+    name: '레보세린정',
     company: '영진약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906585.jpg?raw=true',
   ),
   MedicineData(
     no: '200906588',
-    name: '아스몬츄정4밀리그램(몬테루카스트나트륨)',
+    name: '아스몬츄정',
     company: '신일제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906588.jpg?raw=true',
   ),
   MedicineData(
     no: '200906557',
-    name: '리비알정(티볼론)',
+    name: '리비알정',
     company: '한국엠에스디(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906557.jpg?raw=true',
   ),
   MedicineData(
     no: '200906593',
-    name: '제니낙스정200밀리그램(가레녹사신메실산염수화물)',
+    name: '제니낙스정',
     company: '동아에스티(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906593.jpg?raw=true',
   ),
   MedicineData(
     no: '200906609',
-    name: '산도스프라미펙솔정0.125밀리그램(프라미펙솔염산염)',
+    name: '산도스프라미펙솔정',
     company: '한국산도스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906609.jpg?raw=true',
@@ -1440,7 +1440,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200906540',
-    name: '로나센정2밀리그램(블로난세린)/로나센정4밀리그램(블로난세린)',
+    name: '로나센정',
     company: '부광약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906540.jpg?raw=true',
@@ -1454,14 +1454,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200906562',
-    name: '에이포겔류마정(하르파고피툼근추출물)',
+    name: '에이포겔류마정',
     company: '한화제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906562.jpg?raw=true',
   ),
   MedicineData(
     no: '200906531',
-    name: '로펜정(방풍통성산건조엑스(4.6→1))',
+    name: '로펜정',
     company: '경남제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906531.jpg?raw=true',
@@ -1489,14 +1489,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200906497',
-    name: '씨렉신캡슐(은교산건조엑스8.16→1)',
+    name: '씨렉신캡슐',
     company: '에이치엘비제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906497.jpg?raw=true',
   ),
   MedicineData(
     no: '200906462',
-    name: '솔라제정(프로나제B)',
+    name: '솔라제정',
     company: '조아제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906462.jpg?raw=true',
@@ -1517,7 +1517,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200906094',
-    name: '글로알벤다졸정(알벤다졸)',
+    name: '글로알벤다졸정',
     company: '(주)한국글로벌제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906094.jpg?raw=true',
@@ -1531,21 +1531,21 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200906254',
-    name: '알러샷연질캡슐(세티리진염산염)',
+    name: '알러샷연질캡슐',
     company: '(주)녹십자',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906254.jpg?raw=true',
   ),
   MedicineData(
     no: '200906719',
-    name: '쎄로켈서방정150밀리그램(쿠에티아핀푸마르산염)',
+    name: '쎄로켈서방정',
     company: '알보젠코리아(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906719.jpg?raw=true',
   ),
   MedicineData(
     no: '200906794',
-    name: '씨렉신정(은교산연조엑스4.08→1)',
+    name: '씨렉신정',
     company: '에이치엘비제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906794.jpg?raw=true',
@@ -1559,28 +1559,28 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200906966',
-    name: '제로정150mg(덱시부프로펜)',
+    name: '제로정',
     company: '삼일제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906966.jpg?raw=true',
   ),
   MedicineData(
     no: '200907189',
-    name: '클라빅신정(클로피도그렐황산수소염)',
+    name: '클라빅신정',
     company: '한국유나이티드제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200907189.jpg?raw=true',
   ),
   MedicineData(
     no: '200907170',
-    name: '제이더블유신약로잘탄플러스프로정',
+    name: '제이더블유신플러스프로정',
     company: '제이더블유신약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200907170.jpg?raw=true',
   ),
   MedicineData(
     no: '200906974',
-    name: '산도스에스시탈로프람정10밀리그램(에스시탈로프람옥살산염)',
+    name: '산도스에스시탈로프람정',
     company: '한국산도스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906974.jpg?raw=true',
@@ -1615,14 +1615,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200907669',
-    name: '리노반10캡슐(시부트라민말레산염)',
+    name: '리노반10캡슐',
     company: '일성신약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200907669.jpg?raw=true',
   ),
   MedicineData(
     no: '200907725',
-    name: '비스칸엔캡슐(바실루스리케니포르미스균)',
+    name: '비스칸엔캡슐',
     company: '(주)바이넥스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200907725.jpg?raw=true',
@@ -1643,14 +1643,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200907771',
-    name: '도파로핀정1밀리그램(로피니롤염산염)',
+    name: '도파로핀정',
     company: '일동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200907771.jpg?raw=true',
   ),
   MedicineData(
     no: '200904163',
-    name: '칸단테플러스정16/12.5mg',
+    name: '칸단테플러스정',
     company: '위더스제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904163.jpg?raw=true',
@@ -1671,7 +1671,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200904223',
-    name: '레바록스정250mg(레보플록사신수화물)',
+    name: '레바록스정',
     company: '(주)팜젠사이언스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904223.jpg?raw=true',
@@ -1699,14 +1699,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200904630',
-    name: '원스에어정10밀리그램(몬테루카스트나트륨)',
+    name: '원스에어정',
     company: '국제약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904630.jpg?raw=true',
   ),
   MedicineData(
     no: '200904514',
-    name: '발사벨정40밀리그램(발사르탄)',
+    name: '발사벨정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904514.jpg?raw=true',
@@ -1720,14 +1720,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200904536',
-    name: '아피니토정5밀리그램(에베로리무스)',
+    name: '아피니토정',
     company: '한국노바티스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904536.jpg?raw=true',
   ),
   MedicineData(
     no: '200904343',
-    name: '카바딜플러스정16/12.5mg',
+    name: '카바딜플러스정',
     company: '삼아제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904343.jpg?raw=true',
@@ -1783,21 +1783,21 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200904417',
-    name: '지메톨연질캡슐(옥수수불검화정량추출물)',
+    name: '지메톨연질캡슐',
     company: '주식회사제뉴원사이언스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904417.jpg?raw=true',
   ),
   MedicineData(
     no: '200904441',
-    name: '프로펜디연질캡슐(덱시부프로펜)',
+    name: '프로펜디연질캡슐',
     company: '(주)서흥',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904441.jpg?raw=true',
   ),
   MedicineData(
     no: '200904460',
-    name: '실리세프연질캡슐350밀리그램(밀크시슬열매건조엑스)',
+    name: '실리세프연질캡슐',
     company: '일동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904460.jpg?raw=true',
@@ -1825,14 +1825,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200904516',
-    name: '쥬르택정(세티리진염산염)',
+    name: '쥬르택정',
     company: '조아제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904516.jpg?raw=true',
   ),
   MedicineData(
     no: '200904548',
-    name: '리버골드파워350mg연질캡슐(밀크시슬열매건조엑스)',
+    name: '리버골드파워',
     company: '(주)대웅제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904548.jpg?raw=true',
@@ -1881,7 +1881,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200904652',
-    name: '덱스모아연질캡슐(덱시부프로펜)',
+    name: '덱스모아연질캡슐',
     company: '오스틴제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904652.jpg?raw=true',
@@ -1895,98 +1895,98 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200904655',
-    name: '리버큐연질캡슐(밀크시슬열매건조엑스)',
+    name: '리버큐연질캡슐',
     company: '(주)서흥',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904655.jpg?raw=true',
   ),
   MedicineData(
     no: '200904666',
-    name: '아르텍연질캡슐10mg(세티리진염산염)',
+    name: '아르텍연질캡슐',
     company: '(주)알피바이오',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904666.jpg?raw=true',
   ),
   MedicineData(
     no: '200904349',
-    name: '타미린서방정8밀리그램(갈란타민브롬화수소산염)',
+    name: '타미린서방정',
     company: '현대약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904349.jpg?raw=true',
   ),
   MedicineData(
     no: '200904340',
-    name: '타미린서방정16밀리그램(갈란타민브롬화수소산염)',
+    name: '타미린서방정',
     company: '현대약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904340.jpg?raw=true',
   ),
   MedicineData(
     no: '200904275',
-    name: '타진서방정10/5mg',
+    name: '타진서방정',
     company: '한국먼디파마유한회사',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904275.jpg?raw=true',
   ),
   MedicineData(
     no: '200904276',
-    name: '타진서방정20/10mg',
+    name: '타진서방정',
     company: '한국먼디파마유한회사',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904276.jpg?raw=true',
   ),
   MedicineData(
     no: '200904420',
-    name: '박사르정4밀리그램(라시디핀)',
+    name: '박사르정',
     company: '(주)글락소스미스클라인',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904420.jpg?raw=true',
   ),
   MedicineData(
     no: '200904419',
-    name: '박사르정2밀리그램(라시디핀)',
+    name: '박사르정',
     company: '(주)글락소스미스클라인',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904419.jpg?raw=true',
   ),
   MedicineData(
     no: '200904346',
-    name: '로킨스정1밀리그램(로피니롤염산염)',
+    name: '로킨스정',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904346.jpg?raw=true',
   ),
   MedicineData(
     no: '200904629',
-    name: '도파프로정0.25밀리그램(로피니롤염산염)',
+    name: '도파프로정',
     company: '제일약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904629.jpg?raw=true',
   ),
   MedicineData(
     no: '200904345',
-    name: '로킨스정0.25밀리그램(로피니롤염산염)',
+    name: '로킨스정',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904345.jpg?raw=true',
   ),
   MedicineData(
     no: '200904585',
-    name: '도파프로정1.0밀리그램(로피니롤염산염)',
+    name: '도파프로정',
     company: '제일약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904585.jpg?raw=true',
   ),
   MedicineData(
     no: '200904640',
-    name: '뉴큅정1밀리그램(로피니롤염산염)',
+    name: '뉴큅정',
     company: '(주)유한양행',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904640.jpg?raw=true',
   ),
   MedicineData(
     no: '200904641',
-    name: '뉴큅정0.25밀리그램(로피니롤염산염)',
+    name: '뉴큅정',
     company: '(주)유한양행',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904641.jpg?raw=true',
@@ -2000,21 +2000,21 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200904422',
-    name: '아스몬정10밀리그램(몬테루카스트나트륨)',
+    name: '아스몬정',
     company: '신일제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904422.jpg?raw=true',
   ),
   MedicineData(
     no: '200904535',
-    name: '아피니토정10밀리그램(에베로리무스)',
+    name: '아피니토정',
     company: '한국노바티스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904535.jpg?raw=true',
   ),
   MedicineData(
     no: '200904445',
-    name: '페브릭정80밀리그램(페북소스타트)',
+    name: '페브릭정',
     company: '에스케이케미칼(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904445.jpg?raw=true',
@@ -2028,7 +2028,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200905216',
-    name: '파키놀정0.25밀리그램(로피니롤염산염)',
+    name: '파키놀정',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905216.jpg?raw=true',
@@ -2042,14 +2042,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200905339',
-    name: '렉사프로정20밀리그람(에스시탈로프람옥살산염)',
+    name: '렉사프로정',
     company: '한국룬드벡(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905339.jpg?raw=true',
   ),
   MedicineData(
     no: '200905270',
-    name: '이리보정5마이크로그램(라모세트론염산염)',
+    name: '이리보정',
     company: '한국아스텔라스제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905270.jpg?raw=true',
@@ -2112,7 +2112,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200905124',
-    name: '니퀴틴민트트로키4밀리그램(니코틴폴라크리렉스)',
+    name: '니퀴틴민트트로키',
     company: '(주)글락소스미스클라인컨슈머헬스케어코리아',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905124.jpg?raw=true',
@@ -2154,14 +2154,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200904678',
-    name: '은엑손플러스연질캡슐(은행엽엑스)',
+    name: '은엑손플러스연질캡슐',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904678.jpg?raw=true',
   ),
   MedicineData(
     no: '200904681',
-    name: '메토씨정(메토카르바몰)',
+    name: '메토씨정',
     company: '조아제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904681.jpg?raw=true',
@@ -2182,14 +2182,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200905016',
-    name: '이탄탄큐캡슐(수출용)',
+    name: '이탄탄큐캡슐',
     company: '(주)마더스제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905016.jpg?raw=true',
   ),
   MedicineData(
     no: '200905055',
-    name: '디퓨텐연질캡슐(덱시부프로펜)',
+    name: '디퓨텐연질캡슐',
     company: '동성제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905055.jpg?raw=true',
@@ -2217,14 +2217,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200905123',
-    name: '니퀴틴민트트로키2밀리그램(니코틴폴라크리렉스)',
+    name: '니퀴틴민트트로키',
     company: '(주)글락소스미스클라인컨슈머헬스케어코리아',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905123.jpg?raw=true',
   ),
   MedicineData(
     no: '200905264',
-    name: '린피스정(아스피린)',
+    name: '린피스정',
     company: '(주)씨티씨바이오',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905264.jpg?raw=true',
@@ -2259,7 +2259,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200905221',
-    name: '아세리돈정(수출용)',
+    name: '아세리돈정',
     company: '익수제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905221.jpg?raw=true',
@@ -2301,14 +2301,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200905151',
-    name: '액티리버모닝연질캡슐(밀크시슬열매건조엑스)',
+    name: '액티리버모닝연질캡슐',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905151.jpg?raw=true',
   ),
   MedicineData(
     no: '200905198',
-    name: '넥스핀정(아스피린)',
+    name: '넥스핀정',
     company: '(주)넥스팜코리아',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905198.jpg?raw=true',
@@ -2385,112 +2385,112 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200904774',
-    name: '세티린정(세티리진염산염)',
+    name: '세티린정',
     company: '경남제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200904774.jpg?raw=true',
   ),
   MedicineData(
     no: '200905962',
-    name: '프릴리지정30밀리그램(다폭세틴염산염)',
+    name: '프릴리지정',
     company: '한국메나리니(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200905962.jpg?raw=true',
   ),
   MedicineData(
     no: '201001640',
-    name: '영토넬정150mg(리세드론산나트륨2.5수화물)',
+    name: '영토넬정',
     company: '영진약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001640.jpg?raw=true',
   ),
   MedicineData(
     no: '201001637',
-    name: '리스넬정150밀리그램(리세드론산나트륨일수화물)',
+    name: '리스넬정',
     company: '(주)유한양행',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001637.jpg?raw=true',
   ),
   MedicineData(
     no: '201001638',
-    name: '본토넬정150밀리그램(리세드론산나트륨무수물)',
+    name: '본토넬정',
     company: '제이더블유중외제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001638.jpg?raw=true',
   ),
   MedicineData(
     no: '201001656',
-    name: '발라실정500밀리그램(발라시클로비르염산염수화물)',
+    name: '발라실정',
     company: '영진약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001656.jpg?raw=true',
   ),
   MedicineData(
     no: '201001684',
-    name: '라모스탈정50밀리그램(라모트리진)',
+    name: '라모스탈정',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001684.jpg?raw=true',
   ),
   MedicineData(
     no: '201001699',
-    name: '큐로켈정25밀리그램(쿠에티아핀푸마르산염)',
+    name: '큐로켈정',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001699.jpg?raw=true',
   ),
   MedicineData(
     no: '201001682',
-    name: '레보텐션정5밀리그램(에스암로디핀베실산염2.5수화물)',
+    name: '레보텐션정',
     company: '안국약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001682.jpg?raw=true',
   ),
   MedicineData(
     no: '201001683',
-    name: '텔미스정40mg(텔미사르탄)',
+    name: '텔미스정',
     company: '삼일제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001683.jpg?raw=true',
   ),
   MedicineData(
     no: '201001685',
-    name: '텔미스정80mg(텔미사르탄)',
+    name: '텔미스정',
     company: '삼일제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001685.jpg?raw=true',
   ),
   MedicineData(
     no: '201001737',
-    name: '티자리드정1밀리그람(티자니딘염산염)',
+    name: '티자리드정',
     company: '광동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001737.jpg?raw=true',
   ),
   MedicineData(
     no: '201001733',
-    name: '몬테레어츄정4밀리그램(몬테루카스트나트륨)',
+    name: '몬테레어츄정',
     company: '명문제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001733.jpg?raw=true',
   ),
   MedicineData(
     no: '201001723',
-    name: '큐로스트츄정4밀리그램(몬테루카스트나트륨)',
+    name: '큐로스트츄정',
     company: '안국약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001723.jpg?raw=true',
   ),
   MedicineData(
     no: '201001728',
-    name: '멀택정(드로네다론염산염)',
+    name: '멀택정',
     company: '(주)사노피-아벤티스코리아',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001728.jpg?raw=true',
   ),
   MedicineData(
     no: '201001707',
-    name: '유니발탄정80밀리그램(발사르탄)',
+    name: '유니발탄정',
     company: '환인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001707.jpg?raw=true',
@@ -2504,77 +2504,77 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201001745',
-    name: '로디엔정5밀리그램(에스암로디핀니코틴산염)',
+    name: '로디엔정',
     company: '한림제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001745.jpg?raw=true',
   ),
   MedicineData(
     no: '201001744',
-    name: '딜라트렌에스알캡슐64밀리그램(카르베딜롤)',
+    name: '딜라트렌에스알캡슐',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001744.jpg?raw=true',
   ),
   MedicineData(
     no: '201001732',
-    name: '본넬정150밀리그램(리세드론산나트륨수화물)',
+    name: '본넬정',
     company: '명문제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001732.jpg?raw=true',
   ),
   MedicineData(
     no: '201001730',
-    name: '리도넬정150밀리그램(리세드론산나트륨일수화물)',
+    name: '리도넬정',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001730.jpg?raw=true',
   ),
   MedicineData(
     no: '201001731',
-    name: '알토리톤정150밀리그램(리세드론산나트륨2.5수화물)',
+    name: '알토리톤정',
     company: '(주)유영제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001731.jpg?raw=true',
   ),
   MedicineData(
     no: '201001725',
-    name: '리세드린정150밀리그램(리세드론산나트륨2.5수화물)',
+    name: '리세드린정',
     company: '(주)서울제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001725.jpg?raw=true',
   ),
   MedicineData(
     no: '201002064',
-    name: '바로페질오디정5밀리그램(도네페질염산염일수화물)',
+    name: '바로페질오디정',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002064.jpg?raw=true',
   ),
   MedicineData(
     no: '201001858',
-    name: '보령피오글리타존정15밀리그램(피오글리타존염산염)',
+    name: '보령피오글리타존정',
     company: '(주)보령',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001858.jpg?raw=true',
   ),
   MedicineData(
     no: '201001805',
-    name: '레그파라정25밀리그램(시나칼세트염산염)',
+    name: '레그파라정',
     company: '한국쿄와기린(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001805.jpg?raw=true',
   ),
   MedicineData(
     no: '201001891',
-    name: '메자반트엑스엘장용정1200밀리그램(메살라진)',
+    name: '메자반트엑스엘장용정',
     company: '한국다케다제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001891.jpg?raw=true',
   ),
   MedicineData(
     no: '201001950',
-    name: '신노바핀정10밀리그램(암로디핀베실산염)',
+    name: '신노바핀정',
     company: '신일제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001950.jpg?raw=true',
@@ -2602,14 +2602,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201002060',
-    name: '레볼레이드정25밀리그램(엘트롬보팍올라민)',
+    name: '레볼레이드정',
     company: '한국노바티스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002060.jpg?raw=true',
   ),
   MedicineData(
     no: '201002061',
-    name: '레볼레이드정50밀리그램(엘트롬보팍올라민)',
+    name: '레볼레이드정',
     company: '한국노바티스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002061.jpg?raw=true',
@@ -2630,14 +2630,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201002150',
-    name: '글루코파지엑스알1000밀리그램서방정(메트포르민염산염)',
+    name: '글루코파지엑스알',
     company: '머크(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002150.jpg?raw=true',
   ),
   MedicineData(
     no: '201002151',
-    name: '다이아벡스엑스알서방정1000밀리그램(메트포르민염산염)',
+    name: '다이아벡스엑스알서방정',
     company: '(주)대웅제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002151.jpg?raw=true',
@@ -2651,7 +2651,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201002190',
-    name: '폴원연질캡슐(폴산)',
+    name: '폴원연질캡슐',
     company: '(주)알피바이오',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002190.jpg?raw=true',
@@ -2665,98 +2665,98 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201002238',
-    name: '도네질오디정5밀리그램(도네페질염산염수화물)',
+    name: '도네질오디정',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002238.jpg?raw=true',
   ),
   MedicineData(
     no: '201002277',
-    name: '리치본먼쓰정150밀리그램(리세드론산나트륨일수화물)',
+    name: '리치본먼쓰정',
     company: '에이치케이이노엔(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002277.jpg?raw=true',
   ),
   MedicineData(
     no: '201002278',
-    name: '리본정150밀리그램(리세드론산나트륨수화물)',
+    name: '리본정',
     company: '(주)한국팜비오',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002278.jpg?raw=true',
   ),
   MedicineData(
     no: '201002280',
-    name: '명문암로디핀정5mg(암로디핀베실산염)',
+    name: '명문암로디핀정',
     company: '명문제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002280.jpg?raw=true',
   ),
   MedicineData(
     no: '201002378',
-    name: '조이원정(위령선·괄루근·하고초30%에탄올엑스(40:1))',
+    name: '조이원정',
     company: '대원제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002378.jpg?raw=true',
   ),
   MedicineData(
     no: '201002423',
-    name: '조인클정200mg(위령선|괄루근|하고초30%에탄올엑스(40:1))',
+    name: '조인클정',
     company: '(주)메디카코리아',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002423.jpg?raw=true',
   ),
   MedicineData(
     no: '201002394',
-    name: '베아프렉사정5밀리그램(올란자핀)',
+    name: '베아프렉사정',
     company: '(주)대웅제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002394.jpg?raw=true',
   ),
   MedicineData(
     no: '201002395',
-    name: '뉴로자핀정10밀리그램(올란자핀)',
+    name: '뉴로자핀정',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002395.jpg?raw=true',
   ),
   MedicineData(
     no: '201002396',
-    name: '뉴로자핀정2.5밀리그램(올란자핀)',
+    name: '뉴로자핀정',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002396.jpg?raw=true',
   ),
   MedicineData(
     no: '201002446',
-    name: '조이나스정(위령선·괄루근·하고초30%에탄올엑스(40:1))',
+    name: '조이나스정',
     company: '(주)휴온스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002446.jpg?raw=true',
   ),
   MedicineData(
     no: '201002449',
-    name: '제뉴원텔미사르탄정80밀리그램',
+    name: '제뉴원텔미사르탄정',
     company: '주식회사제뉴원사이언스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002449.jpg?raw=true',
   ),
   MedicineData(
     no: '201002450',
-    name: '제뉴원텔미사르탄정40밀리그램',
+    name: '제뉴원텔미사르탄정',
     company: '주식회사제뉴원사이언스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002450.jpg?raw=true',
   ),
   MedicineData(
     no: '201002402',
-    name: '중외도네페질속붕정10밀리그램',
+    name: '중외도네페질속붕정',
     company: '제이더블유중외제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002402.jpg?raw=true',
   ),
   MedicineData(
     no: '201002503',
-    name: '올리엣캡슐120밀리그램(오르리스타트)',
+    name: '올리엣캡슐',
     company: '알보젠코리아(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002503.jpg?raw=true',
@@ -2777,7 +2777,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201002745',
-    name: '클란자CR정(아세클로페낙)',
+    name: '클란자CR정',
     company: '한국유나이티드제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201002745.jpg?raw=true',
@@ -2791,14 +2791,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201003010',
-    name: '레보라진정(레보드로프로피진)',
+    name: '레보라진정',
     company: '대화제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003010.jpg?raw=true',
   ),
   MedicineData(
     no: '201003049',
-    name: '큐로켈정200밀리그램(쿠에티아핀푸마르산염)',
+    name: '큐로켈정',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003049.jpg?raw=true',
@@ -2812,196 +2812,196 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201003060',
-    name: '넥사졸캡슐40밀리그램(에스오메프라졸)',
+    name: '넥사졸캡슐',
     company: '(주)엘지화학',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003060.jpg?raw=true',
   ),
   MedicineData(
     no: '201003094',
-    name: '유유텔미사르탄정80밀리그램',
+    name: '유유텔미사르탄정',
     company: '(주)유유제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003094.jpg?raw=true',
   ),
   MedicineData(
     no: '201003095',
-    name: '유유텔미사르탄정40밀리그램',
+    name: '유유텔미사르탄정',
     company: '(주)유유제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003095.jpg?raw=true',
   ),
   MedicineData(
     no: '201003096',
-    name: '미카탄정80밀리그램(텔미사르탄)',
+    name: '미카탄정',
     company: '알보젠코리아(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003096.jpg?raw=true',
   ),
   MedicineData(
     no: '201003097',
-    name: '미카탄정40밀리그램(텔미사르탄)',
+    name: '미카탄정',
     company: '알보젠코리아(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003097.jpg?raw=true',
   ),
   MedicineData(
     no: '201003062',
-    name: '에소메드캡슐40밀리그램(에스오메프라졸)',
+    name: '에소메드캡슐',
     company: '에스케이케미칼(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003062.jpg?raw=true',
   ),
   MedicineData(
     no: '201003055',
-    name: '파로킨정1mg(로피니롤염산염)',
+    name: '파로킨정',
     company: '현대약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003055.jpg?raw=true',
   ),
   MedicineData(
     no: '201003061',
-    name: '에스졸캡슐40밀리그램(에스오메프라졸)',
+    name: '에스졸캡슐',
     company: '진양제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003061.jpg?raw=true',
   ),
   MedicineData(
     no: '201003163',
-    name: '오스테론정150밀리그램(리세드론산나트륨2.5수화물)',
+    name: '오스테론정',
     company: '화일약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003163.jpg?raw=true',
   ),
   MedicineData(
     no: '201003164',
-    name: '자니칼정(리세드론산나트륨2.5수화물)',
+    name: '자니칼정',
     company: '삼남제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003164.jpg?raw=true',
   ),
   MedicineData(
     no: '201003150',
-    name: '리세트론정150밀리그램(리세드론산나트륨2.5수화물)',
+    name: '리세트론정',
     company: '동화약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003150.jpg?raw=true',
   ),
   MedicineData(
     no: '201003151',
-    name: '악토제닉정150밀리그램(리세드론산나트륨2.5수화물)',
+    name: '악토제닉정',
     company: '제일약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003151.jpg?raw=true',
   ),
   MedicineData(
     no: '201003153',
-    name: '텔사탄정40밀리그램(텔미사르탄)',
+    name: '텔사탄정',
     company: '동화약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003153.jpg?raw=true',
   ),
   MedicineData(
     no: '201003154',
-    name: '일양텔미사탄정40밀리그램(텔미사르탄)',
+    name: '일양텔미사탄정',
     company: '일양약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003154.jpg?raw=true',
   ),
   MedicineData(
     no: '201003155',
-    name: '일양텔미사탄정80밀리그램(텔미사르탄)',
+    name: '일양텔미사탄정',
     company: '일양약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003155.jpg?raw=true',
   ),
   MedicineData(
     no: '201003156',
-    name: '사브정2.5밀리그램(에스암로디핀베실산염2.5수화물)',
+    name: '사브정',
     company: '일성신약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003156.jpg?raw=true',
   ),
   MedicineData(
     no: '201003185',
-    name: '아데포라정10mg(아데포비어디피복실)',
+    name: '아데포라정',
     company: '삼일제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003185.jpg?raw=true',
   ),
   MedicineData(
     no: '201003188',
-    name: '아포리바정(아데포비어디피복실)',
+    name: '아포리바정',
     company: '삼진제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003188.jpg?raw=true',
   ),
   MedicineData(
     no: '201003189',
-    name: '아뎁세라정10밀리그램(아데포비어디피복실)',
+    name: '아뎁세라정',
     company: '(주)녹십자',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003189.jpg?raw=true',
   ),
   MedicineData(
     no: '201003190',
-    name: '아데팜정10밀리그램(아데포비어디피복실)',
+    name: '아데팜정',
     company: '일동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003190.jpg?raw=true',
   ),
   MedicineData(
     no: '201003191',
-    name: '부광아데포비어정10밀리그램(아데포비어디피복실)',
+    name: '부광아데포비어정',
     company: '부광약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003191.jpg?raw=true',
   ),
   MedicineData(
     no: '201003197',
-    name: '헵세스정(아데포비어디피복실)(수출용)',
+    name: '헵세스정',
     company: '명문제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003197.jpg?raw=true',
   ),
   MedicineData(
     no: '201003199',
-    name: '아뎁틴정10밀리그램(아데포비어디피복실)',
+    name: '아뎁틴정',
     company: '제일약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003199.jpg?raw=true',
   ),
   MedicineData(
     no: '200907763',
-    name: '발라렉스정(발라시클로비르염산염1.5수화물)',
+    name: '발라렉스정',
     company: '(주)비씨월드제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200907763.jpg?raw=true',
   ),
   MedicineData(
     no: '200907770',
-    name: '도파로핀정0.25밀리그램(로피니롤염산염)',
+    name: '도파로핀정',
     company: '일동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200907770.jpg?raw=true',
   ),
   MedicineData(
     no: '200907783',
-    name: '코디핀정6밀리그램(베니디핀염산염)',
+    name: '코디핀정',
     company: '영진약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200907783.jpg?raw=true',
   ),
   MedicineData(
     no: '200907782',
-    name: '칸세틸정16밀리그램(칸데사르탄실렉세틸)',
+    name: '칸세틸정',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200907782.jpg?raw=true',
   ),
   MedicineData(
     no: '200907811',
-    name: '올라핀정5밀리그램(올란자핀)',
+    name: '올라핀정',
     company: '현대약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200907811.jpg?raw=true',
@@ -3022,7 +3022,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200907796',
-    name: '칸데산정16mg(칸데사르탄실렉세틸)',
+    name: '칸데산정',
     company: '명문제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200907796.jpg?raw=true',
@@ -3036,35 +3036,35 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200907798',
-    name: '아이살탄정150mg(이르베사르탄)',
+    name: '아이살탄정',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200907798.jpg?raw=true',
   ),
   MedicineData(
     no: '200907892',
-    name: '씨프로바이정750밀리그램(시프로플록사신염산염)',
+    name: '씨프로바이정',
     company: '바이엘코리아(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200907892.jpg?raw=true',
   ),
   MedicineData(
     no: '200907915',
-    name: '노자임캡슐10000(판크레아틴장용성제피미세정)',
+    name: '노자임캡슐10000',
     company: '(주)한국팜비오',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200907915.jpg?raw=true',
   ),
   MedicineData(
     no: '200906540',
-    name: '로나센정2밀리그램(블로난세린)/로나센정4밀리그램(블로난세린)',
+    name: '로나센정',
     company: '부광약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200906540.jpg?raw=true',
   ),
   MedicineData(
     no: '200907984',
-    name: '한림로자탄정100mg(로사르탄칼륨)',
+    name: '한림로자탄정',
     company: '한림제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200907984.jpg?raw=true',
@@ -3078,84 +3078,84 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200907976',
-    name: '뮤타플로캡슐(E.colistrainNissle1917의동결건조물)',
+    name: '뮤타플로캡슐',
     company: '리퓨어헬스케어(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200907976.jpg?raw=true',
   ),
   MedicineData(
     no: '200907789',
-    name: '도파로핀정2밀리그램(로피니롤염산염)',
+    name: '도파로핀정',
     company: '일동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200907789.jpg?raw=true',
   ),
   MedicineData(
     no: '200908159',
-    name: '뉴젠이미다프릴정5mg(이미다프릴염산염)',
+    name: '뉴젠이미다프릴정',
     company: '(주)뉴젠팜',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908159.jpg?raw=true',
   ),
   MedicineData(
     no: '200908169',
-    name: '몬테칸정10밀리그램(몬테루카스트나트륨)',
+    name: '몬테칸정',
     company: '제일약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908169.jpg?raw=true',
   ),
   MedicineData(
     no: '200908161',
-    name: '아프릴정5mg(이미다프릴염산염)',
+    name: '아프릴정',
     company: '(주)하원제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908161.jpg?raw=true',
   ),
   MedicineData(
     no: '200908162',
-    name: '하이메릴정5mg(이미다프릴염산염)',
+    name: '하이메릴정',
     company: '(주)휴온스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908162.jpg?raw=true',
   ),
   MedicineData(
     no: '200908160',
-    name: '이미트릴정5밀리그램(이미다프릴염산염)',
+    name: '이미트릴정',
     company: '태극제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908160.jpg?raw=true',
   ),
   MedicineData(
     no: '200908186',
-    name: '코자엑스큐정5/100밀리그램',
+    name: '코자엑스큐정',
     company: '한국오가논(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908186.jpg?raw=true',
   ),
   MedicineData(
     no: '200908185',
-    name: '코자엑스큐정5/50밀리그램',
+    name: '코자엑스큐정',
     company: '한국오가논(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908185.jpg?raw=true',
   ),
   MedicineData(
     no: '200908201',
-    name: '스트라테라캡슐80밀리그램(아토목세틴염산염)',
+    name: '스트라테라캡슐',
     company: '한국릴리(유)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908201.jpg?raw=true',
   ),
   MedicineData(
     no: '200908333',
-    name: '모놀레어츄정4밀리그램(몬테루카스트나트륨)',
+    name: '모놀레어츄정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908333.jpg?raw=true',
   ),
   MedicineData(
     no: '200908334',
-    name: '루케마츄정4밀리그램(몬테루카스트나트륨)',
+    name: '루케마츄정',
     company: '고려제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908334.jpg?raw=true',
@@ -3169,154 +3169,154 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200908354',
-    name: '싱카스트츄정5밀리그램(몬테루카스트나트륨)',
+    name: '싱카스트츄정',
     company: '(주)유한양행',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908354.jpg?raw=true',
   ),
   MedicineData(
     no: '200908355',
-    name: '부광이토프리드정50밀리그램(이토프리드염산염)',
+    name: '부광이토프리드정',
     company: '부광약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908355.jpg?raw=true',
   ),
   MedicineData(
     no: '200908348',
-    name: '칸데산정8mg(칸데사르탄실렉세틸)',
+    name: '칸데산정',
     company: '명문제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908348.jpg?raw=true',
   ),
   MedicineData(
     no: '200908352',
-    name: '올라핀정2.5밀리그램(올란자핀)',
+    name: '올라핀정',
     company: '현대약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908352.jpg?raw=true',
   ),
   MedicineData(
     no: '200908349',
-    name: '칸세틸정8밀리그램(칸데사르탄실렉세틸)',
+    name: '칸세틸정',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908349.jpg?raw=true',
   ),
   MedicineData(
     no: '200908351',
-    name: '오니롤정2밀리그램(로피니롤염산염)',
+    name: '오니롤정',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908351.jpg?raw=true',
   ),
   MedicineData(
     no: '200908350',
-    name: '파키놀정2밀리그램(로피니롤염산염)',
+    name: '파키놀정',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908350.jpg?raw=true',
   ),
   MedicineData(
     no: '200908353',
-    name: '싱카스트츄정4밀리그램(몬테루카스트나트륨)',
+    name: '싱카스트츄정',
     company: '(주)유한양행',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908353.jpg?raw=true',
   ),
   MedicineData(
     no: '200908369',
-    name: '싱귤로드속붕정5밀리그램(몬테루카스트나트륨)',
+    name: '싱귤로드속붕정',
     company: '제이더블유신약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908369.jpg?raw=true',
   ),
   MedicineData(
     no: '200908367',
-    name: '고려칸데사르탄정16밀리그램(칸데사르탄실렉세틸)',
+    name: '고려칸데사르탄정',
     company: '고려제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908367.jpg?raw=true',
   ),
   MedicineData(
     no: '200908368',
-    name: '싱귤맥스속붕정5밀리그램(몬테루카스트나트륨)',
+    name: '싱귤맥스속붕정',
     company: '제이더블유중외제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908368.jpg?raw=true',
   ),
   MedicineData(
     no: '200907819',
-    name: '올라핀정10밀리그램(올란자핀)',
+    name: '올라핀정',
     company: '현대약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200907819.jpg?raw=true',
   ),
   MedicineData(
     no: '200908438',
-    name: '데이프로정10mg(에스시탈로프람옥살산염)',
+    name: '데이프로정',
     company: '일성신약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908438.jpg?raw=true',
   ),
   MedicineData(
     no: '200908444',
-    name: '써큐로드연질캡슐120mg(은행엽건조엑스)',
+    name: '써큐로드연질캡슐',
     company: '(주)동구바이오제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908444.jpg?raw=true',
   ),
   MedicineData(
     no: '200908496',
-    name: '타미비어캡슐75밀리그램(오셀타미비르인산염)',
+    name: '타미비어캡슐',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908496.jpg?raw=true',
   ),
   MedicineData(
     no: '200908499',
-    name: '스타레보필름코팅정75/18.75/200밀리그램',
+    name: '스타레보필름코팅정',
     company: '알보젠코리아(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908499.jpg?raw=true',
   ),
   MedicineData(
     no: '200908497',
-    name: '타미비어캡슐45밀리그램(오셀타미비르인산염)',
+    name: '타미비어캡슐',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908497.jpg?raw=true',
   ),
   MedicineData(
     no: '200908494',
-    name: '보령부스파정15mg(부스피론염산염)',
+    name: '보령부스파정',
     company: '(주)보령',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908494.jpg?raw=true',
   ),
   MedicineData(
     no: '200908498',
-    name: '타미비어캡슐30밀리그램(오셀타미비르인산염)',
+    name: '타미비어캡슐',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908498.jpg?raw=true',
   ),
   MedicineData(
     no: '200908500',
-    name: '스타레보필름코팅정125/31.25/200밀리그램',
+    name: '스타레보필름코팅정',
     company: '알보젠코리아(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908500.jpg?raw=true',
   ),
   MedicineData(
     no: '200908479',
-    name: '펜디멘정(펜디메트라진타르타르산염)',
+    name: '펜디멘정',
     company: '한국프라임제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908479.jpg?raw=true',
   ),
   MedicineData(
     no: '200908478',
-    name: '펜더정(펜터민염산염)',
+    name: '펜더정',
     company: '한국프라임제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908478.jpg?raw=true',
@@ -3330,14 +3330,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200908798',
-    name: '아타칸플러스맥스정32/12.5밀리그램',
+    name: '아타칸플러스맥스정',
     company: '한국아스트라제네카(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908798.jpg?raw=true',
   ),
   MedicineData(
     no: '200908745',
-    name: '클로미딘플러스정(건조레드클로버엑스)',
+    name: '클로미딘플러스정',
     company: '(주)서울제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200908745.jpg?raw=true',
@@ -3358,49 +3358,49 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '200909484',
-    name: '바로스크정10밀리그램(암로디핀베실산염)',
+    name: '바로스크정',
     company: '현대약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200909484.jpg?raw=true',
   ),
   MedicineData(
     no: '200909517',
-    name: '조페닐정15밀리그램(조페노프릴칼슘)',
+    name: '조페닐정',
     company: '한국메나리니(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200909517.jpg?raw=true',
   ),
   MedicineData(
     no: '200909372',
-    name: '저니스타서방정4밀리그램(히드로모르폰염산염)',
+    name: '저니스타서방정',
     company: '(주)한국얀센',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200909372.jpg?raw=true',
   ),
   MedicineData(
     no: '200909377',
-    name: '칸델탄정16밀리그램(칸데사르탄실렉세틸)',
+    name: '칸델탄정',
     company: '동국제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200909377.jpg?raw=true',
   ),
   MedicineData(
     no: '200909282',
-    name: '엘사팜정5mg(에스시탈로프람옥살산염)(수출용)',
+    name: '엘사팜정',
     company: '(주)유한양행',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200909282.jpg?raw=true',
   ),
   MedicineData(
     no: '200909125',
-    name: '리소페린정1mg(리스페리돈)',
+    name: '리소페린정',
     company: '제일약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200909125.jpg?raw=true',
   ),
   MedicineData(
     no: '200909126',
-    name: '싸이렉사정5밀리그램(올란자핀)(수출용)',
+    name: '싸이렉사정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/200909126.jpg?raw=true',
@@ -3414,7 +3414,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201000290',
-    name: '징키스틴캡슐(히스티딘아연이수화물)',
+    name: '징키스틴캡슐',
     company: '(주)한국팜비오',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000290.jpg?raw=true',
@@ -3435,105 +3435,105 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201000826',
-    name: '지노티넬정150밀리그램(리세드론산나트륨일수화물)',
+    name: '지노티넬정',
     company: '진양제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000826.jpg?raw=true',
   ),
   MedicineData(
     no: '201000875',
-    name: '휴드론정150밀리그램(리세드론산나트륨일수화물)',
+    name: '휴드론정',
     company: '(주)휴온스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000875.jpg?raw=true',
   ),
   MedicineData(
     no: '201000876',
-    name: '본틸정150밀리그램(리세드론산나트륨일수화물)',
+    name: '본틸정',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000876.jpg?raw=true',
   ),
   MedicineData(
     no: '201000878',
-    name: '미카탄플러스정80/12.5밀리그램',
+    name: '미카탄플러스정',
     company: '알보젠코리아(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000878.jpg?raw=true',
   ),
   MedicineData(
     no: '201000888',
-    name: '유유텔미타플러스정80/12.5밀리그램',
+    name: '유유텔미타플러스정',
     company: '(주)유유제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000888.jpg?raw=true',
   ),
   MedicineData(
     no: '201000827',
-    name: '프리텐션플러스정40/12.5밀리그램',
+    name: '프리텐션플러스정',
     company: '(주)다산제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000827.jpg?raw=true',
   ),
   MedicineData(
     no: '201000869',
-    name: '프리스톤정50밀리그램(이토프리드염산염)',
+    name: '프리스톤정',
     company: '하나제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000869.jpg?raw=true',
   ),
   MedicineData(
     no: '201000873',
-    name: '악토본정150밀리그램(리세드론산나트륨일수화물)',
+    name: '악토본정',
     company: '삼아제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000873.jpg?raw=true',
   ),
   MedicineData(
     no: '201000889',
-    name: '유유텔미타플러스정40/12.5밀리그램',
+    name: '유유텔미타플러스정',
     company: '(주)유유제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000889.jpg?raw=true',
   ),
   MedicineData(
     no: '201000874',
-    name: '오스트론정150밀리그램(리세드론산나트륨일수화물)',
+    name: '오스트론정',
     company: '동아에스티(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000874.jpg?raw=true',
   ),
   MedicineData(
     no: '201000866',
-    name: '텔카탄플러스정80/12.5밀리그램',
+    name: '텔카탄플러스정',
     company: '(주)한국팜비오',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000866.jpg?raw=true',
   ),
   MedicineData(
     no: '201000877',
-    name: '미카탄플러스정40/12.5밀리그램',
+    name: '미카탄플러스정',
     company: '알보젠코리아(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000877.jpg?raw=true',
   ),
   MedicineData(
     no: '201000867',
-    name: '일양텔미사탄플러스정40/12.5밀리그램',
+    name: '일양텔미사탄플러스정',
     company: '일양약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000867.jpg?raw=true',
   ),
   MedicineData(
     no: '201000828',
-    name: '프리텐션플러스정80/12.5밀리그램',
+    name: '프리텐션플러스정',
     company: '(주)다산제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000828.jpg?raw=true',
   ),
   MedicineData(
     no: '201000860',
-    name: '텔카탄플러스정40/12.5밀리그램',
+    name: '텔카탄플러스정',
     company: '(주)한국팜비오',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000860.jpg?raw=true',
@@ -3547,182 +3547,182 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201001057',
-    name: '코팩사엑스알서방캡슐37.5밀리그램(벤라팍신염산염)',
+    name: '코팩사엑스알서방캡슐',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001057.jpg?raw=true',
   ),
   MedicineData(
     no: '201001022',
-    name: '텔미스플러스정40/12.5밀리그램',
+    name: '텔미스플러스정',
     company: '삼일제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001022.jpg?raw=true',
   ),
   MedicineData(
     no: '201001023',
-    name: '텔미로플러스정40/12.5mg',
+    name: '텔미로플러스정',
     company: '(주)제뉴파마',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001023.jpg?raw=true',
   ),
   MedicineData(
     no: '201001024',
-    name: '텔미로플러스정80/12.5mg',
+    name: '텔미로플러스정',
     company: '(주)제뉴파마',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001024.jpg?raw=true',
   ),
   MedicineData(
     no: '201001029',
-    name: '에스로틴정10밀리그램(로수바스타틴칼슘)',
+    name: '에스로틴정',
     company: '에스케이케미칼(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001029.jpg?raw=true',
   ),
   MedicineData(
     no: '201001030',
-    name: '에스로틴정20밀리그램(로수바스타틴칼슘)',
+    name: '에스로틴정',
     company: '에스케이케미칼(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001030.jpg?raw=true',
   ),
   MedicineData(
     no: '201001017',
-    name: '테잘탄플러스정80/12.5mg',
+    name: '테잘탄플러스정',
     company: '(주)휴온스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001017.jpg?raw=true',
   ),
   MedicineData(
     no: '201001018',
-    name: '테잘탄플러스정40/12.5mg',
+    name: '테잘탄플러스정',
     company: '(주)휴온스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001018.jpg?raw=true',
   ),
   MedicineData(
     no: '201001021',
-    name: '텔미스플러스정80/12.5밀리그램',
+    name: '텔미스플러스정',
     company: '삼일제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001021.jpg?raw=true',
   ),
   MedicineData(
     no: '201000951',
-    name: '리드로퀸정150밀리그램(리세드론산나트륨일수화물)',
+    name: '리드로퀸정',
     company: '(주)씨티씨바이오',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000951.jpg?raw=true',
   ),
   MedicineData(
     no: '201000980',
-    name: '크로우정20mg(로수바스타틴칼슘)',
+    name: '크로우정',
     company: '대원제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000980.jpg?raw=true',
   ),
   MedicineData(
     no: '201000981',
-    name: '크로우정10mg(로수바스타틴칼슘)',
+    name: '크로우정',
     company: '대원제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000981.jpg?raw=true',
   ),
   MedicineData(
     no: '201000982',
-    name: '로수로드정5밀리그램(로수바스타틴칼슘)',
+    name: '로수로드정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000982.jpg?raw=true',
   ),
   MedicineData(
     no: '201000983',
-    name: '수바스트정20밀리그램(로수바스타틴칼슘)',
+    name: '수바스트정',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000983.jpg?raw=true',
   ),
   MedicineData(
     no: '201000984',
-    name: '수바스트정10밀리그램(로수바스타틴칼슘)',
+    name: '수바스트정',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000984.jpg?raw=true',
   ),
   MedicineData(
     no: '201001002',
-    name: '로수틴정10밀리그램(로수바스타틴칼슘)',
+    name: '로수틴정',
     company: '삼천당제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001002.jpg?raw=true',
   ),
   MedicineData(
     no: '201001006',
-    name: '로비탄정20밀리그램(로수바스타틴칼슘)',
+    name: '로비탄정',
     company: '삼일제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001006.jpg?raw=true',
   ),
   MedicineData(
     no: '201001007',
-    name: '로비탄정5밀리그램(로수바스타틴칼슘)',
+    name: '로비탄정',
     company: '삼일제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001007.jpg?raw=true',
   ),
   MedicineData(
     no: '201000963',
-    name: '로수로드정20밀리그램(로수바스타틴칼슘)',
+    name: '로수로드정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000963.jpg?raw=true',
   ),
   MedicineData(
     no: '201000964',
-    name: '콜레리스정10밀리그램(로수바스타틴칼슘)',
+    name: '콜레리스정',
     company: '현대약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000964.jpg?raw=true',
   ),
   MedicineData(
     no: '201000965',
-    name: '콜레리스정20밀리그램(로수바스타틴칼슘)',
+    name: '콜레리스정',
     company: '현대약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000965.jpg?raw=true',
   ),
   MedicineData(
     no: '201001034',
-    name: '자부딘정100밀리그램(라미부딘)',
+    name: '자부딘정',
     company: '알보젠코리아(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001034.jpg?raw=true',
   ),
   MedicineData(
     no: '201001037',
-    name: '제라부딘정(라미부딘)',
+    name: '제라부딘정',
     company: '대원제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001037.jpg?raw=true',
   ),
   MedicineData(
     no: '201000989',
-    name: '로바스로정10밀리그램(로수바스타틴칼슘)',
+    name: '로바스로정',
     company: '환인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201000989.jpg?raw=true',
   ),
   MedicineData(
     no: '201001008',
-    name: '로비탄정10밀리그램(로수바스타틴칼슘)',
+    name: '로비탄정',
     company: '삼일제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001008.jpg?raw=true',
   ),
   MedicineData(
     no: '201001155',
-    name: '아모크라듀오정500mg(아목시실린-클라불란산칼륨(7:1))',
+    name: '아모크라듀오정',
     company: '(주)펜믹스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001155.jpg?raw=true',
@@ -3750,28 +3750,28 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201001422',
-    name: '미라펙스서방정0.375밀리그램(프라미펙솔염산염일수화물)',
+    name: '미라펙스서방정',
     company: '한국베링거인겔하임(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001422.jpg?raw=true',
   ),
   MedicineData(
     no: '201001420',
-    name: '미라펙스서방정1.5밀리그램(프라미펙솔염산염일수화물)',
+    name: '미라펙스서방정',
     company: '한국베링거인겔하임(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001420.jpg?raw=true',
   ),
   MedicineData(
     no: '201001421',
-    name: '미라펙스서방정0.75밀리그램(프라미펙솔염산염일수화물)',
+    name: '미라펙스서방정',
     company: '한국베링거인겔하임(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001421.jpg?raw=true',
   ),
   MedicineData(
     no: '201001424',
-    name: '포타스틴오디정(베포타스틴칼슘이수화물)',
+    name: '포타스틴오디정',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001424.jpg?raw=true',
@@ -3806,14 +3806,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201001526',
-    name: '파로킨정0.25mg(로피니롤염산염)',
+    name: '파로킨정',
     company: '현대약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001526.jpg?raw=true',
   ),
   MedicineData(
     no: '201001547',
-    name: '발트크로정500밀리그램(발라시클로비르염산염)',
+    name: '발트크로정',
     company: '코오롱제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001547.jpg?raw=true',
@@ -3834,98 +3834,98 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201001650',
-    name: '갈라닐피알서방캡슐24밀리그램(갈란타민브롬화수소산염)',
+    name: '갈라닐피알서방캡슐',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001650.jpg?raw=true',
   ),
   MedicineData(
     no: '201001649',
-    name: '갈라닐피알서방캡슐16밀리그램(갈란타민브롬화수소산염)',
+    name: '갈라닐피알서방캡슐',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201001649.jpg?raw=true',
   ),
   MedicineData(
     no: '201003203',
-    name: '에버헤파정10밀리그램(아데포비어디피복실)',
+    name: '에버헤파정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003203.jpg?raw=true',
   ),
   MedicineData(
     no: '201003207',
-    name: '헵세론정(아데포비어디피복실)',
+    name: '헵세론정',
     company: '동국제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003207.jpg?raw=true',
   ),
   MedicineData(
     no: '201003213',
-    name: '헵세비어정10밀리그램(아데포비어디피복실)',
+    name: '헵세비어정',
     company: '동아에스티(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003213.jpg?raw=true',
   ),
   MedicineData(
     no: '201003215',
-    name: '아데포빌정10밀리그램(아데포비어디피복실)',
+    name: '아데포빌정',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003215.jpg?raw=true',
   ),
   MedicineData(
     no: '201003217',
-    name: '헤포빌정10밀리그램(아데포비어디피복실)',
+    name: '헤포빌정',
     company: '(주)비씨월드제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003217.jpg?raw=true',
   ),
   MedicineData(
     no: '201003218',
-    name: '아데비어정10밀리그램(아데포비어디피복실)',
+    name: '아데비어정',
     company: '동화약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003218.jpg?raw=true',
   ),
   MedicineData(
     no: '201003221',
-    name: '아데바정(아데포비어디피복실)',
+    name: '아데바정',
     company: '진양제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003221.jpg?raw=true',
   ),
   MedicineData(
     no: '201003224',
-    name: '리벡실정(아데포비어디피복실)',
+    name: '리벡실정',
     company: '(주)한독',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003224.jpg?raw=true',
   ),
   MedicineData(
     no: '201003239',
-    name: '레보다서방정200/50밀리그램(레보도파/카르비도파)',
+    name: '레보다서방정',
     company: '한국산도스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003239.jpg?raw=true',
   ),
   MedicineData(
     no: '201003370',
-    name: '리오다제정(스트렙토키나제·스트렙토도르나제)',
+    name: '리오다제정',
     company: '(주)테라젠이텍스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003370.jpg?raw=true',
   ),
   MedicineData(
     no: '201003397',
-    name: '포스넬정150밀리그램(리세드론산나트륨2.5수화물)',
+    name: '포스넬정',
     company: '동국제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003397.jpg?raw=true',
   ),
   MedicineData(
     no: '201003398',
-    name: '리세토정150밀리그램(리세드론산나트륨2.5수화물)',
+    name: '리세토정',
     company: '알보젠코리아(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003398.jpg?raw=true',
@@ -4002,28 +4002,28 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201006784',
-    name: '클리퍼지속성장용정5밀리그램(베클로메타손디프로피오네이트)',
+    name: '클리퍼지속성장용정',
     company: '코오롱제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201006784.jpg?raw=true',
   ),
   MedicineData(
     no: '201006796',
-    name: '싸이파이정15밀리그램(아리피프라졸)(수출용)',
+    name: '싸이파이정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201006796.jpg?raw=true',
   ),
   MedicineData(
     no: '201006797',
-    name: '싸이파이정5밀리그램(아리피프라졸)(수출용)',
+    name: '싸이파이정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201006797.jpg?raw=true',
   ),
   MedicineData(
     no: '201006798',
-    name: '싸이파이정10밀리그램(아리피프라졸)(수출용)',
+    name: '싸이파이정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201006798.jpg?raw=true',
@@ -4037,14 +4037,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201006870',
-    name: '코이자벨탄정300/12.5밀리그램',
+    name: '코이자벨탄정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201006870.jpg?raw=true',
   ),
   MedicineData(
     no: '201006871',
-    name: '코이자벨탄정150/12.5밀리그램',
+    name: '코이자벨탄정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201006871.jpg?raw=true',
@@ -4072,21 +4072,21 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201006968',
-    name: '밸덕산정25밀리그램(아고멜라틴)',
+    name: '밸덕산정',
     company: '한국세르비에(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201006968.jpg?raw=true',
   ),
   MedicineData(
     no: '201006907',
-    name: '산도스이베사탄정300밀리그램',
+    name: '산도스이베사탄정',
     company: '한국산도스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201006907.jpg?raw=true',
   ),
   MedicineData(
     no: '201006908',
-    name: '산도스이베사탄정150밀리그램',
+    name: '산도스이베사탄정',
     company: '한국산도스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201006908.jpg?raw=true',
@@ -4107,49 +4107,49 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201007220',
-    name: '이지스타정10/10밀리그램',
+    name: '이지스타정',
     company: '(주)보령',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007220.jpg?raw=true',
   ),
   MedicineData(
     no: '201007222',
-    name: '이지스타정10/20밀리그램',
+    name: '이지스타정',
     company: '(주)보령',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007222.jpg?raw=true',
   ),
   MedicineData(
     no: '201007221',
-    name: '프로멘실정(건조레드클로버엑스)',
+    name: '프로멘실정',
     company: '에이프로젠제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007221.jpg?raw=true',
   ),
   MedicineData(
     no: '201007233',
-    name: '자이레핀정5밀리그램(올란자핀)',
+    name: '자이레핀정',
     company: '환인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007233.jpg?raw=true',
   ),
   MedicineData(
     no: '201007234',
-    name: '자이레핀정2.5밀리그램(올란자핀)',
+    name: '자이레핀정',
     company: '환인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007234.jpg?raw=true',
   ),
   MedicineData(
     no: '201007252',
-    name: '발트라정500mg(발라시클로비르염산염수화물)',
+    name: '발트라정',
     company: '제일약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007252.jpg?raw=true',
   ),
   MedicineData(
     no: '201007254',
-    name: '심바토린정10/20',
+    name: '심바토린정',
     company: '오스틴제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007254.jpg?raw=true',
@@ -4163,21 +4163,21 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201007256',
-    name: '바로페질오디정10밀리그램(도네페질염산염일수화물)',
+    name: '바로페질오디정',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007256.jpg?raw=true',
   ),
   MedicineData(
     no: '201007257',
-    name: '명인갈란타민서방캡슐16밀리그램(갈란타민브롬화수소산염)',
+    name: '명인갈란타민서방캡슐',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007257.jpg?raw=true',
   ),
   MedicineData(
     no: '201007258',
-    name: '명인갈란타민서방캡슐24밀리그램(갈란타민브롬화수소산염)',
+    name: '명인갈란타민서방캡슐',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007258.jpg?raw=true',
@@ -4219,14 +4219,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201007523',
-    name: '코바라탄정160/12.5mg',
+    name: '코바라탄정',
     company: '하나제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007523.jpg?raw=true',
   ),
   MedicineData(
     no: '201007529',
-    name: '코바라탄정80/12.5mg',
+    name: '코바라탄정',
     company: '하나제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007529.jpg?raw=true',
@@ -4240,42 +4240,42 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201007568',
-    name: '동화암로디핀베실산염정10밀리그램',
+    name: '동화암로디핀베실산염정',
     company: '동화약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007568.jpg?raw=true',
   ),
   MedicineData(
     no: '201007612',
-    name: '가모시드정5밀리그램(모사프리드시트르산염이수화물)',
+    name: '가모시드정',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007612.jpg?raw=true',
   ),
   MedicineData(
     no: '201007652',
-    name: '칸사타정16밀리그램(칸데사르탄실렉세틸)',
+    name: '칸사타정',
     company: '경동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007652.jpg?raw=true',
   ),
   MedicineData(
     no: '201007672',
-    name: '졸로푸트정100밀리그램(설트랄린염산염)',
+    name: '졸로푸트정',
     company: '비아트리스코리아(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007672.jpg?raw=true',
   ),
   MedicineData(
     no: '201007692',
-    name: '타시그나캡슐150밀리그램(닐로티닙염산염일수화물)',
+    name: '타시그나캡슐',
     company: '한국노바티스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007692.jpg?raw=true',
   ),
   MedicineData(
     no: '201007695',
-    name: '익셀캡슐12.5밀리그램(밀나시프란염산염)',
+    name: '익셀캡슐',
     company: '부광약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007695.jpg?raw=true',
@@ -4289,21 +4289,21 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201007750',
-    name: '칸데모어정32밀리그램(칸데사르탄실렉세틸)',
+    name: '칸데모어정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007750.jpg?raw=true',
   ),
   MedicineData(
     no: '201007755',
-    name: '코디오패스정80/12.5밀리그램',
+    name: '코디오패스정',
     company: '일동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007755.jpg?raw=true',
   ),
   MedicineData(
     no: '201007778',
-    name: '두타론연질캡슐0.5밀리그램(두타스테리드)',
+    name: '두타론연질캡슐',
     company: '알보젠코리아(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201007778.jpg?raw=true',
@@ -4317,63 +4317,63 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201100026',
-    name: '모노틴정(모사프리드시트르산염수화물)',
+    name: '모노틴정',
     company: '하나제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100026.jpg?raw=true',
   ),
   MedicineData(
     no: '201100102',
-    name: '이르베탄플러스에프정(수출용)',
+    name: '이르베탄플러스에프정',
     company: '경동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100102.jpg?raw=true',
   ),
   MedicineData(
     no: '201100168',
-    name: '모프롤정(모사프리드시트르산염수화물)',
+    name: '모프롤정',
     company: '명문제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100168.jpg?raw=true',
   ),
   MedicineData(
     no: '201100215',
-    name: '칸살탄정8밀리그램(칸데사르탄실렉세틸)',
+    name: '칸살탄정',
     company: '영진약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100215.jpg?raw=true',
   ),
   MedicineData(
     no: '201100216',
-    name: '칸살탄정16밀리그램(칸데사르탄실렉세틸)',
+    name: '칸살탄정',
     company: '영진약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100216.jpg?raw=true',
   ),
   MedicineData(
     no: '201100273',
-    name: '실버셉트오디정10밀리그램(도네페질염산염수화물)',
+    name: '실버셉트오디정',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100273.jpg?raw=true',
   ),
   MedicineData(
     no: '201100298',
-    name: '칸데로탄정16밀리그램(칸데사르탄실렉세틸)',
+    name: '칸데로탄정',
     company: '일동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100298.jpg?raw=true',
   ),
   MedicineData(
     no: '201100373',
-    name: '온글라이자정5밀리그램(삭사글립틴수화물)',
+    name: '온글라이자정',
     company: '한국아스트라제네카(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100373.jpg?raw=true',
   ),
   MedicineData(
     no: '201100374',
-    name: '온글라이자정2.5밀리그램(삭사글립틴수화물)',
+    name: '온글라이자정',
     company: '한국아스트라제네카(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100374.jpg?raw=true',
@@ -4387,14 +4387,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201100440',
-    name: '파비도엔필름코팅정100mg/25mg/200mg',
+    name: '파비도엔필름코팅정',
     company: '고려제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100440.jpg?raw=true',
   ),
   MedicineData(
     no: '201100467',
-    name: '바로살탄정160밀리그램(발사르탄)',
+    name: '바로살탄정',
     company: '동아에스티(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100467.jpg?raw=true',
@@ -4408,35 +4408,35 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201100491',
-    name: '싱귤로드속붕정4밀리그램(몬테루카스트나트륨)',
+    name: '싱귤로드속붕정',
     company: '제이더블유신약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100491.jpg?raw=true',
   ),
   MedicineData(
     no: '201100492',
-    name: '싱귤맥스속붕정4밀리그램(몬테루카스트나트륨)',
+    name: '싱귤맥스속붕정',
     company: '제이더블유중외제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100492.jpg?raw=true',
   ),
   MedicineData(
     no: '201100502',
-    name: '터논연질캡슐(덱시부프로펜)',
+    name: '터논연질캡슐',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100502.jpg?raw=true',
   ),
   MedicineData(
     no: '201100572',
-    name: '펜폴캡슐(펜토산폴리설페이트나트륨)',
+    name: '펜폴캡슐',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100572.jpg?raw=true',
   ),
   MedicineData(
     no: '201100608',
-    name: '올레사탄정20밀리그램(올메사탄메독소밀)',
+    name: '올레사탄정',
     company: '(주)유영제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100608.jpg?raw=true',
@@ -4450,28 +4450,28 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201100675',
-    name: '이르베탄플러스정(수출용)',
+    name: '이르베탄플러스정',
     company: '경동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100675.jpg?raw=true',
   ),
   MedicineData(
     no: '201100747',
-    name: '프라닥사캡슐150밀리그램(다비가트란에텍실레이트메실산염)',
+    name: '프라닥사캡슐',
     company: '한국베링거인겔하임(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100747.jpg?raw=true',
   ),
   MedicineData(
     no: '201100796',
-    name: '올드렌정20밀리그램(올메사탄메독소밀)',
+    name: '올드렌정',
     company: '일성신약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100796.jpg?raw=true',
   ),
   MedicineData(
     no: '201100803',
-    name: '썬메텍정20밀리그램(올메사탄메독소밀)',
+    name: '썬메텍정',
     company: '건일제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100803.jpg?raw=true',
@@ -4492,63 +4492,63 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201100823',
-    name: '제메텍정10밀리그램(올메사탄메독소밀)',
+    name: '제메텍정',
     company: '동화약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100823.jpg?raw=true',
   ),
   MedicineData(
     no: '201100824',
-    name: '제메텍정40밀리그램(올메사탄메독소밀)',
+    name: '제메텍정',
     company: '동화약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100824.jpg?raw=true',
   ),
   MedicineData(
     no: '201100825',
-    name: '제메텍정20밀리그램(올메사탄메독소밀)',
+    name: '제메텍정',
     company: '동화약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100825.jpg?raw=true',
   ),
   MedicineData(
     no: '201100826',
-    name: '벨메텍플러스정20/12.5밀리그램',
+    name: '벨메텍플러스정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100826.jpg?raw=true',
   ),
   MedicineData(
     no: '201100827',
-    name: '벨메텍정10밀리그램(올메사르탄메독소밀)',
+    name: '벨메텍정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100827.jpg?raw=true',
   ),
   MedicineData(
     no: '201100828',
-    name: '벨메텍정20밀리그램(올메사르탄메독소밀)',
+    name: '벨메텍정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100828.jpg?raw=true',
   ),
   MedicineData(
     no: '201100829',
-    name: '벨메텍정40밀리그램(올메사르탄메독소밀)',
+    name: '벨메텍정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100829.jpg?raw=true',
   ),
   MedicineData(
     no: '201100869',
-    name: '올스텍정20밀리그램(올메사탄메독소밀)',
+    name: '올스텍정',
     company: '(주)팜젠사이언스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100869.jpg?raw=true',
   ),
   MedicineData(
     no: '201100870',
-    name: '오메조탄정20밀리그램(올메사탄메독소밀)',
+    name: '오메조탄정',
     company: '(주)동구바이오제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100870.jpg?raw=true',
@@ -4576,28 +4576,28 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201003761',
-    name: '썬세라정10밀리그램(아데포비어디피복실)',
+    name: '썬세라정',
     company: '건일제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003761.jpg?raw=true',
   ),
   MedicineData(
     no: '201003803',
-    name: '아나로졸정1밀리그램(아나스트로졸)',
+    name: '아나로졸정',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003803.jpg?raw=true',
   ),
   MedicineData(
     no: '201003860',
-    name: '지아겐정300밀리그램(아바카비르황산염)',
+    name: '지아겐정',
     company: '(주)글락소스미스클라인',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003860.jpg?raw=true',
   ),
   MedicineData(
     no: '201003646',
-    name: '펜디진정35mg(펜디메트라진타르타르산염)',
+    name: '펜디진정',
     company: '(주)서울제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201003646.jpg?raw=true',
@@ -4660,7 +4660,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201004085',
-    name: '베르틴정(베타히스틴염산염)',
+    name: '베르틴정',
     company: '조아제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004085.jpg?raw=true',
@@ -4674,7 +4674,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201004172',
-    name: '비리어드정(테노포비르디소프록실푸마르산염)',
+    name: '비리어드정',
     company: '길리어드사이언스코리아(유)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004172.jpg?raw=true',
@@ -4695,63 +4695,63 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201004221',
-    name: '시암핀정(에스암로디핀베실산염)',
+    name: '시암핀정',
     company: '에이치엘비제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004221.jpg?raw=true',
   ),
   MedicineData(
     no: '201004222',
-    name: '카이로핀정(에스암로디핀베실산염2.5수화물)',
+    name: '카이로핀정',
     company: '대화제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004222.jpg?raw=true',
   ),
   MedicineData(
     no: '201004224',
-    name: '리세맥정150밀리그램(리세드론산나트륨2.5수화물)',
+    name: '리세맥정',
     company: '한국유나이티드제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004224.jpg?raw=true',
   ),
   MedicineData(
     no: '201004230',
-    name: '모니메이트정(모니플루메이트)',
+    name: '모니메이트정',
     company: '경동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004230.jpg?raw=true',
   ),
   MedicineData(
     no: '201004243',
-    name: '모니큐정(모니플루메이트)(수출용)',
+    name: '모니큐정',
     company: '광동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004243.jpg?raw=true',
   ),
   MedicineData(
     no: '201004244',
-    name: '본그로정150밀리그램(리세드론산나트륨2.5수화물)',
+    name: '본그로정',
     company: '한올바이오파마(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004244.jpg?raw=true',
   ),
   MedicineData(
     no: '201004245',
-    name: '에이프로젠리세드론산나트륨정150밀리그램(리세드론산나트륨2.5수화물)',
+    name: '에이프로젠리세드론나트륨정',
     company: '에이프로젠제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004245.jpg?raw=true',
   ),
   MedicineData(
     no: '201004257',
-    name: '모딤정350밀리그램(모니플루메이트)',
+    name: '모딤정',
     company: '제이더블유신약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004257.jpg?raw=true',
   ),
   MedicineData(
     no: '201004349',
-    name: '프로막정300밀리그램(발프로산마그네슘)',
+    name: '프로막정',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004349.jpg?raw=true',
@@ -4765,35 +4765,35 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201004440',
-    name: '멜록신캡슐(멜록시캄)',
+    name: '멜록신캡슐',
     company: '크리스탈생명과학(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004440.jpg?raw=true',
   ),
   MedicineData(
     no: '201004537',
-    name: '플루메이트정(모니플루메이트)',
+    name: '플루메이트정',
     company: '(주)엘지화학',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004537.jpg?raw=true',
   ),
   MedicineData(
     no: '201004413',
-    name: '대화노브제정(펜터민염산염)',
+    name: '대화노브제정',
     company: '대화제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004413.jpg?raw=true',
   ),
   MedicineData(
     no: '201004562',
-    name: '리스토넬정(리세드론산나트륨2.5수화물)',
+    name: '리스토넬정',
     company: '한국유니온제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004562.jpg?raw=true',
   ),
   MedicineData(
     no: '201004569',
-    name: '세비카정5/40밀리그램',
+    name: '세비카정',
     company: '한국다이이찌산쿄(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004569.jpg?raw=true',
@@ -4807,7 +4807,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201004582',
-    name: '발타빅스정(발라시클로비르염산염수화물)',
+    name: '발타빅스정',
     company: '(주)유한양행',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004582.jpg?raw=true',
@@ -4828,182 +4828,182 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201004693',
-    name: '발라시정(발라시클로비르염산염)',
+    name: '발라시정',
     company: '한국프라임제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004693.jpg?raw=true',
   ),
   MedicineData(
     no: '201004718',
-    name: '발렉스정500mg(발라시클로비르염산염)',
+    name: '발렉스정',
     company: '오스틴제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004718.jpg?raw=true',
   ),
   MedicineData(
     no: '201004729',
-    name: '도네필정5밀리그램(도네페질염산염수화물)',
+    name: '도네필정',
     company: '제일약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004729.jpg?raw=true',
   ),
   MedicineData(
     no: '201004753',
-    name: '에피언트정5밀리그램(프라수그렐염산염)',
+    name: '에피언트정',
     company: '한국다이이찌산쿄(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004753.jpg?raw=true',
   ),
   MedicineData(
     no: '201004754',
-    name: '에피언트정10밀리그램(프라수그렐염산염)',
+    name: '에피언트정',
     company: '한국다이이찌산쿄(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004754.jpg?raw=true',
   ),
   MedicineData(
     no: '201004772',
-    name: '디아미크롱서방정60밀리그램(글리클라지드)',
+    name: '디아미크롱서방정',
     company: '한국세르비에(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004772.jpg?raw=true',
   ),
   MedicineData(
     no: '201004896',
-    name: '빔팻정100mg(라코사미드)',
+    name: '빔팻정',
     company: '한국유씨비제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004896.jpg?raw=true',
   ),
   MedicineData(
     no: '201004898',
-    name: '빔팻정50mg(라코사미드)',
+    name: '빔팻정',
     company: '한국유씨비제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004898.jpg?raw=true',
   ),
   MedicineData(
     no: '201004900',
-    name: '몬테루칸정10밀리그램(몬테루카스트나트륨)',
+    name: '몬테루칸정',
     company: '일동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004900.jpg?raw=true',
   ),
   MedicineData(
     no: '201004970',
-    name: '보트리엔트정400밀리그램(파조파닙염산염)',
+    name: '보트리엔트정',
     company: '한국노바티스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004970.jpg?raw=true',
   ),
   MedicineData(
     no: '201004971',
-    name: '보트리엔트정200밀리그램(파조파닙염산염)',
+    name: '보트리엔트정',
     company: '한국노바티스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004971.jpg?raw=true',
   ),
   MedicineData(
     no: '201005059',
-    name: '미카탄플러스정80/25밀리그램',
+    name: '미카탄플러스정',
     company: '알보젠코리아(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005059.jpg?raw=true',
   ),
   MedicineData(
     no: '201005025',
-    name: '텔카탄정80밀리그램(텔미사르탄)',
+    name: '텔카탄정',
     company: '(주)한국팜비오',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005025.jpg?raw=true',
   ),
   MedicineData(
     no: '201005027',
-    name: '프리텐션정40밀리그램(텔미사르탄)',
+    name: '프리텐션정',
     company: '(주)다산제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005027.jpg?raw=true',
   ),
   MedicineData(
     no: '201005031',
-    name: '텔카딘정80밀리그램(텔미사르탄)',
+    name: '텔카딘정',
     company: '경동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005031.jpg?raw=true',
   ),
   MedicineData(
     no: '201005041',
-    name: '텔카탄정40밀리그램(텔미사르탄)',
+    name: '텔카탄정',
     company: '(주)한국팜비오',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005041.jpg?raw=true',
   ),
   MedicineData(
     no: '201004997',
-    name: '리프로진캡슐(레보드로프로피진)',
+    name: '리프로진캡슐',
     company: '(주)하원제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201004997.jpg?raw=true',
   ),
   MedicineData(
     no: '201005078',
-    name: '카바딜정16mg(칸데사르탄실렉세틸)',
+    name: '카바딜정',
     company: '삼아제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005078.jpg?raw=true',
   ),
   MedicineData(
     no: '201005079',
-    name: '아데탄정16밀리그램(칸데사르탄실렉세틸)',
+    name: '아데탄정',
     company: '한올바이오파마(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005079.jpg?raw=true',
   ),
   MedicineData(
     no: '201005080',
-    name: '콕시브캡슐200밀리그램(세레콕시브)',
+    name: '콕시브캡슐',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005080.jpg?raw=true',
   ),
   MedicineData(
     no: '201005081',
-    name: '트윈스타정40/5밀리그램',
+    name: '트윈스타정',
     company: '한국베링거인겔하임(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005081.jpg?raw=true',
   ),
   MedicineData(
     no: '201005082',
-    name: '트윈스타정40/10밀리그램',
+    name: '트윈스타정40밀리그램',
     company: '한국베링거인겔하임(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005082.jpg?raw=true',
   ),
   MedicineData(
     no: '201005083',
-    name: '트윈스타정80/5밀리그램',
+    name: '트윈스타정80밀리그램',
     company: '한국베링거인겔하임(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005083.jpg?raw=true',
   ),
   MedicineData(
     no: '201005134',
-    name: '아빌라핀정15밀리그램(아리피프라졸)',
+    name: '아빌라핀정',
     company: '현대약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005134.jpg?raw=true',
   ),
   MedicineData(
     no: '201005169',
-    name: '온브리즈흡입용캡슐150마이크로그램(인다카테롤말레산염)',
+    name: '온브리즈흡입용캡슐',
     company: '한국노바티스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005169.jpg?raw=true',
   ),
   MedicineData(
     no: '201005170',
-    name: '온브리즈흡입용캡슐300마이크로그램(인다카테롤말레산염)',
+    name: '온브리즈흡입용캡슐',
     company: '한국노바티스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005170.jpg?raw=true',
@@ -5017,7 +5017,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201005236',
-    name: '미르토정40밀리그램(텔미사르탄)',
+    name: '미르토정',
     company: '위더스제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005236.jpg?raw=true',
@@ -5031,77 +5031,77 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201005500',
-    name: '카나브정120밀리그램(피마사르탄칼륨삼수화물)',
+    name: '카나브정',
     company: '(주)보령',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005500.jpg?raw=true',
   ),
   MedicineData(
     no: '201005501',
-    name: '카나브정60밀리그램(피마사르탄칼륨삼수화물)',
+    name: '카나브정',
     company: '(주)보령',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005501.jpg?raw=true',
   ),
   MedicineData(
     no: '201005549',
-    name: '브라본토정100밀리그램(미로데나필염산염)',
+    name: '브라본토정',
     company: '(주)한국얀센',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005549.jpg?raw=true',
   ),
   MedicineData(
     no: '201005550',
-    name: '브라본토정50밀리그램(미로데나필염산염)',
+    name: '브라본토정',
     company: '(주)한국얀센',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005550.jpg?raw=true',
   ),
   MedicineData(
     no: '201005586',
-    name: '여우엔캡슐(나프록센)',
+    name: '여우엔캡슐',
     company: '코오롱제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005586.jpg?raw=true',
   ),
   MedicineData(
     no: '201005685',
-    name: '큐로켈정300밀리그램(쿠에티아핀푸마르산염)',
+    name: '큐로켈정',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005685.jpg?raw=true',
   ),
   MedicineData(
     no: '201005774',
-    name: '텔미원플러스정40/12.5밀리그램',
+    name: '텔미원플러스정',
     company: '에이치케이이노엔(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005774.jpg?raw=true',
   ),
   MedicineData(
     no: '201005775',
-    name: '텔미원플러스정80/12.5밀리그램',
+    name: '텔미원플러스정80',
     company: '에이치케이이노엔(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005775.jpg?raw=true',
   ),
   MedicineData(
     no: '201005780',
-    name: '아리미스타정(아나스트로졸)',
+    name: '아리미스타정',
     company: '영진약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005780.jpg?raw=true',
   ),
   MedicineData(
     no: '201005770',
-    name: '텔미스플러스정80/25mg',
+    name: '텔미스플러스정',
     company: '삼일제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005770.jpg?raw=true',
   ),
   MedicineData(
     no: '201005773',
-    name: '하이스펜연질캡슐(이부프로펜)',
+    name: '하이스펜연질캡슐',
     company: '(주)알피바이오',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005773.jpg?raw=true',
@@ -5122,21 +5122,21 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201005841',
-    name: '자이데나정50밀리그램(유데나필)',
+    name: '자이데나정',
     company: '동아에스티(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201005841.jpg?raw=true',
   ),
   MedicineData(
     no: '201006076',
-    name: '텔미원정40밀리그램(텔미사르탄)',
+    name: '텔미원정',
     company: '에이치케이이노엔(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201006076.jpg?raw=true',
   ),
   MedicineData(
     no: '201006077',
-    name: '텔미원정80밀리그램(텔미사르탄)',
+    name: '텔미원정80',
     company: '에이치케이이노엔(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201006077.jpg?raw=true',
@@ -5164,21 +5164,21 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201006172',
-    name: '뉴멘타민서방캡슐16밀리그램(갈란타민브롬화수소산염)',
+    name: '뉴멘타민서방캡슐16',
     company: '고려제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201006172.jpg?raw=true',
   ),
   MedicineData(
     no: '201006173',
-    name: '뉴멘타민서방캡슐24밀리그램(갈란타민브롬화수소산염)',
+    name: '뉴멘타민서방캡슐24',
     company: '고려제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201006173.jpg?raw=true',
   ),
   MedicineData(
     no: '201006155',
-    name: '시타프렉스정5밀리그램(에스시탈로프람옥살산염)',
+    name: '시타프렉스정',
     company: '고려제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201006155.jpg?raw=true',
@@ -5206,14 +5206,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201006491',
-    name: '판토록정40밀리그램(판토프라졸나트륨세스키히드레이트)',
+    name: '판토록정',
     company: '한국다케다제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201006491.jpg?raw=true',
   ),
   MedicineData(
     no: '201006492',
-    name: '판토록정20밀리그램(판토프라졸나트륨세스키히드레이트)',
+    name: '판토록정',
     company: '한국다케다제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201006492.jpg?raw=true',
@@ -5227,7 +5227,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201006511',
-    name: '클로피도정(클로피도그렐황산수소염)',
+    name: '클로피도정',
     company: '대화제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201006511.jpg?raw=true',
@@ -5255,7 +5255,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201103512',
-    name: '케이넵틴정(티아넵틴나트륨)',
+    name: '케이넵틴정',
     company: '주식회사제뉴원사이언스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103512.jpg?raw=true',
@@ -5269,84 +5269,84 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201103562',
-    name: '동광피타바스타틴정2밀리그램(피타바스타틴칼슘)',
+    name: '동광피타바스타틴정',
     company: '동광제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103562.jpg?raw=true',
   ),
   MedicineData(
     no: '201103563',
-    name: '피타테롤정2밀리그램(피타바스타틴칼슘)',
+    name: '피타테롤정',
     company: '(주)메디카코리아',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103563.jpg?raw=true',
   ),
   MedicineData(
     no: '201103565',
-    name: '피타바스정2밀리그램(피타바스타틴칼슘)',
+    name: '피타바스정',
     company: '초당약품공업(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103565.jpg?raw=true',
   ),
   MedicineData(
     no: '201103567',
-    name: '피바스트정2밀리그램(피타바스타틴칼슘)',
+    name: '피바스트정',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103567.jpg?raw=true',
   ),
   MedicineData(
     no: '201103607',
-    name: '레파넘정1밀리그램(레파글리니드)',
+    name: '레파넘정',
     company: '(주)다림바이오텍',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103607.jpg?raw=true',
   ),
   MedicineData(
     no: '201103608',
-    name: '네비롤정(네비보롤염산염)',
+    name: '네비롤정',
     company: '초당약품공업(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103608.jpg?raw=true',
   ),
   MedicineData(
     no: '201103611',
-    name: '네볼민정(네비보롤염산염)',
+    name: '네볼민정',
     company: '현대약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103611.jpg?raw=true',
   ),
   MedicineData(
     no: '201103615',
-    name: '디프론정(티아넵틴나트륨)',
+    name: '디프론정',
     company: '동국제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103615.jpg?raw=true',
   ),
   MedicineData(
     no: '201103616',
-    name: '한독피타바스타틴칼슘정2밀리그램',
+    name: '한독피타바스타틴칼슘정',
     company: '(주)한독',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103616.jpg?raw=true',
   ),
   MedicineData(
     no: '201103617',
-    name: '리파틴정2밀리그램(피타바스타틴칼슘)',
+    name: '리파틴정',
     company: '하나제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103617.jpg?raw=true',
   ),
   MedicineData(
     no: '201103627',
-    name: '미그펜400연질캡슐(이부프로펜)',
+    name: '미그펜400연질캡슐',
     company: '(주)알피바이오',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103627.jpg?raw=true',
   ),
   MedicineData(
     no: '201103628',
-    name: '스피딕400연질캡슐(이부프로펜)',
+    name: '스피딕400연질캡슐',
     company: '광동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103628.jpg?raw=true',
@@ -5388,14 +5388,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201103762',
-    name: '바로디핀정10밀리그램(암로디핀베실산염)',
+    name: '바로디핀정',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103762.jpg?raw=true',
   ),
   MedicineData(
     no: '201103779',
-    name: '아피니토정2.5밀리그램(에베로리무스)',
+    name: '아피니토정',
     company: '한국노바티스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103779.jpg?raw=true',
@@ -5409,14 +5409,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201103854',
-    name: '프리살탄정10밀리그램(올메사르탄메독소밀)',
+    name: '프리살탄정',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103854.jpg?raw=true',
   ),
   MedicineData(
     no: '201103909',
-    name: '실버셉트오디정5밀리그램(도네페질염산염수화물)',
+    name: '실버셉트오디정',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103909.jpg?raw=true',
@@ -5437,14 +5437,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201103944',
-    name: '엠피돈정5mg(옥시코돈염산염)',
+    name: '엠피돈정5mg',
     company: '명문제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103944.jpg?raw=true',
   ),
   MedicineData(
     no: '201103994',
-    name: '부광발사르탄정160밀리그램',
+    name: '부광발사르탄정',
     company: '부광약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103994.jpg?raw=true',
@@ -5458,35 +5458,35 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201104024',
-    name: '모다닐정200밀리그램(모다피닐)',
+    name: '모다닐정',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104024.jpg?raw=true',
   ),
   MedicineData(
     no: '201104026',
-    name: '딜라트렌정3.125mg(카르베딜롤)',
+    name: '딜라트렌정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104026.jpg?raw=true',
   ),
   MedicineData(
     no: '201104038',
-    name: '베타큐정(베타히스틴염산염)',
+    name: '베타큐정',
     company: '미래제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104038.jpg?raw=true',
   ),
   MedicineData(
     no: '201104021',
-    name: '디오패스정80밀리그램(발사르탄)',
+    name: '디오패스정',
     company: '일동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104021.jpg?raw=true',
   ),
   MedicineData(
     no: '201104022',
-    name: '디오패스정160밀리그램(발사르탄)',
+    name: '디오패스정160',
     company: '일동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104022.jpg?raw=true',
@@ -5507,63 +5507,63 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201104042',
-    name: '아스루카츄정4mg(몬테루카스트나트륨)',
+    name: '아스루카츄정4mg',
     company: '(주)보령',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104042.jpg?raw=true',
   ),
   MedicineData(
     no: '201104043',
-    name: '아스루카츄정5mg(몬테루카스트나트륨)',
+    name: '아스루카츄정5mg',
     company: '(주)보령',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104043.jpg?raw=true',
   ),
   MedicineData(
     no: '201104060',
-    name: '네베트롤정(네비보롤염산염)',
+    name: '네베트롤정',
     company: '국제약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104060.jpg?raw=true',
   ),
   MedicineData(
     no: '201104061',
-    name: '네비베타정(네비보롤염산염)',
+    name: '네비베타정',
     company: '한올바이오파마(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104061.jpg?raw=true',
   ),
   MedicineData(
     no: '201104062',
-    name: '네비올렛정(네비보롤염산염)',
+    name: '네비올렛정',
     company: '영진약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104062.jpg?raw=true',
   ),
   MedicineData(
     no: '201104063',
-    name: '네보트론정(네비보롤염산염)',
+    name: '네보트론정',
     company: '동국제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104063.jpg?raw=true',
   ),
   MedicineData(
     no: '201104064',
-    name: '네비트롤정(네비보롤염산염)',
+    name: '네비트롤정',
     company: '대원제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104064.jpg?raw=true',
   ),
   MedicineData(
     no: '201104066',
-    name: '네비칸정(네비보롤염산염)',
+    name: '네비칸정',
     company: '아주약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104066.jpg?raw=true',
   ),
   MedicineData(
     no: '201104067',
-    name: '란가톤캡슐30밀리그램(란소프라졸)',
+    name: '란가톤캡슐',
     company: '광동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104067.jpg?raw=true',
@@ -5591,7 +5591,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201104376',
-    name: '엘라원정(울리프리스탈아세테이트)',
+    name: '엘라원정',
     company: '현대약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104376.jpg?raw=true',
@@ -5633,14 +5633,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201104578',
-    name: '브릴린타정90밀리그램(티카그렐러)',
+    name: '브릴린타정',
     company: '한국아스트라제네카(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104578.jpg?raw=true',
   ),
   MedicineData(
     no: '201104609',
-    name: '티키스캡슐10밀리그램(티퀴지움브로마이드)',
+    name: '티키스캡슐',
     company: '삼남제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104609.jpg?raw=true',
@@ -5654,21 +5654,21 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201104725',
-    name: '넵틴정12.5밀리그램(티아넵틴나트륨)',
+    name: '넵틴정',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104725.jpg?raw=true',
   ),
   MedicineData(
     no: '201104726',
-    name: '스티아론정(티아넵틴나트륨)',
+    name: '스티아론정',
     company: '(주)한국파마',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104726.jpg?raw=true',
   ),
   MedicineData(
     no: '201104754',
-    name: '발트렙정80밀리그램(발사르탄)',
+    name: '발트렙정',
     company: '경동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104754.jpg?raw=true',
@@ -5696,56 +5696,56 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201104786',
-    name: '오자펙스정10밀리그램(올란자핀)',
+    name: '오자펙스정',
     company: '(주)한국파마',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104786.jpg?raw=true',
   ),
   MedicineData(
     no: '201104797',
-    name: '디잔틴정160밀리그램(발사르탄)',
+    name: '디잔틴정',
     company: '한국유나이티드제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104797.jpg?raw=true',
   ),
   MedicineData(
     no: '201104798',
-    name: '에탈로프정20밀리그램(에스시탈로프람옥살산염)',
+    name: '에탈로프정',
     company: '동화약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104798.jpg?raw=true',
   ),
   MedicineData(
     no: '201104799',
-    name: '시탈로정20밀리그램(에스시탈로프람옥살산염)',
+    name: '시탈로정',
     company: '영진약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104799.jpg?raw=true',
   ),
   MedicineData(
     no: '201104800',
-    name: '시타프로정20밀리그램(에스시탈로프람옥살산염)',
+    name: '시타프로정',
     company: '(주)보령',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104800.jpg?raw=true',
   ),
   MedicineData(
     no: '201104801',
-    name: '에스시탐정20밀리그램(에스시탈로프람옥살산염)',
+    name: '에스시탐정',
     company: '주식회사제뉴원사이언스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104801.jpg?raw=true',
   ),
   MedicineData(
     no: '201104805',
-    name: '티아네론정(티아넵틴나트륨)',
+    name: '티아네론정',
     company: '(주)태준제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104805.jpg?raw=true',
   ),
   MedicineData(
     no: '201104878',
-    name: '인도메타캡슐(인도메타신)',
+    name: '인도메타캡슐',
     company: '(주)한국피엠지제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201104878.jpg?raw=true',
@@ -5759,7 +5759,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201105016',
-    name: '브레핀에스연질캡슐(이부프로펜)',
+    name: '브레핀에스연질캡슐',
     company: '제이더블유중외제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105016.jpg?raw=true',
@@ -5773,7 +5773,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201105083',
-    name: '프로콘틴서방정20mg(옥시코돈염산염)',
+    name: '프로콘틴서방정',
     company: '대원제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105083.jpg?raw=true',
@@ -5801,14 +5801,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201105143',
-    name: '바로살탄정80밀리그램(발사르탄)',
+    name: '바로살탄정80',
     company: '동아에스티(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105143.jpg?raw=true',
   ),
   MedicineData(
     no: '201105144',
-    name: '바로살탄정40밀리그램(발사르탄)',
+    name: '바로살탄정40',
     company: '동아에스티(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105144.jpg?raw=true',
@@ -5822,14 +5822,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201105270',
-    name: '메바로친정40밀리그램(프라바스타틴나트륨)',
+    name: '메바로친정',
     company: '에이치케이이노엔(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105270.jpg?raw=true',
   ),
   MedicineData(
     no: '201105340',
-    name: '프로센캡슐(나프록센)',
+    name: '프로센캡슐',
     company: '명문제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105340.jpg?raw=true',
@@ -5850,21 +5850,21 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201105414',
-    name: '발사오르정40밀리그램(발사르탄)',
+    name: '발사오르정40',
     company: '한림제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105414.jpg?raw=true',
   ),
   MedicineData(
     no: '201105415',
-    name: '발사오르정160밀리그램(발사르탄)',
+    name: '발사오르정160',
     company: '한림제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105415.jpg?raw=true',
   ),
   MedicineData(
     no: '201105416',
-    name: '발사오르정80밀리그램(발사르탄)',
+    name: '발사오르정80',
     company: '한림제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105416.jpg?raw=true',
@@ -5878,70 +5878,70 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201105366',
-    name: '피라맥스정(수출명:Pyramaxfilmcoatedtablets|ARPYCOMfilmcoatedtablets)',
+    name: '피라맥스정',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105366.jpg?raw=true',
   ),
   MedicineData(
     no: '201105486',
-    name: '디오살탄정40밀리그램(발사르탄)',
+    name: '디오살탄정',
     company: '(주)유한양행',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105486.jpg?raw=true',
   ),
   MedicineData(
     no: '201100879',
-    name: '칸살탄플러스정16/12.5mg',
+    name: '칸살탄플러스정',
     company: '영진약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100879.jpg?raw=true',
   ),
   MedicineData(
     no: '201100897',
-    name: '오사탄플러스정20/12.5밀리그램',
+    name: '오사탄플러스정',
     company: '오스틴제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100897.jpg?raw=true',
   ),
   MedicineData(
     no: '201100900',
-    name: '올메딘정20밀리그램(올메사탄메독소밀)',
+    name: '올메딘정',
     company: '동성제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100900.jpg?raw=true',
   ),
   MedicineData(
     no: '201100906',
-    name: '올메살탄정20밀리그램(올메사탄메독소밀)',
+    name: '올메살탄정',
     company: '영풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100906.jpg?raw=true',
   ),
   MedicineData(
     no: '201100913',
-    name: '올메딜정20밀리그램(올메사탄메독소밀)',
+    name: '올메딜정',
     company: '(주)메디카코리아',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100913.jpg?raw=true',
   ),
   MedicineData(
     no: '201100918',
-    name: '올살탄정20밀리그램(올메사탄메독소밀)',
+    name: '올살탄정',
     company: '삼천당제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100918.jpg?raw=true',
   ),
   MedicineData(
     no: '201100946',
-    name: '올레정20밀리그램(올메사르탄메독소밀)',
+    name: '올레정',
     company: '한국프라임제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100946.jpg?raw=true',
   ),
   MedicineData(
     no: '201100949',
-    name: '오사탄정20밀리그램(올메사탄메독소밀)',
+    name: '오사탄정',
     company: '오스틴제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100949.jpg?raw=true',
@@ -5955,63 +5955,63 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201100952',
-    name: '올레텐정10밀리그램(올메사탄메독소밀)',
+    name: '올레텐정10',
     company: '한국유나이티드제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100952.jpg?raw=true',
   ),
   MedicineData(
     no: '201100953',
-    name: '올레텐정20밀리그램(올메사탄메독소밀)',
+    name: '올레텐정20',
     company: '한국유나이티드제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100953.jpg?raw=true',
   ),
   MedicineData(
     no: '201100972',
-    name: '올메진정20밀리그램(올메사탄메독소밀)',
+    name: '올메진정20',
     company: '구주제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100972.jpg?raw=true',
   ),
   MedicineData(
     no: '201100973',
-    name: '올살텍정20밀리그램(올메사탄메독소밀)',
+    name: '올살텍정20',
     company: '광동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100973.jpg?raw=true',
   ),
   MedicineData(
     no: '201100974',
-    name: '올데사르플러스정20/12.5밀리그램',
+    name: '올데사르플러스정',
     company: '(주)한독',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100974.jpg?raw=true',
   ),
   MedicineData(
     no: '201100975',
-    name: '올데사르정20밀리그램(올메사탄메독소밀)',
+    name: '올데사르정20',
     company: '(주)한독',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100975.jpg?raw=true',
   ),
   MedicineData(
     no: '201100976',
-    name: '베니칸정20밀리그램(올메사탄메독소밀)',
+    name: '베니칸정20',
     company: '알보젠코리아(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100976.jpg?raw=true',
   ),
   MedicineData(
     no: '201100979',
-    name: '프리살탄플러스정20/12.5밀리그램',
+    name: '프리살탄플러스정',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100979.jpg?raw=true',
   ),
   MedicineData(
     no: '201100980',
-    name: '프리살탄정20밀리그램(올메사르탄메독소밀)',
+    name: '프리살탄정20',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201100980.jpg?raw=true',
@@ -6032,35 +6032,35 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201101018',
-    name: '칸사타정8밀리그램(칸데사르탄실렉세틸)',
+    name: '칸사타정8밀리그램',
     company: '경동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101018.jpg?raw=true',
   ),
   MedicineData(
     no: '201101022',
-    name: '에스올정20밀리그램(올메사르탄메독소밀)',
+    name: '에스올정20',
     company: '삼익제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101022.jpg?raw=true',
   ),
   MedicineData(
     no: '201101024',
-    name: '루케어츄정4밀리그램(몬테루카스트나트륨)',
+    name: '루케어츄정4',
     company: '에이치케이이노엔(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101024.jpg?raw=true',
   ),
   MedicineData(
     no: '201101025',
-    name: '루케어츄정5밀리그램(몬테루카스트나트륨)',
+    name: '루케어츄정5',
     company: '에이치케이이노엔(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101025.jpg?raw=true',
   ),
   MedicineData(
     no: '201101026',
-    name: '루케어정10밀리그램(몬테루카스트나트륨)',
+    name: '루케어정10',
     company: '에이치케이이노엔(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101026.jpg?raw=true',
@@ -6088,28 +6088,28 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201101113',
-    name: '코아푸르탄정150/12.5밀리그램',
+    name: '코아푸르탄정150',
     company: '동아에스티(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101113.jpg?raw=true',
   ),
   MedicineData(
     no: '201101114',
-    name: '코아푸르탄정300/12.5밀리그램',
+    name: '코아푸르탄정300',
     company: '동아에스티(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101114.jpg?raw=true',
   ),
   MedicineData(
     no: '201101116',
-    name: '자이피스오디정10밀리그램(올란자핀)',
+    name: '자이피스오디정',
     company: '고려제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101116.jpg?raw=true',
   ),
   MedicineData(
     no: '201101167',
-    name: '펜디펜정(펜디메트라진타르타르산염)',
+    name: '펜디펜정',
     company: '에이프로젠제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101167.jpg?raw=true',
@@ -6130,7 +6130,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201101493',
-    name: '록스펜씨알정(록소프로펜나트륨)',
+    name: '록스펜씨알정',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101493.jpg?raw=true',
@@ -6165,84 +6165,84 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201101643',
-    name: '이자벨탄정150밀리그램(이르베사르탄)',
+    name: '이자벨탄정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101643.jpg?raw=true',
   ),
   MedicineData(
     no: '201101644',
-    name: '이자벨탄정300밀리그램(이베사탄)',
+    name: '이자벨탄정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101644.jpg?raw=true',
   ),
   MedicineData(
     no: '201101692',
-    name: '국제세팔렉신캡슐(메틸올세팔렉신리시네이트)',
+    name: '국제세팔렉신캡슐',
     company: '국제약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101692.jpg?raw=true',
   ),
   MedicineData(
     no: '201101753',
-    name: '이베라플러스정150/12.5밀리그램',
+    name: '이베라플러스정',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101753.jpg?raw=true',
   ),
   MedicineData(
     no: '201101755',
-    name: '이잘탄정150밀리그램(이르베사르탄)',
+    name: '이잘탄정150',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101755.jpg?raw=true',
   ),
   MedicineData(
     no: '201101756',
-    name: '이잘탄정300밀리그램(이르베사르탄)',
+    name: '이잘탄정300',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101756.jpg?raw=true',
   ),
   MedicineData(
     no: '201101757',
-    name: '데잘탄정16밀리그램(칸데사르탄실렉세틸)',
+    name: '데잘탄정16',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101757.jpg?raw=true',
   ),
   MedicineData(
     no: '201101758',
-    name: '데잘탄정8밀리그램(칸데사르탄실렉세틸)',
+    name: '데잘탄정8',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101758.jpg?raw=true',
   ),
   MedicineData(
     no: '201101759',
-    name: '오파스트정(리마프로스트알파덱스)',
+    name: '오파스트정',
     company: '영진약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101759.jpg?raw=true',
   ),
   MedicineData(
     no: '201101760',
-    name: '이르베탄정150밀리그램(이베사탄)',
+    name: '이르베탄정',
     company: '경동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101760.jpg?raw=true',
   ),
   MedicineData(
     no: '201101773',
-    name: '올란자오디정5밀리그램(올란자핀)',
+    name: '올란자오디정5',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101773.jpg?raw=true',
   ),
   MedicineData(
     no: '201101774',
-    name: '올란자오디정10밀리그램(올란자핀)',
+    name: '올란자오디정10',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101774.jpg?raw=true',
@@ -6256,77 +6256,77 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201101834',
-    name: '텔미탄플러스정40/12.5밀리그램',
+    name: '텔미탄플러스정40',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101834.jpg?raw=true',
   ),
   MedicineData(
     no: '201101835',
-    name: '텔미탄플러스정80/12.5밀리그램',
+    name: '텔미탄플러스정80',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101835.jpg?raw=true',
   ),
   MedicineData(
     no: '201101843',
-    name: '에스올정10밀리그램(올메사르탄메독소밀)',
+    name: '에스올정10',
     company: '삼익제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101843.jpg?raw=true',
   ),
   MedicineData(
     no: '201101844',
-    name: '에스올정40밀리그램(올메사르탄메독소밀)',
+    name: '에스올정40',
     company: '삼익제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101844.jpg?raw=true',
   ),
   MedicineData(
     no: '201101847',
-    name: '아푸르탄정300밀리그램(이르베사르탄)',
+    name: '아푸르탄정',
     company: '동아에스티(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101847.jpg?raw=true',
   ),
   MedicineData(
     no: '201101853',
-    name: '올자핀정10밀리그램(올란자핀)',
+    name: '올자핀정',
     company: '동화약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101853.jpg?raw=true',
   ),
   MedicineData(
     no: '201101854',
-    name: '자이올란정10밀리그램(올란자핀)',
+    name: '자이올란정',
     company: '초당약품공업(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101854.jpg?raw=true',
   ),
   MedicineData(
     no: '201101856',
-    name: '에스졸캡슐20밀리그램(에스오메프라졸)',
+    name: '에스졸캡슐',
     company: '진양제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101856.jpg?raw=true',
   ),
   MedicineData(
     no: '201101857',
-    name: '에소프라졸캡슐20밀리그램(에스오메프라졸)',
+    name: '에소프라졸캡슐',
     company: '경동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101857.jpg?raw=true',
   ),
   MedicineData(
     no: '201101858',
-    name: '넥사졸캡슐20밀리그램(에스오메프라졸)',
+    name: '넥사졸캡슐',
     company: '(주)엘지화학',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101858.jpg?raw=true',
   ),
   MedicineData(
     no: '201101860',
-    name: '레트론정(레트로졸)',
+    name: '레트론정',
     company: '동국제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101860.jpg?raw=true',
@@ -6340,7 +6340,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201101863',
-    name: '헵세루사정(아데포비어디피복실)',
+    name: '헵세루사정',
     company: '대웅바이오(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101863.jpg?raw=true',
@@ -6361,14 +6361,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201101884',
-    name: '코바로살탄정80/12.5밀리그램',
+    name: '코바로살탄정80',
     company: '동아에스티(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101884.jpg?raw=true',
   ),
   MedicineData(
     no: '201101885',
-    name: '코바로살탄정160/12.5밀리그램',
+    name: '코바로살탄정160',
     company: '동아에스티(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201101885.jpg?raw=true',
@@ -6382,49 +6382,49 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201102120',
-    name: '리드펜캡슐(덱시부프로펜)',
+    name: '리드펜캡슐',
     company: '명문제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201102120.jpg?raw=true',
   ),
   MedicineData(
     no: '201102229',
-    name: '스프라이셀정100밀리그램(다사티닙)',
+    name: '스프라이셀정',
     company: '(유)한국비엠에스제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201102229.jpg?raw=true',
   ),
   MedicineData(
     no: '201102394',
-    name: '프레탈서방캡슐(실로스타졸)',
+    name: '프레탈서방캡슐',
     company: '한국오츠카제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201102394.jpg?raw=true',
   ),
   MedicineData(
     no: '201102328',
-    name: '이베라정150밀리그램(이르베사르탄)',
+    name: '이베라정150',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201102328.jpg?raw=true',
   ),
   MedicineData(
     no: '201102329',
-    name: '이베라정300밀리그램(이르베사르탄)',
+    name: '이베라정300',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201102329.jpg?raw=true',
   ),
   MedicineData(
     no: '201102476',
-    name: '아리피졸정15밀리그램(아리피프라졸)',
+    name: '아리피졸정',
     company: '환인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201102476.jpg?raw=true',
   ),
   MedicineData(
     no: '201102477',
-    name: '아리피졸정10밀리그램(아리피프라졸)',
+    name: '아리피졸정10',
     company: '환인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201102477.jpg?raw=true',
@@ -6466,7 +6466,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201102619',
-    name: '올자핀정2.5밀리그램(올란자핀)',
+    name: '올자핀정2.5밀리그램',
     company: '동화약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201102619.jpg?raw=true',
@@ -6480,42 +6480,42 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201102767',
-    name: '플리바스정25mg(나프토피딜)',
+    name: '플리바스정25mg',
     company: '동아에스티(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201102767.jpg?raw=true',
   ),
   MedicineData(
     no: '201102768',
-    name: '플리바스정75mg(나프토피딜)',
+    name: '플리바스정75mg',
     company: '동아에스티(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201102768.jpg?raw=true',
   ),
   MedicineData(
     no: '201102769',
-    name: '플리바스정50mg(나프토피딜)',
+    name: '플리바스정50mg',
     company: '동아에스티(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201102769.jpg?raw=true',
   ),
   MedicineData(
     no: '201102754',
-    name: '자이올란정5밀리그램(올란자핀)',
+    name: '자이올란정5밀리그램',
     company: '초당약품공업(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201102754.jpg?raw=true',
   ),
   MedicineData(
     no: '201102755',
-    name: '올자핀정5밀리그램(올란자핀)',
+    name: '올자핀정5밀리그램',
     company: '동화약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201102755.jpg?raw=true',
   ),
   MedicineData(
     no: '201102756',
-    name: '자이올란정2.5밀리그램(올란자핀)',
+    name: '자이올란정',
     company: '초당약품공업(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201102756.jpg?raw=true',
@@ -6529,7 +6529,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201102762',
-    name: '레파넘정2밀리그람(레파글리니드)',
+    name: '레파넘정2밀리그람',
     company: '(주)다림바이오텍',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201102762.jpg?raw=true',
@@ -6543,14 +6543,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201102749',
-    name: '서클베인장용정75밀리그램(아스피린)',
+    name: '서클베인장용정',
     company: '일양바이오팜(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201102749.jpg?raw=true',
   ),
   MedicineData(
     no: '201102783',
-    name: '치오단정(요오드화칼륨)',
+    name: '치오단정',
     company: '한국유나이티드제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201102783.jpg?raw=true',
@@ -6585,14 +6585,14 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201103214',
-    name: '코디잔틴정80/12.5밀리그램',
+    name: '코디잔틴정80',
     company: '한국유나이티드제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103214.jpg?raw=true',
   ),
   MedicineData(
     no: '201103227',
-    name: '레피진정(레보드로프로피진)',
+    name: '레피진정',
     company: '삼남제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103227.jpg?raw=true',
@@ -6606,7 +6606,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201103179',
-    name: '닥사스정500마이크로그램(로플루밀라스트)',
+    name: '닥사스정',
     company: '한국아스트라제네카(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103179.jpg?raw=true',
@@ -6620,21 +6620,21 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201103308',
-    name: '발사닌플러스정80/12.5밀리그램',
+    name: '발사닌플러스정80',
     company: '명문제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103308.jpg?raw=true',
   ),
   MedicineData(
     no: '201103309',
-    name: '발사닌플러스정160/12.5밀리그램',
+    name: '발사닌플러스정160',
     company: '명문제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103309.jpg?raw=true',
   ),
   MedicineData(
     no: '201103324',
-    name: '노마로크정5밀리그램(암로디핀베실산염)',
+    name: '노마로크정',
     company: '하나제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103324.jpg?raw=true',
@@ -6662,140 +6662,140 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201103414',
-    name: '피바스탄정2밀리그램(피타바스타틴칼슘)',
+    name: '피바스탄정',
     company: '영진약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103414.jpg?raw=true',
   ),
   MedicineData(
     no: '201103415',
-    name: '피큐로우정2밀리그램(피타바스타틴칼슘)',
+    name: '피큐로우정',
     company: '삼천당제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103415.jpg?raw=true',
   ),
   MedicineData(
     no: '201103416',
-    name: '타바로우정(피타바스타틴칼슘)',
+    name: '타바로우정',
     company: '대원제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103416.jpg?raw=true',
   ),
   MedicineData(
     no: '201103417',
-    name: '피타로바정2밀리그램(피타바스타틴칼슘)',
+    name: '피타로바정',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103417.jpg?raw=true',
   ),
   MedicineData(
     no: '201103420',
-    name: '리바스틴정2밀리그램(피타바스타틴칼슘)',
+    name: '리바스틴정',
     company: '구주제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103420.jpg?raw=true',
   ),
   MedicineData(
     no: '201103421',
-    name: '피타정2밀리그램(피타바스타틴칼슘)',
+    name: '피타정',
     company: '(주)서울제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103421.jpg?raw=true',
   ),
   MedicineData(
     no: '201103422',
-    name: '피타큐정2밀리그램(피타바스타틴칼슘)',
+    name: '피타큐정',
     company: '일동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103422.jpg?raw=true',
   ),
   MedicineData(
     no: '201103423',
-    name: '리피타정2밀리그램(피타바스타틴칼슘)',
+    name: '리피타정',
     company: '(주)경보제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103423.jpg?raw=true',
   ),
   MedicineData(
     no: '201103424',
-    name: '피타로우정2밀리그램(피타바스타틴칼슘)',
+    name: '피타로우정',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103424.jpg?raw=true',
   ),
   MedicineData(
     no: '201103425',
-    name: '피타바로틴정2밀리그램(피타바스타틴칼슘)',
+    name: '피타바로틴정',
     company: '환인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103425.jpg?raw=true',
   ),
   MedicineData(
     no: '201103426',
-    name: '피스타틴정(피타바스타틴칼슘)',
+    name: '피스타틴정',
     company: '(주)휴온스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103426.jpg?raw=true',
   ),
   MedicineData(
     no: '201103449',
-    name: '베네카정(방풍통성산건조엑스(4.6→1))',
+    name: '베네카정',
     company: '(주)서울제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103449.jpg?raw=true',
   ),
   MedicineData(
     no: '201103466',
-    name: '피타에스정2밀리그램(피타바스타틴칼슘)',
+    name: '피타에스정',
     company: '삼아제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103466.jpg?raw=true',
   ),
   MedicineData(
     no: '201103469',
-    name: '피타넥스정(피타바스타틴칼슘)',
+    name: '피타넥스정',
     company: '(주)바이넥스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103469.jpg?raw=true',
   ),
   MedicineData(
     no: '201103470',
-    name: '피바틴정2밀리그램(피타바스타틴칼슘)',
+    name: '피바틴정',
     company: '동화약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103470.jpg?raw=true',
   ),
   MedicineData(
     no: '201103471',
-    name: '피라바정(피타바스타틴칼슘)',
+    name: '피라바정',
     company: '(주)유영제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103471.jpg?raw=true',
   ),
   MedicineData(
     no: '201103472',
-    name: '타스틴정2밀리그램(피타바스타틴칼슘)',
+    name: '타스틴정',
     company: '위더스제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103472.jpg?raw=true',
   ),
   MedicineData(
     no: '201103475',
-    name: '케이바로정(피타바스타틴칼슘)',
+    name: '케이바로정',
     company: '주식회사제뉴원사이언스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103475.jpg?raw=true',
   ),
   MedicineData(
     no: '201103510',
-    name: '스티론정(티아넵틴나트륨)',
+    name: '스티론정',
     company: '(주)동구바이오제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103510.jpg?raw=true',
   ),
   MedicineData(
     no: '201103511',
-    name: '스타넵틴정(티아넵틴나트륨)',
+    name: '스타넵틴정',
     company: '동화약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201103511.jpg?raw=true',
@@ -6816,21 +6816,21 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201105613',
-    name: '발사오르플러스정160/12.5밀리그램',
+    name: '발사오르플러스정160',
     company: '한림제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105613.jpg?raw=true',
   ),
   MedicineData(
     no: '201105614',
-    name: '발사오르플러스정80/12.5밀리그램',
+    name: '발사오르플러스정80',
     company: '한림제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105614.jpg?raw=true',
   ),
   MedicineData(
     no: '201105697',
-    name: '위더스레보플록사신정500밀리그램',
+    name: '위더스레보플록사신정',
     company: '위더스제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105697.jpg?raw=true',
@@ -6844,70 +6844,70 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201105914',
-    name: '몬테잘츄정5밀리그램(몬테루카스트나트륨)',
+    name: '몬테잘츄정',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105914.jpg?raw=true',
   ),
   MedicineData(
     no: '201105915',
-    name: '몬테잘츄정4밀리그램(몬테루카스트나트륨)',
+    name: '몬테잘츄정4밀리그램',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105915.jpg?raw=true',
   ),
   MedicineData(
     no: '201105916',
-    name: '몬테잘정10밀리그램(몬테루카스트나트륨)',
+    name: '몬테잘정10밀리그램',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105916.jpg?raw=true',
   ),
   MedicineData(
     no: '201105917',
-    name: '몬테루브이츄정4mg(몬테루카스트나트륨)',
+    name: '몬테루브이츄정4mg',
     company: '(주)엘지화학',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105917.jpg?raw=true',
   ),
   MedicineData(
     no: '201105918',
-    name: '발사렉트정40밀리그램(발사르탄)',
+    name: '발사렉트정40mg',
     company: '제이더블유중외제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105918.jpg?raw=true',
   ),
   MedicineData(
     no: '201105919',
-    name: '몬테루브이츄정5mg(몬테루카스트나트륨)',
+    name: '몬테루브이츄정5mg',
     company: '(주)엘지화학',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105919.jpg?raw=true',
   ),
   MedicineData(
     no: '201105920',
-    name: '몬테루브이정10mg(몬테루카스트나트륨)',
+    name: '몬테루브이정10mg',
     company: '(주)엘지화학',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105920.jpg?raw=true',
   ),
   MedicineData(
     no: '201105953',
-    name: '씨투스현탁정70mg(프란루카스트수화물)',
+    name: '씨투스현탁정70mg',
     company: '삼아제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201105953.jpg?raw=true',
   ),
   MedicineData(
     no: '201106062',
-    name: '삼스카정15밀리그램(톨밥탄분무건조분말)',
+    name: '삼스카정15밀리그램',
     company: '한국오츠카제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201106062.jpg?raw=true',
   ),
   MedicineData(
     no: '201106063',
-    name: '삼스카정30밀리그램(톨밥탄분무건조분말)',
+    name: '삼스카정30mg',
     company: '한국오츠카제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201106063.jpg?raw=true',
@@ -6921,7 +6921,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201106366',
-    name: '솝튼정(티자니딘염산염)',
+    name: '솝튼정',
     company: '(주)휴온스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201106366.jpg?raw=true',
@@ -6935,7 +6935,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201106367',
-    name: '트라젠타정(리나글립틴)',
+    name: '트라젠타정',
     company: '한국베링거인겔하임(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201106367.jpg?raw=true',
@@ -6949,28 +6949,28 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201106390',
-    name: '파라메트정(라베프라졸나트륨)',
+    name: '파라메트정',
     company: '하나제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201106390.jpg?raw=true',
   ),
   MedicineData(
     no: '201106781',
-    name: '아마리아엠정2/500밀리그램',
+    name: '아마리아엠정2',
     company: '(주)테라젠이텍스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201106781.jpg?raw=true',
   ),
   MedicineData(
     no: '201106782',
-    name: '그리마린엠정2/500밀리그램',
+    name: '그리마린엠정2',
     company: '(주)하원제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201106782.jpg?raw=true',
   ),
   MedicineData(
     no: '201106784',
-    name: '베실로핀정10밀리그램(암로디핀베실산염)',
+    name: '베실로핀정10mg',
     company: '(주)티디에스팜',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201106784.jpg?raw=true',
@@ -6998,189 +6998,189 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201106950',
-    name: '글리메드엠정2/500밀리그램',
+    name: '글리메드엠정2',
     company: '일양약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201106950.jpg?raw=true',
   ),
   MedicineData(
     no: '201106951',
-    name: '글리피론엠정2/500밀리그램',
+    name: '글리피론엠정2',
     company: '영일제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201106951.jpg?raw=true',
   ),
   MedicineData(
     no: '201106952',
-    name: '글루비엠정2/500밀리그램',
+    name: '글루비엠정2',
     company: '알보젠코리아(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201106952.jpg?raw=true',
   ),
   MedicineData(
     no: '201106953',
-    name: '아로밀엠정2/500밀리그램',
+    name: '아로밀엠정2',
     company: '아주약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201106953.jpg?raw=true',
   ),
   MedicineData(
     no: '201109259',
-    name: '프리렙톨캡슐75mg(프레가발린)',
+    name: '프리렙톨캡슐75mg',
     company: '환인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109259.jpg?raw=true',
   ),
   MedicineData(
     no: '201109260',
-    name: '프리렙톨캡슐150밀리그램(프레가발린)',
+    name: '프리렙톨캡슐150mg',
     company: '환인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109260.jpg?raw=true',
   ),
   MedicineData(
     no: '201109261',
-    name: '리바린캡슐75밀리그램(프레가발린)',
+    name: '리바린캡슐75mg',
     company: '(주)한국비엠아이',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109261.jpg?raw=true',
   ),
   MedicineData(
     no: '201109188',
-    name: '로자신정100밀리그램(로사르탄칼륨)',
+    name: '로자신정100mg',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109188.jpg?raw=true',
   ),
   MedicineData(
     no: '201109274',
-    name: '가바뉴로캡슐75밀리그램(프레가발린)',
+    name: '가바뉴로캡슐75mg',
     company: '한림제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109274.jpg?raw=true',
   ),
   MedicineData(
     no: '201109275',
-    name: '가바뉴로캡슐150밀리그램(프레가발린)',
+    name: '가바뉴로캡슐150mg',
     company: '한림제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109275.jpg?raw=true',
   ),
   MedicineData(
     no: '201109276',
-    name: '아나리카캡슐150밀리그램(프레가발린)',
+    name: '아나리카캡슐150mg',
     company: '아주약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109276.jpg?raw=true',
   ),
   MedicineData(
     no: '201109277',
-    name: '아나리카캡슐75밀리그램(프레가발린)',
+    name: '아나리카캡슐75mg',
     company: '아주약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109277.jpg?raw=true',
   ),
   MedicineData(
     no: '201109280',
-    name: '글리파엠정2/500밀리그램',
+    name: '글리파엠정2',
     company: '(주)동구바이오제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109280.jpg?raw=true',
   ),
   MedicineData(
     no: '201109287',
-    name: '일양프레가발린캡슐75밀리그램',
+    name: '일양프레가발린캡슐75mg',
     company: '일양약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109287.jpg?raw=true',
   ),
   MedicineData(
     no: '201109288',
-    name: '일양프레가발린캡슐150밀리그램',
+    name: '일양프레가발린캡슐150mg',
     company: '일양약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109288.jpg?raw=true',
   ),
   MedicineData(
     no: '201109291',
-    name: '뉴로페인캡슐75밀리그램(프레가발린)',
+    name: '뉴로페인캡슐75mg',
     company: '유니메드제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109291.jpg?raw=true',
   ),
   MedicineData(
     no: '201109292',
-    name: '프리가캡슐75밀리그램(프레가발린)',
+    name: '프리가캡슐75mg',
     company: '(주)동구바이오제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109292.jpg?raw=true',
   ),
   MedicineData(
     no: '201109293',
-    name: '프리가캡슐150밀리그램(프레가발린)',
+    name: '프리가캡슐150mg',
     company: '(주)동구바이오제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109293.jpg?raw=true',
   ),
   MedicineData(
     no: '201109296',
-    name: '뉴로페인캡슐150밀리그램(프레가발린)',
+    name: '뉴로페인캡슐150mg',
     company: '유니메드제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109296.jpg?raw=true',
   ),
   MedicineData(
     no: '201109297',
-    name: '리카린캡슐75밀리그램(프레가발린)',
+    name: '리카린캡슐75mg',
     company: '영진약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109297.jpg?raw=true',
   ),
   MedicineData(
     no: '201109298',
-    name: '리카린캡슐150밀리그램(프레가발린)',
+    name: '리카린캡슐150mg',
     company: '영진약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109298.jpg?raw=true',
   ),
   MedicineData(
     no: '201109301',
-    name: '자이피스오디정5밀리그램(올란자핀)',
+    name: '자이피스오디정5mg',
     company: '고려제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109301.jpg?raw=true',
   ),
   MedicineData(
     no: '201109304',
-    name: '프리엔터캡슐150밀리그램(프레가발린)',
+    name: '프리엔터캡슐150mg',
     company: '에스케이케미칼(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109304.jpg?raw=true',
   ),
   MedicineData(
     no: '201109310',
-    name: '프레리카캡슐150밀리그램(프레가발린)',
+    name: '프레리카캡슐150mg',
     company: '(주)메디카코리아',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109310.jpg?raw=true',
   ),
   MedicineData(
     no: '201109313',
-    name: '폴라리스정100밀리그램(아미설피리드)',
+    name: '폴라리스정100mg',
     company: '유니메드제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109313.jpg?raw=true',
   ),
   MedicineData(
     no: '201109314',
-    name: '글리파엠정1/250밀리그램',
+    name: '글리파엠정1',
     company: '(주)동구바이오제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109314.jpg?raw=true',
   ),
   MedicineData(
     no: '201109514',
-    name: '한미탐스오디정0.2밀리그램(탐스로신염산염)',
+    name: '한미탐스오디정0.2mg',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109514.jpg?raw=true',
@@ -7250,21 +7250,21 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201109818',
-    name: '디오패스정40밀리그램(발사르탄)',
+    name: '디오패스정40mg',
     company: '일동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109818.jpg?raw=true',
   ),
   MedicineData(
     no: '201109819',
-    name: '지트람씨알서방정75밀리그램(트라마돌염산염)',
+    name: '지트람씨알서방정75mg',
     company: '한국먼디파마(유)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109819.jpg?raw=true',
   ),
   MedicineData(
     no: '201109827',
-    name: '에이프로젠란소프라졸캡슐30밀리그램',
+    name: '에이프로젠란소프라졸캡슐30mg',
     company: '에이프로젠제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109827.jpg?raw=true',
@@ -7299,49 +7299,49 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201110023',
-    name: '람세트오디정0.1밀리그램(라모세트론염산염)',
+    name: '람세트오디정0.1mg',
     company: '하나제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201110023.jpg?raw=true',
   ),
   MedicineData(
     no: '201110058',
-    name: '람트론오디정(라모세트론염산염)',
+    name: '람트론오디정',
     company: '한국유나이티드제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201110058.jpg?raw=true',
   ),
   MedicineData(
     no: '201110062',
-    name: '프리텐션정80밀리그램(텔미사르탄)',
+    name: '프리텐션정80mg',
     company: '(주)다산제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201110062.jpg?raw=true',
   ),
   MedicineData(
     no: '201110095',
-    name: '비비안트정20밀리그램(바제독시펜아세테이트)',
+    name: '비비안트정20mg',
     company: '한국화이자제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201110095.jpg?raw=true',
   ),
   MedicineData(
     no: '201110104',
-    name: '발사닌정160밀리그램(발사르탄)',
+    name: '발사닌정160mg',
     company: '명문제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201110104.jpg?raw=true',
   ),
   MedicineData(
     no: '201110105',
-    name: '발사닌정80밀리그램(발사르탄)',
+    name: '발사닌정80mg',
     company: '명문제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201110105.jpg?raw=true',
   ),
   MedicineData(
     no: '201110120',
-    name: '트리스펜연질캡슐(이부프로펜)',
+    name: '트리스펜연질캡슐',
     company: '동화약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201110120.jpg?raw=true',
@@ -7369,7 +7369,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201110294',
-    name: '미니린멜트설하정240마이크로그램(데스모프레신아세트산염)',
+    name: '미니린멜트설하정240',
     company: '한국페링제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201110294.jpg?raw=true',
@@ -7383,7 +7383,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201110421',
-    name: '디메릴엠정2/500밀리그램',
+    name: '디메릴엠정2',
     company: '(주)이든파마',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201110421.jpg?raw=true',
@@ -7411,28 +7411,28 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201110472',
-    name: '아미썰정400밀리그램(아미설프리드)',
+    name: '아미썰정400mg',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201110472.jpg?raw=true',
   ),
   MedicineData(
     no: '201110491',
-    name: '씨투스현탁정50mg(프란루카스트수화물)',
+    name: '씨투스현탁정50mg',
     company: '삼아제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201110491.jpg?raw=true',
   ),
   MedicineData(
     no: '201110492',
-    name: '씨투스현탁정100mg(프란루카스트수화물)',
+    name: '씨투스현탁정100mg',
     company: '삼아제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201110492.jpg?raw=true',
   ),
   MedicineData(
     no: '201110501',
-    name: '엘리퀴스정2.5밀리그램(아픽사반)',
+    name: '엘리퀴스정2.5mg',
     company: '(유)한국비엠에스제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201110501.jpg?raw=true',
@@ -7446,7 +7446,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201110509',
-    name: '리스돈정3밀리그램(리스페리돈)',
+    name: '리스돈정3mg',
     company: '(주)한국파마',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201110509.jpg?raw=true',
@@ -7460,28 +7460,28 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201110511',
-    name: '에스마라정(레트로졸)',
+    name: '에스마라정',
     company: '동아에스티(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201110511.jpg?raw=true',
   ),
   MedicineData(
     no: '201110512',
-    name: '라사르정4밀리그램(라시디핀)',
+    name: '라사르정4mg',
     company: '유니메드제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201110512.jpg?raw=true',
   ),
   MedicineData(
     no: '201110513',
-    name: '메록스캄캡슐7.5밀리그램(멜록시캄)',
+    name: '메록스캄캡슐7.5mg',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201110513.jpg?raw=true',
   ),
   MedicineData(
     no: '201110541',
-    name: '엠빅스에스구강붕해필름50밀리그램(미로데나필)',
+    name: '엠빅스에스구강붕해필름50mg',
     company: '에스케이케미칼(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201110541.jpg?raw=true',
@@ -7495,7 +7495,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201110563',
-    name: '폴시드정0.4밀리그램(폴산)',
+    name: '폴시드정0.4mg',
     company: '조아제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201110563.jpg?raw=true',
@@ -7516,7 +7516,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201110739',
-    name: '덴파사큐연질캡슐(옥수수불검화정량추출물)',
+    name: '덴파사큐연질캡슐',
     company: '동아제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201110739.jpg?raw=true',
@@ -7544,35 +7544,35 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201111086',
-    name: '메디키넷리타드캡슐5mg(메틸페니데이트염산염)',
+    name: '메디키넷리타드캡슐5mg',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201111086.jpg?raw=true',
   ),
   MedicineData(
     no: '201111087',
-    name: '메디키넷리타드캡슐40mg(메틸페니데이트염산염)',
+    name: '메디키넷리타드캡슐40mg',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201111087.jpg?raw=true',
   ),
   MedicineData(
     no: '201111088',
-    name: '메디키넷리타드캡슐10mg(메틸페니데이트염산염)',
+    name: '메디키넷리타드캡슐10mg',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201111088.jpg?raw=true',
   ),
   MedicineData(
     no: '201111093',
-    name: '메디키넷리타드캡슐30mg(메틸페니데이트염산염)',
+    name: '메디키넷리타드캡슐30mg',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201111093.jpg?raw=true',
   ),
   MedicineData(
     no: '201111091',
-    name: '메디키넷리타드캡슐20mg(메틸페니데이트염산염)',
+    name: '메디키넷리타드캡슐20mg',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201111091.jpg?raw=true',
@@ -7586,119 +7586,119 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201112299',
-    name: '레파넘정0.5밀리그램(레파글리니드)',
+    name: '레파넘정0.5mg',
     company: '(주)다림바이오텍',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201112299.jpg?raw=true',
   ),
   MedicineData(
     no: '201112304',
-    name: '옥세틴캡슐10밀리그램(플루옥세틴염산염)',
+    name: '옥세틴캡슐10mg',
     company: '조아제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201112304.jpg?raw=true',
   ),
   MedicineData(
     no: '201112306',
-    name: '동광프레가발린캡슐150밀리그램',
+    name: '동광프레가발린캡슐150mg',
     company: '동광제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201112306.jpg?raw=true',
   ),
   MedicineData(
     no: '201112307',
-    name: '동광프레가발린캡슐75밀리그램',
+    name: '동광프레가발린캡슐75mg',
     company: '동광제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201112307.jpg?raw=true',
   ),
   MedicineData(
     no: '201112194',
-    name: '잴코리캡슐200밀리그램(크리조티닙)',
+    name: '잴코리캡슐200mg',
     company: '한국화이자제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201112194.jpg?raw=true',
   ),
   MedicineData(
     no: '201112195',
-    name: '잴코리캡슐250밀리그램(크리조티닙)',
+    name: '잴코리캡슐250mg',
     company: '한국화이자제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201112195.jpg?raw=true',
   ),
   MedicineData(
     no: '201200062',
-    name: '세파신캡슐(세팔렉신수화물)(수출명:Medicephalcap.)',
+    name: '세파신캡슐',
     company: '한국코러스(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201200062.jpg?raw=true',
   ),
   MedicineData(
     no: '201200120',
-    name: '슈펙트캡슐200밀리그램(라도티닙염산염)',
+    name: '슈펙트캡슐200mg',
     company: '일양약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201200120.jpg?raw=true',
   ),
   MedicineData(
     no: '201200121',
-    name: '슈펙트캡슐100밀리그램(라도티닙염산염)',
+    name: '슈펙트캡슐100mg',
     company: '일양약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201200121.jpg?raw=true',
   ),
   MedicineData(
     no: '201200211',
-    name: '리스피돈오디정2밀리그램(리스페리돈)',
+    name: '리스피돈오디정2mg',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201200211.jpg?raw=true',
   ),
   MedicineData(
     no: '201106963',
-    name: '메아그릴엠정2/500밀리그램',
+    name: '메아그릴엠정2',
     company: '(주)엘지화학',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201106963.jpg?raw=true',
   ),
   MedicineData(
     no: '201106964',
-    name: '디아리드엠정2/500밀리그램',
+    name: '디아리드엠정2',
     company: '광동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201106964.jpg?raw=true',
   ),
   MedicineData(
     no: '201106980',
-    name: '메리클엠정2/500mg',
+    name: '메리클엠정2',
     company: '대원제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201106980.jpg?raw=true',
   ),
   MedicineData(
     no: '201106982',
-    name: '글라포민엠정2/500밀리그램',
+    name: '글라포민엠정2',
     company: '(주)유한양행',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201106982.jpg?raw=true',
   ),
   MedicineData(
     no: '201107002',
-    name: '다이피릴엠정2/500밀리그램',
+    name: '다이피릴엠정2',
     company: '환인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107002.jpg?raw=true',
   ),
   MedicineData(
     no: '201107003',
-    name: '글리팜엠정2/500밀리그램',
+    name: '글리팜엠정2',
     company: '일동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107003.jpg?raw=true',
   ),
   MedicineData(
     no: '201107004',
-    name: '메피릴엠정2/500밀리그램',
+    name: '메피릴엠정2',
     company: '명문제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107004.jpg?raw=true',
@@ -7712,161 +7712,161 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201107174',
-    name: '포디엠정2/500밀리그램',
+    name: '포디엠정2',
     company: '대화제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107174.jpg?raw=true',
   ),
   MedicineData(
     no: '201107175',
-    name: '다이메릴엠정2/500밀리그램',
+    name: '다이메릴엠정2',
     company: '국제약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107175.jpg?raw=true',
   ),
   MedicineData(
     no: '201107176',
-    name: '글리포르민정2/500밀리그램',
+    name: '글리포르민정2',
     company: '주식회사제뉴원사이언스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107176.jpg?raw=true',
   ),
   MedicineData(
     no: '201107199',
-    name: '메디롤엠정2/500밀리그램',
+    name: '메디롤엠정2',
     company: '삼익제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107199.jpg?raw=true',
   ),
   MedicineData(
     no: '201107201',
-    name: '미아릴엠정2/500밀리그램',
+    name: '미아릴엠정2',
     company: '진양제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107201.jpg?raw=true',
   ),
   MedicineData(
     no: '201107202',
-    name: '글리필엠정2/500밀리그램',
+    name: '글리필엠정2',
     company: '동화약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107202.jpg?raw=true',
   ),
   MedicineData(
     no: '201107204',
-    name: '글레딘엠정2/500밀리그램',
+    name: '글레딘엠정2',
     company: '삼진제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107204.jpg?raw=true',
   ),
   MedicineData(
     no: '201107205',
-    name: '지엠정2/500밀리그램',
+    name: '지엠정2',
     company: '에이치엘비제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107205.jpg?raw=true',
   ),
   MedicineData(
     no: '201107216',
-    name: '디발탄정160밀리그램(발사르탄)',
+    name: '디발탄정160mg',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107216.jpg?raw=true',
   ),
   MedicineData(
     no: '201107217',
-    name: '디발탄정80밀리그램(발사르탄)',
+    name: '디발탄정80mg',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107217.jpg?raw=true',
   ),
   MedicineData(
     no: '201107219',
-    name: '네오마릴엠정2/500밀리그램',
+    name: '네오마릴엠정2mg',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107219.jpg?raw=true',
   ),
   MedicineData(
     no: '201107220',
-    name: '다이리드엠정2/500밀리그램',
+    name: '다이리드엠정2',
     company: '하나제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107220.jpg?raw=true',
   ),
   MedicineData(
     no: '201107221',
-    name: '게리메트정2/500밀리그램',
+    name: '게리메트정2',
     company: '대한뉴팜(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107221.jpg?raw=true',
   ),
   MedicineData(
     no: '201107224',
-    name: '글리포르민정1/250밀리그램',
+    name: '글리포르민정1',
     company: '주식회사제뉴원사이언스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107224.jpg?raw=true',
   ),
   MedicineData(
     no: '201107225',
-    name: '글리팜엠정1/250밀리그램',
+    name: '글리팜엠정1',
     company: '일동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107225.jpg?raw=true',
   ),
   MedicineData(
     no: '201107226',
-    name: '글라포민엠정1/250밀리그램',
+    name: '글라포민엠정1',
     company: '(주)유한양행',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107226.jpg?raw=true',
   ),
   MedicineData(
     no: '201107227',
-    name: '글라포민엠정1/500밀리그램',
+    name: '글라포민엠정1',
     company: '(주)유한양행',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107227.jpg?raw=true',
   ),
   MedicineData(
     no: '201107228',
-    name: '글리원플러스정2/500밀리그램',
+    name: '글리원플러스정2',
     company: '에이치케이이노엔(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107228.jpg?raw=true',
   ),
   MedicineData(
     no: '201107229',
-    name: '아베린엠정2/500밀리그램',
+    name: '아베린엠정2',
     company: '(주)휴온스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107229.jpg?raw=true',
   ),
   MedicineData(
     no: '201107230',
-    name: '아베린엠정1/250밀리그램',
+    name: '아베린엠정1',
     company: '(주)휴온스',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107230.jpg?raw=true',
   ),
   MedicineData(
     no: '201107231',
-    name: '크리메릴엠정2/500밀리그램',
+    name: '크리메릴엠정2',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107231.jpg?raw=true',
   ),
   MedicineData(
     no: '201107232',
-    name: '케이마릴엠정2/500밀리그램',
+    name: '케이마릴엠정2',
     company: '(주)경보제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107232.jpg?raw=true',
   ),
   MedicineData(
     no: '201107233',
-    name: '윈글리엠정2/500밀리그램',
+    name: '윈글리엠정2',
     company: '한화제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107233.jpg?raw=true',
@@ -7880,35 +7880,35 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201107235',
-    name: '모티펜캡슐75밀리그램(디클로페낙나트륨)',
+    name: '모티펜캡슐75mg',
     company: '한국유니온제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107235.jpg?raw=true',
   ),
   MedicineData(
     no: '201107238',
-    name: '헤르포지정(발라시클로버염산염세스키히드레이트)',
+    name: '헤르포지정',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107238.jpg?raw=true',
   ),
   MedicineData(
     no: '201107290',
-    name: '윈글리엠정1/250밀리그램',
+    name: '윈글리엠정1',
     company: '한화제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107290.jpg?raw=true',
   ),
   MedicineData(
     no: '201107291',
-    name: '세프렌정100밀리그램(세프카펜피복실염산염수화물)',
+    name: '세프렌정100mg',
     company: '코오롱제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107291.jpg?raw=true',
   ),
   MedicineData(
     no: '201107292',
-    name: '프로카펜정100밀리그램(세프카펜피복실염산염수화물)',
+    name: '프로카펜정100mg',
     company: '삼아제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107292.jpg?raw=true',
@@ -7922,21 +7922,21 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201107504',
-    name: '세파목스정100밀리그램(세프카펜피복실염산염수화물)',
+    name: '세파목스정100mg',
     company: '신풍제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107504.jpg?raw=true',
   ),
   MedicineData(
     no: '201107505',
-    name: '레스카펜정100밀리그램(세프카펜피복실염산염수화물)',
+    name: '레스카펜정100mg',
     company: '안국약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107505.jpg?raw=true',
   ),
   MedicineData(
     no: '201107506',
-    name: '세로카펜정100밀리그램(세프카펜피복실염산염수화물)',
+    name: '세로카펜정100mg',
     company: '영진약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107506.jpg?raw=true',
@@ -7950,7 +7950,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201107508',
-    name: '디아그릴엠정2/500밀리그램',
+    name: '디아그릴엠정2',
     company: '부광약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107508.jpg?raw=true',
@@ -7971,7 +7971,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201107513',
-    name: '글루폴민정2/500밀리그램',
+    name: '글루폴민정2',
     company: '(주)일화',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107513.jpg?raw=true',
@@ -7992,84 +7992,84 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201107516',
-    name: '글리메엠정2/500밀리그램',
+    name: '글리메엠정2',
     company: '(주)셀트리온제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107516.jpg?raw=true',
   ),
   MedicineData(
     no: '201107519',
-    name: '세카펜정100밀리그램(세프카펜피복실염산염수화물)',
+    name: '세카펜정100mg',
     company: '한미약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107519.jpg?raw=true',
   ),
   MedicineData(
     no: '201107520',
-    name: '로트라엠정1/250밀리그램',
+    name: '로트라엠정1',
     company: '에스케이케미칼(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107520.jpg?raw=true',
   ),
   MedicineData(
     no: '201107521',
-    name: '디어메디엠정1/250밀리그램(수출용)',
+    name: '디어메디엠정1',
     company: '삼천당제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107521.jpg?raw=true',
   ),
   MedicineData(
     no: '201107522',
-    name: '세프피보정100밀리그램(세프카펜피복실염산염수화물)',
+    name: '세프피보정100mg',
     company: '경동제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107522.jpg?raw=true',
   ),
   MedicineData(
     no: '201107523',
-    name: '글리엠정1/250밀리그램',
+    name: '글리엠정1',
     company: '오스틴제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107523.jpg?raw=true',
   ),
   MedicineData(
     no: '201107524',
-    name: '다이리드엠정1/250밀리그램',
+    name: '다이리드엠정1',
     company: '하나제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107524.jpg?raw=true',
   ),
   MedicineData(
     no: '201107525',
-    name: '네오마릴엠정1/250밀리그램',
+    name: '네오마릴엠정1',
     company: '(주)종근당',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107525.jpg?raw=true',
   ),
   MedicineData(
     no: '201107526',
-    name: '글리멜엠정1/250밀리그램',
+    name: '글리멜엠정1',
     company: '동아에스티(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107526.jpg?raw=true',
   ),
   MedicineData(
     no: '201107527',
-    name: '케이마릴엠정1/250밀리그램',
+    name: '케이마릴엠정1',
     company: '(주)경보제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107527.jpg?raw=true',
   ),
   MedicineData(
     no: '201107528',
-    name: '글레아정1/250밀리그램',
+    name: '글레아정1',
     company: '위더스제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107528.jpg?raw=true',
   ),
   MedicineData(
     no: '201107530',
-    name: '글리매핀엠정2/500밀리그램',
+    name: '글리매핀엠정2',
     company: '영진약품(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107530.jpg?raw=true',
@@ -8083,49 +8083,49 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201107537',
-    name: '메피리드엠정2/500밀리그램',
+    name: '메피리드엠정2',
     company: '(주)서울제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107537.jpg?raw=true',
   ),
   MedicineData(
     no: '201107272',
-    name: '글리멜엠정2/500밀리그램',
+    name: '글리멜엠정2',
     company: '동아에스티(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107272.jpg?raw=true',
   ),
   MedicineData(
     no: '201107273',
-    name: '글레아정2/500밀리그램',
+    name: '글레아정2',
     company: '위더스제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107273.jpg?raw=true',
   ),
   MedicineData(
     no: '201107274',
-    name: '글리엠정2/500밀리그램',
+    name: '글리엠정2',
     company: '오스틴제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107274.jpg?raw=true',
   ),
   MedicineData(
     no: '201107275',
-    name: '로트라엠정2/500밀리그램',
+    name: '로트라엠정2',
     company: '에스케이케미칼(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107275.jpg?raw=true',
   ),
   MedicineData(
     no: '201107276',
-    name: '포디엠정1/250밀리그램',
+    name: '포디엠정1',
     company: '대화제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107276.jpg?raw=true',
   ),
   MedicineData(
     no: '201107277',
-    name: '글리멥엠정2/500밀리그램',
+    name: '글리멥엠정2',
     company: '삼아제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107277.jpg?raw=true',
@@ -8139,7 +8139,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201107539',
-    name: '뉴프람정20밀리그램(에스시탈로프람옥살산염)',
+    name: '뉴프람정20mg',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107539.jpg?raw=true',
@@ -8153,35 +8153,35 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201107542',
-    name: '미아릴엠정1/250밀리그램',
+    name: '미아릴엠정1',
     company: '진양제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107542.jpg?raw=true',
   ),
   MedicineData(
     no: '201107543',
-    name: '글리메엠정1/250밀리그램',
+    name: '글리메엠정1',
     company: '(주)셀트리온제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107543.jpg?raw=true',
   ),
   MedicineData(
     no: '201107620',
-    name: '몬테프리오디에프5밀리그램(몬테루카스트나트륨)',
+    name: '몬테프리오디에프5mg',
     company: '에스케이케미칼(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107620.jpg?raw=true',
   ),
   MedicineData(
     no: '201107621',
-    name: '몬테프리오디에프4밀리그램(몬테루카스트나트륨)',
+    name: '몬테프리오디에프4mg',
     company: '에스케이케미칼(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107621.jpg?raw=true',
   ),
   MedicineData(
     no: '201107622',
-    name: '몬테프리오디에프10밀리그램(몬테루카스트나트륨)',
+    name: '몬테프리오디에프10mg',
     company: '에스케이케미칼(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201107622.jpg?raw=true',
@@ -8209,42 +8209,42 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201108824',
-    name: '파키놀정5밀리그램(로피니롤염산염)',
+    name: '파키놀정5mg',
     company: '명인제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201108824.jpg?raw=true',
   ),
   MedicineData(
     no: '201108890',
-    name: '한독프레가발린캡슐150밀리그램(프레가발린)',
+    name: '한독프레가발린캡슐150mg',
     company: '(주)한독',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201108890.jpg?raw=true',
   ),
   MedicineData(
     no: '201108891',
-    name: '한독프레가발린캡슐75밀리그램(프레가발린)',
+    name: '한독프레가발린캡슐75mg',
     company: '(주)한독',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201108891.jpg?raw=true',
   ),
   MedicineData(
     no: '201108892',
-    name: '뉴로카바-피지캡슐75밀리그램(프레가발린)',
+    name: '뉴로카바-피지캡슐75mg',
     company: '삼진제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201108892.jpg?raw=true',
   ),
   MedicineData(
     no: '201108203',
-    name: '렌벨라정(세벨라머탄산염)',
+    name: '렌벨라정',
     company: '(주)사노피-아벤티스코리아',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201108203.jpg?raw=true',
   ),
   MedicineData(
     no: '201108886',
-    name: '뉴로카바-피지캡슐150밀리그램(프레가발린)',
+    name: '뉴로카바-피지캡슐150mg',
     company: '삼진제약(주)',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201108886.jpg?raw=true',
@@ -8279,7 +8279,7 @@ List<MedicineData> medicineList = [
   ),
   MedicineData(
     no: '201109142',
-    name: '프레빈캡슐(프레가발린)',
+    name: '프레빈캡슐',
     company: '(주)하원제약',
     urlToImage:
         'https://github.com/Sungrae-kogi/capstone-2022-47/blob/master/assets/medicinedata/201109142.jpg?raw=true',

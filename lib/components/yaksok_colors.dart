@@ -8,7 +8,6 @@ class YaksokColors {
   static const primaryColor = Color(_primaryColorValue);
   static const primaryColor2 = Color(_yakColorValue); //test
 
-
   static const MaterialColor primaryMaterialColor = MaterialColor(
     _primaryColorValue,
     <int, Color>{
