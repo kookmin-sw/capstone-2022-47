@@ -27,16 +27,16 @@ class SettingMapPageState extends State<SettingMapPage> {
   LatLng? _initialPosition;
   late Position currentLocation;
 
+  Future<Position> locateUser() async{
+    return Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
+  }
+
   @override
   void initState() {
     super.initState();
     _getUserLocation();   //접속자 초기 위치 파악
   }
-
-  Future<Position> locateUser() async{
-    return Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
-  }
-
+  
   void _getUserLocation() async{
     LocationPermission permission = await Geolocator.requestPermission(); //지도 켰을때 위치정보요청 동의를 묻는 창
     Position position = await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high);
