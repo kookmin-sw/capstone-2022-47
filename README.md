@@ -33,7 +33,7 @@ drug application that provides search and differentiation functions
 ## 3. 소개 영상
 [1. 중간 발표자료](https://github.com/kookmin-sw/capstone-2022-47/blob/master/docs/%ED%8C%8047-%EC%A4%91%EA%B0%84%EB%B0%9C%ED%91%9C%EC%9E%90%EB%A3%8C.pdf)<br>
 [2. 중간 보고서](https://github.com/kookmin-sw/capstone-2022-47/blob/master/docs/%ED%8C%8047-%EC%A4%91%EA%B0%84%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf)<br>
-[![3. 시연 영상]](https://youtu.be/esEHS3oNi9E)
+[3. 시연 영상](https://youtu.be/esEHS3oNi9E)
 ## 4. 팀 소개
 
 ```markdown
