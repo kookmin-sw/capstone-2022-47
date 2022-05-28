@@ -1,7 +1,5 @@
 //약 종류에 들어갈 약 데이터 모델 클래스
 
-import 'package:flutter/cupertino.dart';
-
 class MedicineData {
   String no;
   String name;
@@ -16,7 +14,7 @@ class MedicineData {
   });
 }
 
-List<MedicineData> medicineList = [
+List<MedicineData> medicineDataList = [
   MedicineData(
     no: '200808876',
     name: '가스디알정',

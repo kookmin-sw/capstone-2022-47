@@ -6,10 +6,10 @@ class ImageDetailPage extends StatelessWidget {
   //이미지 창 크게보기
   const ImageDetailPage({
     Key? key,
-    required this.imagePath,
+    required this.image_path,
   }) : super(key: key);
 
-  final String imagePath;
+  final String image_path;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class ImageDetailPage extends StatelessWidget {
       ),
       body: Center(
         child: Image.file(
-          File(imagePath),
+          File(image_path),
         ),
       ),
     );

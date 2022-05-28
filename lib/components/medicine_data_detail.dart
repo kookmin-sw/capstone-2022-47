@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:yaksok_project/components/medicine_data.dart';
+import 'package:yaksok_project/components/medicine_data_model.dart';
 
 class MedicineDataDetail extends StatelessWidget {
   final MedicineData medicineData;

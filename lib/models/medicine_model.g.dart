@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'medicine.dart';
+part of 'medicine_model.dart';
 
 // **************************************************************************
 // TypeAdapterGenerator
@@ -17,10 +17,10 @@ class MedicineAdapter extends TypeAdapter<Medicine> {
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return Medicine(
-      id: fields[0] as int,
-      name: fields[1] as String,
-      imagePath: fields[2] as String?,
-      alarms: (fields[3] as List).cast<String>(),
+      medicine_id: fields[0] as int,
+      medicine_name: fields[1] as String,
+      medicine_image_path: fields[2] as String?,
+      medicine_alarms: (fields[3] as List).cast<String>(),
     );
   }
 
@@ -29,13 +29,13 @@ class MedicineAdapter extends TypeAdapter<Medicine> {
     writer
       ..writeByte(4)
       ..writeByte(0)
-      ..write(obj.id)
+      ..write(obj.medicine_id)
       ..writeByte(1)
-      ..write(obj.name)
+      ..write(obj.medicine_name)
       ..writeByte(2)
-      ..write(obj.imagePath)
+      ..write(obj.medicine_image_path)
       ..writeByte(3)
-      ..write(obj.alarms);
+      ..write(obj.medicine_alarms);
   }
 
   @override

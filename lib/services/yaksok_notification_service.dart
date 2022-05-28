@@ -13,8 +13,8 @@ final notification = FlutterLocalNotificationsPlugin();
 class YaksokNotificationService {
   Future<void> initializeTimeZone() async {
     tz.initializeTimeZones();
-    final timeZoneName = await FlutterNativeTimezone.getLocalTimezone();
-    tz.setLocalLocation(tz.getLocation(timeZoneName));
+    final time_zone_name = await FlutterNativeTimezone.getLocalTimezone();
+    tz.setLocalLocation(tz.getLocation(time_zone_name));
   }
 
   Future<void> initializeNotification() async {
@@ -37,15 +37,15 @@ class YaksokNotificationService {
     );
   }
 
-  String alarmId(int medicineId, String alarmTime){
-    return medicineId.toString() + alarmTime.replaceAll(':', '');
+  String alarmId(int medicine_id, String alarm_time){
+    return medicine_id.toString() + alarm_time.replaceAll(':', '');
   }
 
   Future<bool> addNotifcication({
-    required int medicineId,
-    required String alarmTimeStr,
-    required String title, // HH:mm 약 먹을 시간이예요!
-    required String body, // {약이름} 복약했다고 알려주세요!
+    required int notification_medicine_id,
+    required String notification_alarm_time_str,
+    required String notification_title, // HH:mm 약 먹을 시간이예요!
+    required String notification_body, // {약이름} 복약했다고 알려주세요!
   }) async {
     if (!await permissionNotification) {
       // show native setting page
@@ -54,41 +54,41 @@ class YaksokNotificationService {
 
     /// exception
     final now = tz.TZDateTime.now(tz.local);
-    final alarmTime = DateFormat('HH:mm').parse(alarmTimeStr);
-    final day = (alarmTime.hour < now.hour ||
-        alarmTime.hour == now.hour && alarmTime.minute <= now.minute)
+    final alarm_time = DateFormat('HH:mm').parse(notification_alarm_time_str);
+    final day = (alarm_time.hour < now.hour ||
+        alarm_time.hour == now.hour && alarm_time.minute <= now.minute)
         ? now.day + 1
         : now.day;
 
     /// id
-    String alarmTimeId = alarmId(medicineId, alarmTimeStr); //id가 1, 8시 면 , 1+0800=10800형식
+    String alarm_time_id = alarmId(notification_medicine_id, notification_alarm_time_str); //id가 1, 8시 면 , 1+0800=10800형식
 
 
     /// add schedule notification
     final details = _notificationDetails(
-      alarmTimeId, // unique
-      title: title,
-      body: body,
+      alarm_time_id, // unique
+      title: notification_title,
+      body: notification_body,
     );
 
     await notification.zonedSchedule(
-      int.parse(alarmTimeId), // unique
-      title,
-      body,
+      int.parse(alarm_time_id), // unique
+      notification_title,
+      notification_body,
       tz.TZDateTime(
         tz.local,
         now.year,
         now.month,
         day,
-        alarmTime.hour,
-        alarmTime.minute,
+        alarm_time.hour,
+        alarm_time.minute,
       ),
       details,
       androidAllowWhileIdle: true,
       uiLocalNotificationDateInterpretation:
         UILocalNotificationDateInterpretation.absoluteTime,
       matchDateTimeComponents: DateTimeComponents.time,
-      payload: alarmTimeId
+      payload: alarm_time_id
     );
     log('[notification list] ${await PendingNotificationRequest}');
 
@@ -129,10 +129,10 @@ class YaksokNotificationService {
     }
   }
 
-  Future<void> deleteMultipleAlarm(Iterable<String> alarmIds) async {
+  Future<void> deleteMultipleAlarm(Iterable<String> alarm_ids) async {
      log('[before delete notification list] ${await PendingNotificationRequest}');
-     for(final alarmId in alarmIds){
-       final id = int.parse(alarmId);
+     for(final alarm_id in alarm_ids){
+       final id = int.parse(alarm_id);
        notification.cancel(id);
      }
 

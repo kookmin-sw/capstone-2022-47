@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class FadePageRoute extends PageRouteBuilder {
+class YaksokFadePageRoute extends PageRouteBuilder {
   final Widget page;
 
-  FadePageRoute({required this.page})
+  YaksokFadePageRoute({required this.page})
       : super(
           pageBuilder: (
             context,

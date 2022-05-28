@@ -4,12 +4,12 @@ import 'package:yaksok_project/main.dart';
 
 class AddMedicineService with ChangeNotifier{
 
-  AddMedicineService(int updateMedicineId){
-    if(updateMedicineId != -1){ ///약 정보 수정 객체라면
+  AddMedicineService(int update_medicine_id){
+    if(update_medicine_id != -1){ ///약 정보 수정 객체라면
      
-      final updateAlarms = medicineRepository.medicineBox.values.singleWhere((medicine) => medicine.id == updateMedicineId).alarms;
+      final update_alarms = medicine_repository.medicine_box.values.singleWhere((medicine) => medicine.medicine_id == update_medicine_id).medicine_alarms;
       _alarms.clear(); //알람 초기화
-      _alarms.addAll(updateAlarms);
+      _alarms.addAll(update_alarms);
     }
   }
 
@@ -24,22 +24,22 @@ class AddMedicineService with ChangeNotifier{
   void addNowAlarm(){
     //추가할때 현재시간이 들어가도록
     final now = DateTime.now();
-    final nowTime = DateFormat('HH:mm').format(now);
-    _alarms.add(nowTime);
+    final now_time = DateFormat('HH:mm').format(now);
+    _alarms.add(now_time);
 
     notifyListeners();
   }
 
-  void removeAlarm(String alarmTime){
-    _alarms.remove(alarmTime);
+  void removeAlarm(String alarm_time){
+    _alarms.remove(alarm_time);
     notifyListeners();
   }
 
-  void setAlarm({required String prevTime, required DateTime setTime}){
-    _alarms.remove(prevTime);
+  void setAlarm({required String prev_time, required DateTime set_time}){
+    _alarms.remove(prev_time);
 
-    final setTimeStr = DateFormat('HH:mm').format(setTime);
-    _alarms.add(setTimeStr);
+    final set_time_str = DateFormat('HH:mm').format(set_time);
+    _alarms.add(set_time_str);
     notifyListeners();
   }
 }
