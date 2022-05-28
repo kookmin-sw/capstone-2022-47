@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'medicine_data.dart';
-import 'medicinedata_detail.dart';
+import 'medicine_data_model.dart';
+import 'medicine_data_detail.dart';
 
 class MedicineDataItem extends StatelessWidget {
   final MedicineData medicineData;

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:yaksok_project/components/medicine_data.dart';
-import 'package:yaksok_project/components/medicinedata_item.dart';
+import 'package:yaksok_project/components/medicine_data_model.dart';
+import 'package:yaksok_project/components/medicine_data_item.dart';
 
 import '../../components/yaksok_colors.dart';
 
@@ -39,10 +39,10 @@ class SettingSearchPage extends StatelessWidget {
         color: Colors.grey,
       ),
         itemBuilder: (context, index) {
-          return MedicineDataItem(medicineData: medicineList[index],
+          return MedicineDataItem(medicineData: medicineDataList[index],
           );
         },
-        itemCount: medicineList.length,
+        itemCount: medicineDataList.length,
       ),
     );
   }

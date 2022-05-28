@@ -9,49 +9,49 @@ import 'package:yaksok_project/components/yaksok_widgets.dart';
 class TimeSettingBottomSheet extends StatelessWidget {
   const TimeSettingBottomSheet({
     Key? key,
-    required this.initialTime, 
-    this.submitTitle="선택", 
-    this.bottomWidget,
+    required this.initial_time, 
+    this.submit_title="선택", 
+    this.bottom_widget,
   }) : super(key: key);
 
-  final String initialTime;
-  final String submitTitle;
-  final Widget? bottomWidget;
+  final String initial_time;
+  final String submit_title;
+  final Widget? bottom_widget;
 
 
   @override
   Widget build(BuildContext context) {
-    final initialTimeData = DateFormat('HH:mm').parse(initialTime);
+    final initial_time_data = DateFormat('HH:mm').parse(initial_time);
     final now = DateTime.now();
-    final initialDateTime = DateTime(now.year, now.month, now.day, initialTimeData.hour, initialTimeData.minute);
+    final intial_date_time = DateTime(now.year, now.month, now.day, initial_time_data.hour, initial_time_data.minute);
 
-    DateTime setDateTime = initialDateTime;
+    DateTime set_date_time = intial_date_time;
     
     return BottomSheetBody(
       children: [
         SizedBox(
           height: 200,
           child: CupertinoDatePicker(
-            onDateTimeChanged: (dateTime) {
-              setDateTime = dateTime;
+            onDateTimeChanged: (date_time) {
+              set_date_time = date_time;
             },
             mode: CupertinoDatePickerMode.time, //
-            initialDateTime: initialDateTime, // 시간만
+            initialDateTime: intial_date_time, // 시간만
           ),
         ),
         //상하 여백
         const SizedBox(
-          height: smallSpace,
+          height: s_size_space,
         ),
-        if(bottomWidget != null) bottomWidget!,
+        if(bottom_widget != null) bottom_widget!,
         const SizedBox(
-          height: smallSpace,
+          height: s_size_space,
         ),
         Row(
           children: [
             Expanded(
               child: SizedBox(
-                height: submitButtonHeight,
+                height: submit_button_height,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     textStyle: Theme.of(context).textTheme.subtitle1,
@@ -65,16 +65,16 @@ class TimeSettingBottomSheet extends StatelessWidget {
             ),
             //버튼 사이 여백
             const SizedBox(
-              width: smallSpace,
+              width: s_size_space,
             ),
             Expanded(
               child: SizedBox(
-                height: submitButtonHeight,
+                height: submit_button_height,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                       textStyle: Theme.of(context).textTheme.subtitle1, primary: Colors.green[300]),
-                  onPressed: () =>  Navigator.pop(context, setDateTime), //setDateTime 넘겨줌
-                  child: Text(submitTitle),
+                  onPressed: () =>  Navigator.pop(context, set_date_time), //set_date_time 넘겨줌
+                  child: Text(submit_title),
                 ),
               ),
             ),

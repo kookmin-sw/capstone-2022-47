@@ -11,23 +11,23 @@ import 'package:yaksok_project/services/yaksok_file_service.dart';
 
 import '../../components/yaksok_constants.dart';
 import '../../main.dart';
-import '../../models/medicine.dart';
+import '../../models/medicine_model.dart';
 import 'add_medicine_page.dart';
 import 'components/add_page_widget.dart';
 
 // ignore: must_be_immutable
 class AddAlarmPage extends StatelessWidget {
   AddAlarmPage(
-      {Key? key, required this.medicineImage, required this.medicineName, required this.updateMedicineId})
+      {Key? key, required this.addAlarm_medicine_image, required this.addAlarm_medicine_name, required this.addAlarm_update_medicine_id})
       : super(key: key) {
-      service = AddMedicineService(updateMedicineId);
+      add_medicine_service = AddMedicineService(addAlarm_update_medicine_id);
   }
 
-  final File? medicineImage;
-  final String medicineName;
-  final int updateMedicineId;
+  final File? addAlarm_medicine_image;
+  final String addAlarm_medicine_name;
+  final int addAlarm_update_medicine_id;
 
-  late AddMedicineService service;
+  late AddMedicineService add_medicine_service;
 
   @override
   Widget build(BuildContext context) {
@@ -39,10 +39,10 @@ class AddAlarmPage extends StatelessWidget {
             '복용할 시간을 설정해주세요!',
             style: Theme.of(context).textTheme.headline4,
           ),
-          const SizedBox(height: largeSpace),
+          const SizedBox(height: l_size_space),
           Expanded(
             child: AnimatedBuilder(
-              animation: service,
+              animation: add_medicine_service,
               builder: (context, _) {
                 return ListView(
                   children: alarmWidgets,
@@ -54,7 +54,7 @@ class AddAlarmPage extends StatelessWidget {
       ),
       bottomNavigationBar: BottomSubmitButton(
         onPressed: () async{
-          final isUpdate = updateMedicineId != -1;
+          final isUpdate = addAlarm_update_medicine_id != -1;
           isUpdate
             ? await _onUpdateMedicine(context)
             : await _onAddMedicine(context);
@@ -68,12 +68,12 @@ class AddAlarmPage extends StatelessWidget {
   Future<void> _onAddMedicine(BuildContext context) async {
           bool result = false;
           //알람추가, 이미지 저장,
-          for (var alarm in service.alarms) {
+          for (var alarm in add_medicine_service.alarms) {
             result = await notification.addNotifcication(
-              medicineId: medicineRepository.newId,
-              alarmTimeStr: alarm,
-              title: '$alarm 약 먹을 시간이에요!',
-              body: '$medicineName 복약했다고 알려주세요!',
+              notification_medicine_id: medicine_repository.newId,
+              notification_alarm_time_str: alarm,
+              notification_title: '$alarm 약 먹을 시간이에요!',
+              notification_body: '$addAlarm_medicine_name 복약했다고 알려주세요!',
             );
           }
           if (!result) {
@@ -83,19 +83,19 @@ class AddAlarmPage extends StatelessWidget {
           //이미지 저장
           String? imageFilePath;
 
-          if (medicineImage != null) {
-            imageFilePath = await saveImageToLocalDirectory(medicineImage!);
+          if (addAlarm_medicine_image != null) {
+            imageFilePath = await saveImageToLocalDirectory(addAlarm_medicine_image!);
           }
 
           //medicine model
           final medicine = Medicine(
-            id: medicineRepository.newId,
-            name: medicineName,
-            imagePath: imageFilePath,
-            alarms: service.alarms.toList(),
+            medicine_id: medicine_repository.newId,
+            medicine_name: addAlarm_medicine_name,
+            medicine_image_path: imageFilePath,
+            medicine_alarms: add_medicine_service.alarms.toList(),
           );
 
-          medicineRepository.addMedicine(medicine);
+          medicine_repository.addMedicine(medicine);
           Navigator.popUntil(context, (route) => route.isFirst);
 
   }
@@ -104,65 +104,65 @@ class AddAlarmPage extends StatelessWidget {
     bool result = false;
 
     //이전 알람 지우기
-    final alarmIds = _updateMedicine.alarms.map((alarmTime)=> notification.alarmId(updateMedicineId, alarmTime));
+    final alarmIds = _updateMedicine.medicine_alarms.map((alarmTime)=> notification.alarmId(addAlarm_update_medicine_id, alarmTime));
     await notification.deleteMultipleAlarm(alarmIds);
 
 
     //알람추가
-    for (var alarm in service.alarms) {
+    for (var alarm in add_medicine_service.alarms) {
       result = await notification.addNotifcication(
-        medicineId: updateMedicineId,
-        alarmTimeStr: alarm,
-        title: '$alarm 약 먹을 시간이에요!',
-        body: '$medicineName 복약했다고 알려주세요!',
+        notification_medicine_id: addAlarm_update_medicine_id,
+        notification_alarm_time_str: alarm,
+        notification_title: '$alarm 약 먹을 시간이에요!',
+        notification_body: '$addAlarm_medicine_name 복약했다고 알려주세요!',
       );
     }
     if (!result) {
       return showPermissionDenied(context, permission: '알람');
     }
 
-    String? imageFilePath = _updateMedicine.imagePath;
-    if(_updateMedicine.imagePath != medicineImage?.path){
+    String? imageFilePath = _updateMedicine.medicine_image_path;
+    if(_updateMedicine.medicine_image_path != addAlarm_medicine_image?.path){
       //이전 이미지 삭제
-      if(_updateMedicine.imagePath != null){
-      deleteImage(_updateMedicine.imagePath!);
+      if(_updateMedicine.medicine_image_path != null){
+      deleteImage(_updateMedicine.medicine_image_path!);
       }
 
       //이미지 저장  
-      if (medicineImage != null) {
-        imageFilePath = await saveImageToLocalDirectory(medicineImage!);
+      if (addAlarm_medicine_image != null) {
+        imageFilePath = await saveImageToLocalDirectory(addAlarm_medicine_image!);
       }
     }
     
 
     //update medicine model (로컬 db,  hive)
     final medicine = Medicine(
-      id: updateMedicineId,
-      name: medicineName,
-      imagePath: imageFilePath,
-      alarms: service.alarms.toList(),
+      medicine_id: addAlarm_update_medicine_id,
+      medicine_name: addAlarm_medicine_name,
+      medicine_image_path: imageFilePath,
+      medicine_alarms: add_medicine_service.alarms.toList(),
     );
 
-    medicineRepository.updateMedicine(key: _updateMedicine.key,medicine: medicine);
+    medicine_repository.updateMedicine(key: _updateMedicine.key,medicine: medicine);
     Navigator.popUntil(context, (route) => route.isFirst);
 
   }
   Medicine get _updateMedicine =>
-    medicineRepository.medicineBox.values.singleWhere((medicine) => medicine.id == updateMedicineId);
+    medicine_repository.medicine_box.values.singleWhere((medicine) => medicine.medicine_id == addAlarm_update_medicine_id);
 
   //알람시간 출력 리스트
   List<Widget> get alarmWidgets {
     final children = <Widget>[];
     children.addAll(
-      service.alarms.map(
+      add_medicine_service.alarms.map(
         (alarmTime) => AlarmBox(
           time: alarmTime,
-          service: service,
+          service: add_medicine_service,
         ),
       ),
     );
     children.add(AddAlarmButton(
-      service: service,
+      service: add_medicine_service,
     ));
     return children;
   }
@@ -245,13 +245,13 @@ class TimePickerBottomSheet extends StatelessWidget {
         ),
         //상하 여백
         const SizedBox(
-          height: regularSpace,
+          height: r_size_space,
         ),
         Row(
           children: [
             Expanded(
               child: SizedBox(
-                height: submitButtonHeight,
+                height: submit_button_height,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     textStyle: Theme.of(context).textTheme.subtitle1,
@@ -265,18 +265,18 @@ class TimePickerBottomSheet extends StatelessWidget {
             ),
             //버튼 사이 여백
             const SizedBox(
-              width: smallSpace,
+              width: s_size_space,
             ),
             Expanded(
               child: SizedBox(
-                height: submitButtonHeight,
+                height: submit_button_height,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                       textStyle: Theme.of(context).textTheme.subtitle1),
                   onPressed: () {
                     service.setAlarm(
-                        prevTime: initialTime,
-                        setTime: _setDateTime ?? initialDateTime);
+                        prev_time: initialTime,
+                        set_time: _setDateTime ?? initialDateTime);
                     Navigator.pop(context);
                   },
                   child: const Text('선택'),

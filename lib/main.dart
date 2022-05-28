@@ -9,8 +9,8 @@ import 'pages/home_page.dart';
 
 final notification = YaksokNotificationService();
 final hive = YaksokHive();
-final medicineRepository = MedicineRepository();
-final historyRepository = MedicineHistoryRepository();
+final medicine_repository = MedicineRepository();
+final history_repository = MedicineHistoryRepository();
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -2,19 +2,19 @@ import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 
 Future<String> saveImageToLocalDirectory(File image) async {
-  final documentDirectory = await getApplicationDocumentsDirectory();
-  final folderPath = documentDirectory.path + '/medicine/images';
-  final filePath = folderPath + '/${DateTime.now().millisecondsSinceEpoch}.png';
+  final document_directory = await getApplicationDocumentsDirectory();
+  final folder_path = document_directory.path + '/medicine/images';
+  final file_path = folder_path + '/${DateTime.now().millisecondsSinceEpoch}.png';
 
-  await Directory(folderPath).create(recursive: true);
+  await Directory(folder_path).create(recursive: true);
 
-  final newFile = File(filePath);
-  newFile.writeAsBytesSync(image.readAsBytesSync());
+  final new_file = File(file_path);
+  new_file.writeAsBytesSync(image.readAsBytesSync());
 
-  return filePath;
+  return file_path;
 }
 
-void deleteImage(String filePath){
-  File(filePath).delete(recursive: true);
+void deleteImage(String file_path){
+  File(file_path).delete(recursive: true);
 
 }

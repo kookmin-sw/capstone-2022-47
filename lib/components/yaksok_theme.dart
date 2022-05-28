@@ -4,7 +4,7 @@ import 'yaksok_colors.dart';
 class YaksokThemes {
   static ThemeData get lightTheme => ThemeData(        
           primarySwatch: YaksokColors.primaryMaterialColor,
-          fontFamily: 'GmarketSansTTF',
+          fontFamily: 'KMU_TTF',
           scaffoldBackgroundColor: Colors.white,
           splashColor: Colors.white, 
           textTheme: _textTheme,
@@ -16,7 +16,7 @@ class YaksokThemes {
 /*
   static ThemeData get darkTheme => ThemeData(        
           primarySwatch: YaksokColors.primaryMaterialColor,
-          fontFamily: 'GmarketSansTTF',
+          fontFamily: 'KMU_TTF',
           splashColor: Colors.white, 
           textTheme: _textTheme,
           brightness: Brightness.dark,

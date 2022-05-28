@@ -4,10 +4,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:yaksok_project/components/yaksok_constants.dart';
-import 'package:yaksok_project/components/yaksok_page_route.dart';
+import 'package:yaksok_project/components/yaksok_fade_page_route.dart';
 import 'package:yaksok_project/main.dart';
-import 'package:yaksok_project/models/medicine_alarm.dart';
-import 'package:yaksok_project/models/medicine_history.dart';
+import 'package:yaksok_project/models/medicine_alarm_model.dart';
+import 'package:yaksok_project/models/medicine_history_model.dart';
 import 'package:yaksok_project/pages/add_medicine/add_medicine_page.dart';
 import 'package:yaksok_project/pages/bottomsheet/more_action_bottomsheet.dart';
 import 'package:yaksok_project/pages/bottomsheet/time_setting_bottomsheet.dart';
@@ -19,10 +19,10 @@ import 'package:yaksok_project/pages/today/today_page.dart';
 class BeforeTakeTile extends StatelessWidget {
   const BeforeTakeTile({
     Key? key,
-    required this.medicineAlarm,
+    required this.medicine_alarm,
   }) : super(key: key);
 
-  final MedicineAlarm medicineAlarm;
+  final MedicineAlarm medicine_alarm;
 
   @override
   Widget build(BuildContext context) {
@@ -30,15 +30,15 @@ class BeforeTakeTile extends StatelessWidget {
 
     return Row(
         children: [
-          MedicineImageButton(imagePath: medicineAlarm.imagePath),
-          const SizedBox(width: smallSpace), // 여백
+          MedicineImageButton(image_path: medicine_alarm.alarm_image_path),
+          const SizedBox(width: s_size_space), // 여백
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: _buildTileBody(textStyle, context),
             ),
           ),
-          _MoreButton(medicineAlarm: medicineAlarm)
+          _MoreButton(medicine_alarm: medicine_alarm)
         ],
     );
   }
@@ -46,21 +46,21 @@ class BeforeTakeTile extends StatelessWidget {
 
   List<Widget> _buildTileBody(TextStyle? textStyle, BuildContext context) {
     return [
-      Text('🕑 ${medicineAlarm.alarmTime}', style: textStyle),
+      Text('🕑 ${medicine_alarm.alarm_time}', style: textStyle),
       const SizedBox(height: 6),
       Wrap(
         crossAxisAlignment: WrapCrossAlignment.center,
         children: [
-          Text('${medicineAlarm.name},', style: textStyle),
+          Text('${medicine_alarm.alarm_name},', style: textStyle),
           TileActionButton( //'지금' 버튼
             onTap: () { //history에 지금 시간 추가
-              historyRepository.addHistory(MedicineHistory( //hive db에 takeDateTime 저장
-                  medicineId: medicineAlarm.id
-                , alarmTime: medicineAlarm.alarmTime
-                , takeTime: DateTime.now()
-                , imagePath: medicineAlarm.imagePath
-                , name: medicineAlarm.name
-                , medicineKey: medicineAlarm.key,
+              history_repository.addHistory(MedicineHistory( //hive db에 take_date_time 저장
+                  history_medicine_id: medicine_alarm.alarm_id
+                , history_alarm_time: medicine_alarm.alarm_time
+                , history_take_time: DateTime.now()
+                , history_image_path: medicine_alarm.alarm_image_path
+                , history_name: medicine_alarm.alarm_name
+                , history_medicine_key: medicine_alarm.alarm_key,
               ));
             },
             title: '지금',
@@ -80,17 +80,17 @@ class BeforeTakeTile extends StatelessWidget {
     showModalBottomSheet(
       context: context, 
       builder: (context)=> TimeSettingBottomSheet(
-        initialTime: medicineAlarm.alarmTime,
+        initial_time: medicine_alarm.alarm_time,
       )
-    ).then((takeDateTime){
-      if(takeDateTime == null || takeDateTime is! DateTime){return;}
-      historyRepository.addHistory(MedicineHistory( //hive db에 takeDateTime 저장
-        medicineId: medicineAlarm.id
-      , alarmTime: medicineAlarm.alarmTime
-      , takeTime: takeDateTime
-      , imagePath: medicineAlarm.imagePath
-      , name: medicineAlarm.name
-      , medicineKey: medicineAlarm.key,
+    ).then((take_date_time){
+      if(take_date_time == null || take_date_time is! DateTime){return;}
+      history_repository.addHistory(MedicineHistory( //hive db에 take_date_time 저장
+        history_medicine_id: medicine_alarm.alarm_id
+      , history_alarm_time: medicine_alarm.alarm_time
+      , history_take_time: take_date_time
+      , history_image_path: medicine_alarm.alarm_image_path
+      , history_name: medicine_alarm.alarm_name
+      , history_medicine_key: medicine_alarm.alarm_key,
       ),
     );
   });
@@ -102,11 +102,11 @@ class BeforeTakeTile extends StatelessWidget {
 class AfterTakeTile extends StatelessWidget {
   const AfterTakeTile({
     Key? key,
-    required this.medicineAlarm, 
+    required this.medicine_alarm, 
     required this.history,
   }) : super(key: key);
 
-  final MedicineAlarm medicineAlarm; //알람 객체
+  final MedicineAlarm medicine_alarm; //알람 객체
   final MedicineHistory history; //복약기록 hive객체
 
   @override
@@ -117,7 +117,7 @@ class AfterTakeTile extends StatelessWidget {
       children: [
         Stack( //이미지 stack (쌓기)
           children: [
-            MedicineImageButton(imagePath: medicineAlarm.imagePath),
+            MedicineImageButton(image_path: medicine_alarm.alarm_image_path),
             CircleAvatar( //이미지 위로 반투명 체크 겹침
               radius: 40,
               backgroundColor: Colors.green.withOpacity(0.8),
@@ -129,14 +129,14 @@ class AfterTakeTile extends StatelessWidget {
           ],
         ),
        
-        const SizedBox(width: smallSpace), // 여백
+        const SizedBox(width: s_size_space), // 여백
         Expanded(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: _buildTileBody(textStyle, context),
           ),
         ),
-        _MoreButton(medicineAlarm: medicineAlarm)
+        _MoreButton(medicine_alarm: medicine_alarm)
       ],
     );
   }
@@ -146,10 +146,10 @@ class AfterTakeTile extends StatelessWidget {
     return [
       Text.rich(
         TextSpan(
-          text: '✅ ${medicineAlarm.alarmTime} → ',
+          text: '✅ ${medicine_alarm.alarm_time} → ',
           style: textStyle,
           children: [
-            TextSpan(text: takeTimeStr, 
+            TextSpan(text: take_time_str, 
             style: textStyle?.copyWith(fontWeight: FontWeight.w500)),
           ]
         ),
@@ -158,10 +158,10 @@ class AfterTakeTile extends StatelessWidget {
       Wrap(
         crossAxisAlignment: WrapCrossAlignment.center,
         children: [
-          Text('${medicineAlarm.name},', style: textStyle),
+          Text('${medicine_alarm.alarm_name},', style: textStyle),
           TileActionButton(
             onTap: () => _onTap(context),
-            title: DateFormat('HH시 mm분에').format(history.takeTime),//'20시 19분에 ',
+            title: DateFormat('HH시 mm분에').format(history.history_take_time),//'20시 19분에 ',
           ),
           Text('먹었어요!', style: textStyle),
         ],
@@ -169,39 +169,38 @@ class AfterTakeTile extends StatelessWidget {
     ];
   }
 
-  String get takeTimeStr => DateFormat('HH:mm').format(history.takeTime); //실 복약시간 date -> string
+  String get take_time_str => DateFormat('HH:mm').format(history.history_take_time); //실 복약시간 date -> string
 
   //저장된 약 터치
   void _onTap(BuildContext context){
     showModalBottomSheet(
       context: context, 
       builder: (context)=> TimeSettingBottomSheet(
-        initialTime:  takeTimeStr,
-        submitTitle:  '수정',
-        bottomWidget: TextButton(
+        initial_time:  take_time_str,
+        submit_title:  '수정',
+        bottom_widget: TextButton(
           onPressed: () {
-            historyRepository.deleteHistory(history.key); //복약 히스토리 삭제
+            history_repository.deleteHistory(history.key); //복약 히스토리 삭제
             Navigator.pop(context);
           },
           child: Text('약 복용 시간을 삭제하고 싶어요!')
         ),
       )
-    ).then((takeDateTime){
-      if(takeDateTime == null || takeDateTime is! DateTime)
+    ).then((take_date_time){
+      if(take_date_time == null || take_date_time is! DateTime)
       {
         return;
       }
-      historyRepository.updateHistory( //hive db의 takeTime 수정
+      history_repository.updateHistory( //hive db의 takeTime 수정
         key: history.key, //변경하고자 하는 key값
         history: MedicineHistory(
-          medicineId: medicineAlarm.id,
-          alarmTime: medicineAlarm.alarmTime,
-          takeTime: takeDateTime,
+          history_medicine_id: medicine_alarm.alarm_id,
+          history_alarm_time: medicine_alarm.alarm_time,
+          history_take_time: take_date_time,
 
-          //추가
-          medicineKey: medicineAlarm.key,
-          imagePath: medicineAlarm.imagePath,
-          name: medicineAlarm.name,
+          history_medicine_key: medicine_alarm.alarm_key,
+          history_image_path: medicine_alarm.alarm_image_path,
+          history_name: medicine_alarm.alarm_name,
       ),  
       );
     });
@@ -214,10 +213,10 @@ class AfterTakeTile extends StatelessWidget {
 class _MoreButton extends StatelessWidget { 
   const _MoreButton({
     Key? key,
-    required this.medicineAlarm,
+    required this.medicine_alarm,
   }) : super(key: key);
 
-  final MedicineAlarm medicineAlarm;
+  final MedicineAlarm medicine_alarm;
 
   @override
   Widget build(BuildContext context) {
@@ -225,22 +224,22 @@ class _MoreButton extends StatelessWidget {
       onPressed: () {
         showModalBottomSheet(context: context, builder: (context)=> MoreActionBottomSheet(//context인자로 위젯 반환
           onPressedUpdate: (){ //약 정보 수정
-            Navigator.push(context, FadePageRoute(page: AddMedicinePage(updateMedicineId:medicineAlarm.id ,))).then((_) => Navigator.maybePop(context));
+            Navigator.push(context, YaksokFadePageRoute(page: AddMedicinePage(update_medicine_id:medicine_alarm.alarm_id ,))).then((_) => Navigator.maybePop(context));
           },
           onPressedDeleteMedicine: (){ //약 정보 삭제
             //알람 삭제
             //hive 약 데이터 삭제
-            notification.deleteMultipleAlarm(alarmIds);
-            medicineRepository.deleteMedicine(medicineAlarm.key);
+            notification.deleteMultipleAlarm(alarm_ids);
+            medicine_repository.deleteMedicine(medicine_alarm.alarm_key);
             Navigator.pop(context);
           },
           onPressedDeleteAll: (){ //약 정보와 히스토리 모두삭제
             //알람 삭제
             //hive 히스토리 데이터 삭제
             //hive 약 데이터 삭제
-            notification.deleteMultipleAlarm(alarmIds);
-            historyRepository.deleteAllHistory(keys);
-            medicineRepository.deleteMedicine(medicineAlarm.key);
+            notification.deleteMultipleAlarm(alarm_ids);
+            history_repository.deleteAllHistory(keys);
+            medicine_repository.deleteMedicine(medicine_alarm.alarm_key);
             Navigator.pop(context);
           },
         )
@@ -250,15 +249,15 @@ class _MoreButton extends StatelessWidget {
     );
   }
 
-  List<String> get alarmIds{
-    final medicine = medicineRepository.medicineBox.values.singleWhere((element) => element.id == medicineAlarm.id);
-    final alarmIds = medicine.alarms.map((alarmStr) => notification.alarmId(medicineAlarm.id, alarmStr)).toList();
-    return alarmIds;
+  List<String> get alarm_ids{
+    final medicine = medicine_repository.medicine_box.values.singleWhere((element) => element.medicine_id == medicine_alarm.alarm_id);
+    final alarm_ids = medicine.medicine_alarms.map((alarmStr) => notification.alarmId(medicine_alarm.alarm_id, alarmStr)).toList();
+    return alarm_ids;
   }
 
   Iterable<int> get keys{
   final histories = 
-  historyRepository.historyBox.values.where((history) => history.medicineId == medicineAlarm.id && history.medicineKey == medicineAlarm.key);
+  history_repository.history_box.values.where((history) => history.history_medicine_id == medicine_alarm.alarm_id && history.history_medicine_key == medicine_alarm.alarm_key);
   final keys = histories.map((e)=>e.key as int);
   return keys;
   }
@@ -269,32 +268,32 @@ class _MoreButton extends StatelessWidget {
 class MedicineImageButton extends StatelessWidget {
   const MedicineImageButton({
     Key? key,
-    required this.imagePath,
+    required this.image_path,
   }) : super(key: key);
 
-  final String? imagePath;
+  final String? image_path;
 
   @override
   Widget build(BuildContext context) {
     return CupertinoButton(
       padding: EdgeInsets.zero, // padding 제거
-      onPressed: imagePath == null //이미지 클릭
+      onPressed: image_path == null //이미지 클릭
       ? null
       :() {
         Navigator.push(
           context, 
-          FadePageRoute( //화면 전환 애니메이션
-            page: ImageDetailPage(imagePath: imagePath!), //이미지 창 크게보기
+          YaksokFadePageRoute( //화면 전환 애니메이션
+            page: ImageDetailPage(image_path: image_path!), //이미지 창 크게보기
           ),
         );
       },
       child: CircleAvatar(
         backgroundColor: Colors.green[300],
         radius: 40,
-        foregroundImage: imagePath == null
+        foregroundImage: image_path == null
         ? null
-        : FileImage(File(imagePath!)),
-        child: imagePath == null? Icon(CupertinoIcons.alarm, color: Colors.white,): null,
+        : FileImage(File(image_path!)),
+        child: image_path == null? Icon(CupertinoIcons.alarm, color: Colors.white,): null,
       ),
     );
   }

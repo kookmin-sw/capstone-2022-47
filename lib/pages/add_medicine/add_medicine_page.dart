@@ -3,9 +3,9 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:yaksok_project/components/yaksok_page_route.dart';
+import 'package:yaksok_project/components/yaksok_fade_page_route.dart';
 import 'package:yaksok_project/main.dart';
-import 'package:yaksok_project/models/medicine.dart';
+import 'package:yaksok_project/models/medicine_model.dart';
 import 'package:yaksok_project/pages/bottomsheet/pick_image_bottomsheet.dart';
 
 import '../../components/yaksok_constants.dart';
@@ -16,11 +16,11 @@ import 'components/add_page_widget.dart';
 class AddMedicinePage extends StatefulWidget {
   const AddMedicinePage({
     Key? key, 
-    this.updateMedicineId = -1, //-1이면 약 추가창, 다른 정수면 수정페이지
+    this.update_medicine_id = -1, //-1이면 약 추가창, 다른 정수면 수정페이지
   }) : super(key: key);
 
   //약 정보 수정 시 받아올 key 값
-  final int updateMedicineId;
+  final int update_medicine_id;
 
   @override
   State<AddMedicinePage> createState() => _AddMedicinePageState();
@@ -31,11 +31,11 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
   File? _medicineImage;
 
   bool get _isUpdate =>
-  widget.updateMedicineId != -1;
+  widget.update_medicine_id != -1;
 
     //약 정보 수정 객체 가져옴
   Medicine get _updateMedicine =>
-    medicineRepository.medicineBox.values.singleWhere((medicine) => medicine.id == widget.updateMedicineId);
+    medicine_repository.medicine_box.values.singleWhere((medicine) => medicine.medicine_id == widget.update_medicine_id);
 
 
   @override
@@ -43,9 +43,9 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
     super.initState();
 
     if(_isUpdate){ //약 정보 수정 창 + 기존값 가져오기
-      _nameController  = TextEditingController(text: _updateMedicine.name);
-      if(_updateMedicine.imagePath != null){
-        _medicineImage = File(_updateMedicine.imagePath!);
+      _nameController  = TextEditingController(text: _updateMedicine.medicine_name);
+      if(_updateMedicine.medicine_image_path != null){
+        _medicineImage = File(_updateMedicine.medicine_image_path!);
       }
     }else{ //추가창
       _nameController  = TextEditingController(); 
@@ -80,7 +80,7 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
               style: Theme.of(context).textTheme.headline4,
             ),
             const SizedBox(
-              height: largeSpace,
+              height: l_size_space,
             ),
             Center(
               child: _MedicineImageButton(
@@ -91,7 +91,7 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
               ),
             ),
             const SizedBox(
-              height: largeSpace + regularSpace,
+              height: 60.0,
             ),
             Text(
               '약 이름',
@@ -106,7 +106,7 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
               decoration: InputDecoration(
                 hintText: '복용할 약 이름을 기입해주세요.',
                 hintStyle: Theme.of(context).textTheme.bodyText2,
-                contentPadding: textFieldContentPadding, //constants값
+                contentPadding: content_padding_form, //constants값
               ),
               onChanged: (_) {
                 setState(() {});
@@ -125,11 +125,11 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
   void _onAddAlarmPage() {
     Navigator.push(
       context,
-      FadePageRoute(
+      YaksokFadePageRoute(
         page: AddAlarmPage(
-          medicineImage: _medicineImage,
-          medicineName: _nameController.text, 
-          updateMedicineId: widget.updateMedicineId,
+          addAlarm_medicine_image: _medicineImage,
+          addAlarm_medicine_name: _nameController.text, 
+          addAlarm_update_medicine_id: widget.update_medicine_id,
         ),
       ),
     );

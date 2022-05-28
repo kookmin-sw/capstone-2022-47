@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'medicine_history.dart';
+part of 'medicine_history_model.dart';
 
 // **************************************************************************
 // TypeAdapterGenerator
@@ -17,12 +17,12 @@ class MedicineHistoryAdapter extends TypeAdapter<MedicineHistory> {
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return MedicineHistory(
-      medicineId: fields[0] as int,
-      alarmTime: fields[1] as String,
-      takeTime: fields[2] as DateTime,
-      medicineKey: fields[3] == null? -1 : fields[3] as int,
-      name: fields[4] == null? '삭제된 약' : fields[4] as String,
-      imagePath: fields[5] as String?,
+      history_medicine_id: fields[0] as int,
+      history_alarm_time: fields[1] as String,
+      history_take_time: fields[2] as DateTime,
+      history_medicine_key: fields[3] == null? -1 : fields[3] as int,
+      history_name: fields[4] == null? '삭제된 약' : fields[4] as String,
+      history_image_path: fields[5] as String?,
     );
   }
 
@@ -31,17 +31,17 @@ class MedicineHistoryAdapter extends TypeAdapter<MedicineHistory> {
     writer
       ..writeByte(6)
       ..writeByte(0)
-      ..write(obj.medicineId)
+      ..write(obj.history_medicine_id)
       ..writeByte(1)
-      ..write(obj.alarmTime)
+      ..write(obj.history_alarm_time)
       ..writeByte(2)
-      ..write(obj.takeTime)
+      ..write(obj.history_take_time)
       ..writeByte(3)
-      ..write(obj.medicineKey)
+      ..write(obj.history_medicine_key)
       ..writeByte(4)
-      ..write(obj.name)
+      ..write(obj.history_name)
       ..writeByte(5)
-      ..write(obj.imagePath);
+      ..write(obj.history_image_path);
   }
 
   @override

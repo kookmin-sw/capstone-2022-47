@@ -196,11 +196,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: GmarketSansTTF
+    - family: KMU_TTF
       fonts:
-        - asset: assets/fonts/GmarketSansTTF/GmarketSansTTFLight.ttf
-          weight: 300
-        - asset: assets/fonts/GmarketSansTTF/GmarketSansTTFMedium.ttf
+        - asset: assets/fonts/KMU_TTF/KMU-Regular.ttf
           weight: 500
-        - asset: assets/fonts/GmarketSansTTF/GmarketSansTTFBold.ttf
+        - asset: assets/fonts/KMU_TTF/KMU-Bold.ttf
           weight: 700

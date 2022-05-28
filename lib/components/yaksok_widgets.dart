@@ -11,7 +11,7 @@ class BottomSheetBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: pagePadding,
+        padding: page_padding_form,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: children,

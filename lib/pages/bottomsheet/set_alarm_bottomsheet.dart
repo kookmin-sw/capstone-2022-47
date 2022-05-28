@@ -27,7 +27,7 @@ class SetAlarmBottomSheet extends StatelessWidget {
               children: [
                 Expanded(
                   child: SizedBox(
-                    height: submitButtonHeight,
+                    height: submit_button_height,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                         textStyle: Theme.of(context).textTheme.subtitle1,
@@ -41,11 +41,11 @@ class SetAlarmBottomSheet extends StatelessWidget {
                 ),
                 //버튼 사이 여백
                 const SizedBox(
-                  width: smallSpace,
+                  width: s_size_space,
                 ),
                 Expanded(
                   child: SizedBox(
-                    height: submitButtonHeight,
+                    height: submit_button_height,
                     child: ElevatedButton(
                       style: ElevatedButton.styleFrom(
                           textStyle: Theme.of(context).textTheme.subtitle1, primary: Colors.green[300]),
