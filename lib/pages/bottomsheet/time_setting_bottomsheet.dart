@@ -56,7 +56,7 @@ class TimeSettingBottomSheet extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     textStyle: Theme.of(context).textTheme.subtitle1,
                     primary: Colors.white,
-                    onPrimary: YaksokColors.primaryColor,
+                    onPrimary: YaksokColors.yaksok_color,
                   ),
                   onPressed: () => Navigator.pop(context),
                   child: const Text('취소'),

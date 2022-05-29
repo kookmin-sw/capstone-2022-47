@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 
-
 /// 10.0
 const double s_size_space = 10.0;
 

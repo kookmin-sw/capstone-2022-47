@@ -3,7 +3,7 @@ import 'yaksok_colors.dart';
 
 class YaksokThemes {
   static ThemeData get lightTheme => ThemeData(        
-          primarySwatch: YaksokColors.primaryMaterialColor,
+          primarySwatch: YaksokColors.yaksok_material_color,
           fontFamily: 'KMU_TTF',
           scaffoldBackgroundColor: Colors.white,
           splashColor: Colors.white, 
@@ -12,10 +12,10 @@ class YaksokThemes {
           brightness: Brightness.light,
       );
 
-// 어두운 테마 (main.dart에서 theme: YaksokThemes.darkTheme 변경)
+// 어두운 테마 (main.dart에서 theme: YaksokThemes.darkTheme 변경, 다크모드)
 /*
   static ThemeData get darkTheme => ThemeData(        
-          primarySwatch: YaksokColors.primaryMaterialColor,
+          primarySwatch: YaksokColors.yaksok_material_color,
           fontFamily: 'KMU_TTF',
           splashColor: Colors.white, 
           textTheme: _textTheme,
@@ -26,7 +26,7 @@ class YaksokThemes {
   static const AppBarTheme _appBarTheme = AppBarTheme(
     backgroundColor: Colors.white,
     iconTheme: IconThemeData(
-      color: YaksokColors.primaryColor,
+      color: YaksokColors.yaksok_color,
     ),
     elevation: 0, //그림자 제거
   );

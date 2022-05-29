@@ -223,17 +223,17 @@ class _MoreButton extends StatelessWidget {
     return CupertinoButton(
       onPressed: () {
         showModalBottomSheet(context: context, builder: (context)=> MoreActionBottomSheet(//context인자로 위젯 반환
-          onPressedUpdate: (){ //약 정보 수정
+          onPressed_update: (){ //약 정보 수정
             Navigator.push(context, YaksokFadePageRoute(page: AddMedicinePage(update_medicine_id:medicine_alarm.alarm_id ,))).then((_) => Navigator.maybePop(context));
           },
-          onPressedDeleteMedicine: (){ //약 정보 삭제
+          onPressed_delete_medicine: (){ //약 정보 삭제
             //알람 삭제
             //hive 약 데이터 삭제
             notification.deleteMultipleAlarm(alarm_ids);
             medicine_repository.deleteMedicine(medicine_alarm.alarm_key);
             Navigator.pop(context);
           },
-          onPressedDeleteAll: (){ //약 정보와 히스토리 모두삭제
+          onPressed_delete_all: (){ //약 정보와 히스토리 모두삭제
             //알람 삭제
             //hive 히스토리 데이터 삭제
             //hive 약 데이터 삭제

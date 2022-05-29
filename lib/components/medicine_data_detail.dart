@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:yaksok_project/components/medicine_data_model.dart';
 
 class MedicineDataDetail extends StatelessWidget {
-  final MedicineData medicineData;
+  final MedicineData medicine_data;
 
-  const MedicineDataDetail({required this.medicineData});
+  const MedicineDataDetail({required this.medicine_data});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class MedicineDataDetail extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            medicineData.name,
+            medicine_data.name,
             style: TextStyle(
               color: Colors.black54,
               fontWeight: FontWeight.w500,
@@ -22,7 +22,7 @@ class MedicineDataDetail extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 6.0),
-          Text('제조사: ${medicineData.company}',
+          Text('제조사: ${medicine_data.company}',
             style: TextStyle(
               fontSize: 12,
             ),
@@ -30,7 +30,7 @@ class MedicineDataDetail extends StatelessWidget {
           const SizedBox(
             height: 6.0,
           ),
-          Text('일련번호: ${medicineData.no}',
+          Text('일련번호: ${medicine_data.no}',
             style: TextStyle(
               fontSize: 14,
           ),
