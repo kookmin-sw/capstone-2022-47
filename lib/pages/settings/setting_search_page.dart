@@ -39,10 +39,10 @@ class SettingSearchPage extends StatelessWidget {
         color: Colors.grey,
       ),
         itemBuilder: (context, index) {
-          return MedicineDataItem(medicineData: medicineDataList[index],
+          return MedicineDataItem(medicine_data: medicine_data_list[index],
           );
         },
-        itemCount: medicineDataList.length,
+        itemCount: medicine_data_list.length,
       ),
     );
   }

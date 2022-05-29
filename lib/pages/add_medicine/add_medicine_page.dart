@@ -27,14 +27,14 @@ class AddMedicinePage extends StatefulWidget {
 }
 
 class _AddMedicinePageState extends State<AddMedicinePage> {
-  late TextEditingController _nameController;
-  File? _medicineImage;
+  late TextEditingController _name_controller;
+  File? _medicine_image;
 
-  bool get _isUpdate =>
+  bool get _is_update =>
   widget.update_medicine_id != -1;
 
     //약 정보 수정 객체 가져옴
-  Medicine get _updateMedicine =>
+  Medicine get _update_medicine =>
     medicine_repository.medicine_box.values.singleWhere((medicine) => medicine.medicine_id == widget.update_medicine_id);
 
 
@@ -42,28 +42,22 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
   void initState() {
     super.initState();
 
-    if(_isUpdate){ //약 정보 수정 창 + 기존값 가져오기
-      _nameController  = TextEditingController(text: _updateMedicine.medicine_name);
-      if(_updateMedicine.medicine_image_path != null){
-        _medicineImage = File(_updateMedicine.medicine_image_path!);
+    if(_is_update){ //약 정보 수정 창 + 기존값 가져오기
+      _name_controller  = TextEditingController(text: _update_medicine.medicine_name);
+      if(_update_medicine.medicine_image_path != null){
+        _medicine_image = File(_update_medicine.medicine_image_path!);
       }
     }else{ //추가창
-      _nameController  = TextEditingController(); 
+      _name_controller  = TextEditingController(); 
     }
   }
 
-  
 
-
-
- 
-  
   @override
   void dispose() {
-    _nameController.dispose();
+    _name_controller.dispose();
     super.dispose();
   }
-
 
 
   @override
@@ -84,9 +78,9 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
             ),
             Center(
               child: _MedicineImageButton(
-                updateImage: _medicineImage,
-                changeImageFile: (File? value) {
-                  _medicineImage = value;
+                update_image: _medicine_image,
+                change_image_file: (File? value) {
+                  _medicine_image = value;
                 },
               ),
             ),
@@ -98,7 +92,7 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
               style: Theme.of(context).textTheme.subtitle1,
             ),
             TextFormField(
-              controller: _nameController,
+              controller: _name_controller,
               maxLength: 20,
               keyboardType: TextInputType.text,
               textInputAction: TextInputAction.done,
@@ -116,7 +110,7 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
         ),
       ),
       bottomNavigationBar: BottomSubmitButton(
-        onPressed: _nameController.text.isEmpty ? null : _onAddAlarmPage,
+        onPressed: _name_controller.text.isEmpty ? null : _onAddAlarmPage,
         text: '다음',
       ),
     );
@@ -127,8 +121,8 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
       context,
       YaksokFadePageRoute(
         page: AddAlarmPage(
-          addAlarm_medicine_image: _medicineImage,
-          addAlarm_medicine_name: _nameController.text, 
+          addAlarm_medicine_image: _medicine_image,
+          addAlarm_medicine_name: _name_controller.text, 
           addAlarm_update_medicine_id: widget.update_medicine_id,
         ),
       ),
@@ -137,23 +131,23 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
 }
 
 class _MedicineImageButton extends StatefulWidget {
-  const _MedicineImageButton({Key? key, required this.changeImageFile, this.updateImage})
+  const _MedicineImageButton({Key? key, required this.change_image_file, this.update_image})
       : super(key: key);
 
-  final File? updateImage;
-  final ValueChanged<File?> changeImageFile;
+  final File? update_image;
+  final ValueChanged<File?> change_image_file;
 
   @override
   State<_MedicineImageButton> createState() => _MedicineImageButtonState();
 }
 
 class _MedicineImageButtonState extends State<_MedicineImageButton> {
-  File? _pickedImage;
+  File? _picked_image;
 
   @override
   void initState() {
     super.initState();
-    _pickedImage = widget.updateImage;
+    _picked_image = widget.update_image;
   }
 
   @override
@@ -162,15 +156,15 @@ class _MedicineImageButtonState extends State<_MedicineImageButton> {
       radius: 40,
       child: CupertinoButton(
         onPressed: _showBottomSheet,
-        padding: _pickedImage == null ? null : EdgeInsets.zero,
-        child: _pickedImage == null
+        padding: _picked_image == null ? null : EdgeInsets.zero,
+        child: _picked_image == null
             ? const Icon(
                 CupertinoIcons.photo_camera_solid,
                 size: 30,
                 color: Colors.white,
               )
             : CircleAvatar(
-                foregroundImage: FileImage(_pickedImage!),
+                foregroundImage: FileImage(_picked_image!),
                 radius: 40,
               ),
       ),
@@ -182,8 +176,8 @@ class _MedicineImageButtonState extends State<_MedicineImageButton> {
         context: context,
         builder: (context) {
           return PickImageBottomSheet(
-            onPressedCamera: () => _onPressed(ImageSource.camera),
-            onPressedGallery: () => _onPressed(ImageSource.gallery),
+            onPressed_camera: () => _onPressed(ImageSource.camera),
+            onPressed_gallery: () => _onPressed(ImageSource.gallery),
           );
         });
   }
@@ -192,8 +186,8 @@ class _MedicineImageButtonState extends State<_MedicineImageButton> {
     ImagePicker().pickImage(source: source).then((xfile) {
       if (xfile != null) {
         setState(() {
-          _pickedImage = File(xfile.path);
-          widget.changeImageFile(_pickedImage);
+          _picked_image = File(xfile.path);
+          widget.change_image_file(_picked_image);
         });
       }
       Navigator.maybePop(context);
