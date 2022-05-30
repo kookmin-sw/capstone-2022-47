@@ -6,6 +6,8 @@ import 'package:yaksok_project/pages/history/history_page.dart';
 import 'package:yaksok_project/pages/settings/setting_page.dart';
 import 'package:yaksok_project/pages/today/today_page.dart';
 
+
+//메인 페이지로 Today, History, Setting 페이지 연결, 전환을 담당
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
   
@@ -16,7 +18,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage>{
   int _current_index = 0;
 
-  // class page 2가지
+  // class page 3가지
   final _pages = [
     const TodayPage(),
     const HistoryPage(),
@@ -35,6 +37,7 @@ class _HomePageState extends State<HomePage>{
 
           // 추가(+) 모양 버튼
           floatingActionButton: FloatingActionButton(
+            elevation: 2,
             backgroundColor: Colors.green[300],
             onPressed: _onAddMedicine,
             child: const Icon(CupertinoIcons.add,),
@@ -49,6 +52,7 @@ class _HomePageState extends State<HomePage>{
               height: kBottomNavigationBarHeight,
               color: Colors.white,   //아래 메뉴바 색깔
               child: Row(
+                verticalDirection: VerticalDirection.down,
                 mainAxisAlignment: MainAxisAlignment.spaceAround, //중앙 기준 정렬
                 children: [
                   // 체크 모양 마크

@@ -72,6 +72,7 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
             Text(
               '어떤 약을 등록하실 건가요?🤔',
               style: Theme.of(context).textTheme.headline4,
+              maxLines: 1,
             ),
             const SizedBox(
               height: l_size_space,
@@ -93,7 +94,8 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
             ),
             TextFormField(
               controller: _name_controller,
-              maxLength: 20,
+              maxLines: 2,
+              maxLength: 25,
               keyboardType: TextInputType.text,
               textInputAction: TextInputAction.done,
               style: Theme.of(context).textTheme.bodyText1,
@@ -156,6 +158,7 @@ class _MedicineImageButtonState extends State<_MedicineImageButton> {
       radius: 40,
       child: CupertinoButton(
         onPressed: _showBottomSheet,
+        disabledColor: Colors.grey,
         padding: _picked_image == null ? null : EdgeInsets.zero,
         child: _picked_image == null
             ? const Icon(

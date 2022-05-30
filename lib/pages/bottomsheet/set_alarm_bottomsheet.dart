@@ -34,6 +34,7 @@ class SetAlarmBottomSheet extends StatelessWidget {
                         primary: Colors.white,
                         onPrimary: YaksokColors.yaksok_color,
                       ),
+                      autofocus: false,
                       onPressed: () => Navigator.pop(context),
                       child: const Text('취소'),
                     ),
@@ -53,6 +54,7 @@ class SetAlarmBottomSheet extends StatelessWidget {
                         Navigator.pop(context);
                         flutterToast();
                       }, //setDateTime 넘겨줌
+                      autofocus: false,
                       child: Text('확인'),
                     ),
                   ),

@@ -18,8 +18,8 @@ class MedicineDataItem extends StatelessWidget {
             borderRadius: BorderRadius.circular(10.0),
             child: Image.network(
               medicine_data.urlToImage,
-              width: 100,
-              height: 100,
+              width: 125,
+              height: 110,
               fit: BoxFit.cover,
             ),
           ),

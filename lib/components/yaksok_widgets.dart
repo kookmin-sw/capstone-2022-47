@@ -30,6 +30,7 @@ void showPermissionDenied(BuildContext context, {required String permission}){
             Text('$permission 알람 권한이 없습니다.'),
             const TextButton(
               onPressed: openAppSettings,
+              autofocus: false,
               child: Text('설정창으로 이동'),
             )
           ],
