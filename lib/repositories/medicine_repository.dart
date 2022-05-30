@@ -15,15 +15,15 @@ class MedicineRepository{
   void addMedicine(Medicine medicine) async{
     int key = await medicine_box.add(medicine);
 
-    log('[addMedicine] add (key:$key) $medicine');
-    log('result ${medicine_box.values.toList()}');
+    log('[addMedicine] add (key : $key) $medicine');
+    log('result : ${medicine_box.values.toList()}');
   }
 
   void deleteMedicine(int key) async{
     await medicine_box.delete(key);
 
-    log('[deleteMedicine] delete (key:$key)');
-    log('result ${medicine_box.values.toList()}');
+    log('[deleteMedicine] delete (key : $key)');
+    log('result : ${medicine_box.values.toList()}');
   }
 
   void updateMedicine({
@@ -32,8 +32,8 @@ class MedicineRepository{
   }) async {
     await medicine_box.put(key, medicine);
 
-    log('[updateMedicine] update (key:$key) $medicine');
-    log('result %{medicineBox.vlaues.toList()}');
+    log('[updateMedicine] update (key : $key) $medicine');
+    log('result : ${medicine_box.values.toList()}');
   }
 
   int get newId{

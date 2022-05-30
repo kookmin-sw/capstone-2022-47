@@ -131,6 +131,7 @@ class _TimeTile extends StatelessWidget {
                       height: 1.6,
                       leadingDistribution: TextLeadingDistribution.even,
                     ),
+                maxLines: 1,
               ),
             ],
           ),

@@ -15,15 +15,15 @@ class MedicineHistoryRepository{
   void addHistory(MedicineHistory history) async{
     int key = await history_box.add(history);
 
-    log('[addHistory] add (key:$key) $history');
-    log('result ${history_box.values.toList()}');
+    log('[addHistory] add (key : $key) $history');
+    log('result : ${history_box.values.toList()}');
   }
 
   void deleteHistory(int key) async{
     await history_box.delete(key);
 
-    log('[deleteHistory] delete (key:$key)');
-    log('result ${history_box.values.toList()}');
+    log('[deleteHistory] delete (key : $key)');
+    log('result : ${history_box.values.toList()}');
   }
 
   void updateHistory({
@@ -32,15 +32,15 @@ class MedicineHistoryRepository{
   }) async {
     await history_box.put(key, history);
 
-    log('[updateHistory] update (key:$key) $history');
-    log('result %{medicineBox.vlaues.toList()}');
+    log('[updateHistory] update (key : $key) $history');
+    log('result : %{medicine_box.values.toList()}');
   }
 
     void deleteAllHistory(Iterable<int> keys) async{
     //await historyBox.delete(key);
     await history_box.deleteAll(keys);
 
-    log('[deleteHistory] delete (key:$keys)');
-    log('result ${history_box.values.toList()}');
+    log('[deleteHistory] delete (key : $keys)');
+    log('result : ${history_box.values.toList()}');
   }
 }

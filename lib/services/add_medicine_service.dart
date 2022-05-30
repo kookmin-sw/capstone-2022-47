@@ -13,10 +13,11 @@ class AddMedicineService with ChangeNotifier{
     }
   }
 
+  //기본값
   final _alarms = <String>{
     '08:00',
     '13:00',
-    '19:00',
+    '18:00',
   };
 
   Set<String> get alarms => _alarms;
