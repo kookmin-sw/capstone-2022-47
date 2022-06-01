@@ -27,6 +27,7 @@ class MedicineAdapter extends TypeAdapter<Medicine> {
   @override
   void write(BinaryWriter writer, Medicine obj) {
     writer
+      ..writeByte(4)
       ..writeByte(0)
       ..write(obj.medicine_id)
       ..writeByte(1)
@@ -34,8 +35,8 @@ class MedicineAdapter extends TypeAdapter<Medicine> {
       ..writeByte(2)
       ..write(obj.medicine_image_path)
       ..writeByte(3)
-      ..write(obj.medicine_alarms)
-      ..writeByte(4);
+      ..write(obj.medicine_alarms);
+      
   }
 
   @override
