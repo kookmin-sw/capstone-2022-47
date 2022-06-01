@@ -3,6 +3,9 @@ import 'package:path_provider/path_provider.dart';
 
 Future<String> saveImageToLocalDirectory(File image) async {
   final document_directory = await getApplicationDocumentsDirectory();
+
+
+  //Path경로 지정
   final folder_path = document_directory.path + '/medicine/images';
   final file_path = folder_path + '/${DateTime.now().millisecondsSinceEpoch}.png';
 

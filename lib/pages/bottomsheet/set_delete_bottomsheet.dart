@@ -20,6 +20,7 @@ class SetDeleteBottomSheet extends StatelessWidget {
               child: const Text(
                 '복용 기록 로그를 삭제하겠습니까?',
                 textAlign: TextAlign.center,
+                textDirection: TextDirection.ltr,
                 style: TextStyle(fontSize: 23, fontWeight: FontWeight.normal),
               ),
             ),
@@ -35,8 +36,9 @@ class SetDeleteBottomSheet extends StatelessWidget {
                             .textTheme
                             .subtitle1,
                         primary: Colors.white,
-                        onPrimary: YaksokColors.primaryColor,
+                        onPrimary: YaksokColors.yaksok_color,
                       ),
+                      autofocus: false,
                       onPressed: () => Navigator.pop(context),
                       child: const Text('취소'),
                     ),
@@ -66,6 +68,7 @@ class SetDeleteBottomSheet extends StatelessWidget {
                           toastLength: Toast.LENGTH_SHORT,
                         );
                       }, //setDateTime 넘겨줌
+                      autofocus: false,
                       child: Text('확인'),
                     ),
                   ),

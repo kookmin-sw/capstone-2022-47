@@ -18,9 +18,12 @@ import 'components/add_page_widget.dart';
 // ignore: must_be_immutable
 class AddAlarmPage extends StatelessWidget {
   AddAlarmPage(
-      {Key? key, required this.addAlarm_medicine_image, required this.addAlarm_medicine_name, required this.addAlarm_update_medicine_id})
+      {Key? key,
+      required this.addAlarm_medicine_image,
+      required this.addAlarm_medicine_name,
+      required this.addAlarm_update_medicine_id})
       : super(key: key) {
-      add_medicine_service = AddMedicineService(addAlarm_update_medicine_id);
+    add_medicine_service = AddMedicineService(addAlarm_update_medicine_id);
   }
 
   final File? addAlarm_medicine_image;
@@ -32,7 +35,9 @@ class AddAlarmPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text('복용할 시간을 설정해주세요'),
+      ),
       body: AddPageBody(
         children: [
           Text(
@@ -45,6 +50,7 @@ class AddAlarmPage extends StatelessWidget {
               animation: add_medicine_service,
               builder: (context, _) {
                 return ListView(
+                  scrollDirection: Axis.vertical,
                   children: alarmWidgets,
                 );
               },
@@ -53,12 +59,11 @@ class AddAlarmPage extends StatelessWidget {
         ],
       ),
       bottomNavigationBar: BottomSubmitButton(
-        onPressed: () async{
+        onPressed: () async {
           final isUpdate = addAlarm_update_medicine_id != -1;
           isUpdate
-            ? await _onUpdateMedicine(context)
-            : await _onAddMedicine(context);
-          
+              ? await _onUpdateMedicine(context)
+              : await _onAddMedicine(context);
         },
         text: '완료',
       ),
@@ -66,47 +71,46 @@ class AddAlarmPage extends StatelessWidget {
   }
 
   Future<void> _onAddMedicine(BuildContext context) async {
-          bool result = false;
-          //알람추가, 이미지 저장,
-          for (var alarm in add_medicine_service.alarms) {
-            result = await notification.addNotifcication(
-              notification_medicine_id: medicine_repository.newId,
-              notification_alarm_time_str: alarm,
-              notification_title: '$alarm 약 먹을 시간이에요!',
-              notification_body: '$addAlarm_medicine_name 복약했다고 알려주세요!',
-            );
-          }
-          if (!result) {
-            return showPermissionDenied(context, permission: '알람');
-          }
+    bool result = false;
+    //알람추가, 이미지 저장,
+    for (var alarm in add_medicine_service.alarms) {
+      result = await notification.addNotifcication(
+        notification_medicine_id: medicine_repository.newId,
+        notification_alarm_time_str: alarm,
+        notification_title: '$alarm 약 먹을 시간이에요!',
+        notification_body: '$addAlarm_medicine_name 복약했다고 알려주세요!',
+      );
+    }
+    if (!result) {
+      return showPermissionDenied(context, permission: '알람');
+    }
 
-          //이미지 저장
-          String? imageFilePath;
+    //이미지 저장
+    String? imageFilePath;
 
-          if (addAlarm_medicine_image != null) {
-            imageFilePath = await saveImageToLocalDirectory(addAlarm_medicine_image!);
-          }
+    if (addAlarm_medicine_image != null) {
+      imageFilePath = await saveImageToLocalDirectory(addAlarm_medicine_image!);
+    }
 
-          //medicine model
-          final medicine = Medicine(
-            medicine_id: medicine_repository.newId,
-            medicine_name: addAlarm_medicine_name,
-            medicine_image_path: imageFilePath,
-            medicine_alarms: add_medicine_service.alarms.toList(),
-          );
+    //medicine model
+    final medicine = Medicine(
+      medicine_id: medicine_repository.newId,
+      medicine_name: addAlarm_medicine_name,
+      medicine_image_path: imageFilePath,
+      medicine_alarms: add_medicine_service.alarms.toList(),
+    );
 
-          medicine_repository.addMedicine(medicine);
-          Navigator.popUntil(context, (route) => route.isFirst);
-
+    medicine_repository.addMedicine(medicine);
+    Navigator.popUntil(context, (route) => route.isFirst);
   }
 
   Future<void> _onUpdateMedicine(BuildContext context) async {
     bool result = false;
 
     //이전 알람 지우기
-    final alarmIds = _updateMedicine.medicine_alarms.map((alarmTime)=> notification.alarmId(addAlarm_update_medicine_id, alarmTime));
+    final alarmIds = _update_medicine.medicine_alarms.map((alarmTime) =>
+        notification.alarmId(addAlarm_update_medicine_id, alarmTime));
     await notification.deleteMultipleAlarm(alarmIds);
-
 
     //알람추가
     for (var alarm in add_medicine_service.alarms) {
@@ -121,19 +125,19 @@ class AddAlarmPage extends StatelessWidget {
       return showPermissionDenied(context, permission: '알람');
     }
 
-    String? imageFilePath = _updateMedicine.medicine_image_path;
-    if(_updateMedicine.medicine_image_path != addAlarm_medicine_image?.path){
+    String? imageFilePath = _update_medicine.medicine_image_path;
+    if (_update_medicine.medicine_image_path != addAlarm_medicine_image?.path) {
       //이전 이미지 삭제
-      if(_updateMedicine.medicine_image_path != null){
-      deleteImage(_updateMedicine.medicine_image_path!);
+      if (_update_medicine.medicine_image_path != null) {
+        deleteImage(_update_medicine.medicine_image_path!);
       }
 
-      //이미지 저장  
+      //이미지 저장
       if (addAlarm_medicine_image != null) {
-        imageFilePath = await saveImageToLocalDirectory(addAlarm_medicine_image!);
+        imageFilePath =
+            await saveImageToLocalDirectory(addAlarm_medicine_image!);
       }
     }
-    
 
     //update medicine model (로컬 db,  hive)
     final medicine = Medicine(
@@ -143,12 +147,14 @@ class AddAlarmPage extends StatelessWidget {
       medicine_alarms: add_medicine_service.alarms.toList(),
     );
 
-    medicine_repository.updateMedicine(key: _updateMedicine.key,medicine: medicine);
+    medicine_repository.updateMedicine(
+        key: _update_medicine.key, medicine: medicine);
     Navigator.popUntil(context, (route) => route.isFirst);
-
   }
-  Medicine get _updateMedicine =>
-    medicine_repository.medicine_box.values.singleWhere((medicine) => medicine.medicine_id == addAlarm_update_medicine_id);
+
+  Medicine get _update_medicine =>
+      medicine_repository.medicine_box.values.singleWhere(
+          (medicine) => medicine.medicine_id == addAlarm_update_medicine_id);
 
   //알람시간 출력 리스트
   List<Widget> get alarmWidgets {
@@ -188,7 +194,10 @@ class AlarmBox extends StatelessWidget {
             onPressed: () {
               service.removeAlarm(time);
             },
-            icon: const Icon(CupertinoIcons.minus_circle, color: Colors.green,),
+            icon: const Icon(
+              CupertinoIcons.minus_circle,
+              color: Colors.green,
+            ),
           ),
         ),
         Expanded(
@@ -202,13 +211,17 @@ class AlarmBox extends StatelessWidget {
                 context: context,
                 builder: (context) {
                   return TimePickerBottomSheet(
-                    initialTime: time,
+                    initial_time: time,
                     service: service,
                   );
                 },
               );
             },
-            child: Text(time),
+            autofocus: false,
+            child: Text(
+              time,
+              maxLines: 1,
+            ),
           ),
         )
       ],
@@ -219,17 +232,17 @@ class AlarmBox extends StatelessWidget {
 class TimePickerBottomSheet extends StatelessWidget {
   TimePickerBottomSheet({
     Key? key,
-    required this.initialTime,
+    required this.initial_time,
     required this.service,
   }) : super(key: key);
 
-  final String initialTime;
+  final String initial_time;
   final AddMedicineService service;
   DateTime? _setDateTime;
 
   @override
   Widget build(BuildContext context) {
-    final initialDateTime = DateFormat('HH:mm').parse(initialTime);
+    final initialDateTime = DateFormat('HH:mm').parse(initial_time);
 
     return BottomSheetBody(
       children: [
@@ -256,10 +269,14 @@ class TimePickerBottomSheet extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                     textStyle: Theme.of(context).textTheme.subtitle1,
                     primary: Colors.white,
-                    onPrimary: YaksokColors.primaryColor,
+                    onPrimary: YaksokColors.yaksok_color,
                   ),
+                  autofocus: false,
                   onPressed: () => Navigator.pop(context),
-                  child: const Text('취소'),
+                  child: const Text(
+                    '취소',
+                    maxLines: 1,
+                  ),
                 ),
               ),
             ),
@@ -272,14 +289,18 @@ class TimePickerBottomSheet extends StatelessWidget {
                 height: submit_button_height,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
+                      primary: Colors.green[300],
                       textStyle: Theme.of(context).textTheme.subtitle1),
                   onPressed: () {
                     service.setAlarm(
-                        prev_time: initialTime,
+                        prev_time: initial_time,
                         set_time: _setDateTime ?? initialDateTime);
                     Navigator.pop(context);
                   },
-                  child: const Text('선택'),
+                  child: const Text(
+                    '선택',
+                    maxLines: 1,
+                  ),
                 ),
               ),
             ),
@@ -310,7 +331,10 @@ class AddAlarmButton extends StatelessWidget {
         children: const [
           Expanded(
             flex: 1,
-            child: Icon(CupertinoIcons.plus_circle_fill, color: Colors.green,),
+            child: Icon(
+              CupertinoIcons.plus_circle_fill,
+              color: Colors.green,
+            ),
           ),
           Expanded(
             flex: 5,

@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-
 import 'medicine_data_model.dart';
 import 'medicine_data_detail.dart';
 
 class MedicineDataItem extends StatelessWidget {
-  final MedicineData medicineData;
+  final MedicineData medicine_data;
 
-  MedicineDataItem({required this.medicineData});
+  MedicineDataItem({required this.medicine_data});
 
   @override
   Widget build(BuildContext context) {
@@ -18,14 +17,14 @@ class MedicineDataItem extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(10.0),
             child: Image.network(
-              medicineData.urlToImage,
-              width: 100,
-              height: 100,
+              medicine_data.urlToImage,
+              width: 125,
+              height: 110,
               fit: BoxFit.cover,
             ),
           ),
           const SizedBox(width: 16.0,),
-          MedicineDataDetail(medicineData: medicineData)
+          MedicineDataDetail(medicine_data: medicine_data)
         ],
       ),
     );

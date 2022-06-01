@@ -13,7 +13,7 @@ class AddPageBody extends StatelessWidget {
         FocusScope.of(context).unfocus();
       },
       child: Padding(
-        padding: page_padding_form, //constants 값
+        padding: page_padding_form,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: children,
@@ -37,9 +37,9 @@ class BottomSubmitButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: submit_button_padding_form, //constants 값
+        padding: submit_button_padding_form,
         child: SizedBox(
-          height: submit_button_height, //constants값
+          height: submit_button_height,
           child: ElevatedButton(
             onPressed: onPressed,
             style: ElevatedButton.styleFrom(
